@@ -1,28 +1,28 @@
 {
   "docs": [
     {
-      "title": "Introduction",
-      "link" : "https://sprucecss.com/docs/getting-started/introduction"
+      "title": "Use headings properly",
+      "link" : "#"
     },
     {
-      "title": "Installation",
-      "link" : "https://sprucecss.com/docs/getting-started/installation"
+      "title": "Always (almost) add labels to form fields",
+      "link" : "#"
     },
     {
-      "title": "Structure and Code",
-      "link" : "https://sprucecss.com/docs/getting-started/structure-and-code"
+      "title": "Identify language of text",
+      "link" : "#"
     },
     {
-      "title": "Typography",
-      "link" : "https://sprucecss.com/docs/elements/typography"
+      "title": "Provide sufficient color contrast",
+      "link" : "#"
     },
     {
-      "title": "Tables",
-      "link" : "https://sprucecss.com/docs/elements/tables"
+      "title": "Use text, not pictures of text",
+      "link" : "#"
     },
     {
-      "title": "Buttons",
-      "link" : "https://sprucecss.com/docs/elements/buttons"
+      "title": "Use a website navigation menu that works for all users",
+      "link" : "#"
     }
   ]
 }

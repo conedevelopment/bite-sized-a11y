@@ -1,0 +1,30 @@
+@use 'sprucecss/scss/spruce';
+
+.hero {
+  &__container {
+    @include spruce.layout-center();
+  }
+
+  &__inner {
+    @include spruce.layout-stack(
+      spruce.spacer(s),
+      $width: false
+    );
+    padding-block: spruce.spacer(xl);
+  }
+
+  &__title {
+    font-family: spruce.$font-family-heading;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-size: spruce.font-size(
+      $key: h4,
+      $scaler: 20,
+      $optimal-size: '0.5vw + 1rem'
+    );
+    line-height: spruce.$line-height-md;
+    max-width: 40ch;
+  }
+}

@@ -1,0 +1,49 @@
+@use 'sprucecss/scss/spruce';
+
+.list {
+  position: relative;
+  z-index: 10;
+
+  &__container {
+    @include spruce.layout-center;
+  }
+
+  &__inner {
+    @include spruce.layout-stack;
+  }
+}
+
+.list-card {
+  $this: &;
+
+  align-items: center;
+  display: flex;
+  gap: spruce.spacer(m);
+  text-decoration: none;
+
+  &:hover {
+    #{$this}__serial-number {
+      background-color: spruce.color(primary);
+      color: hsl(0, 0%, 100%);
+    }
+  }
+
+  &__serial-number {
+    align-items: center;
+    background-color: #ffe3ec;
+    border-radius: spruce.$border-radius-lg;
+    color: spruce.color(primary);
+    display: flex;
+    flex-shrink: 0;
+    font-family: spruce.$font-family-cursive;
+    font-size: spruce.responsive-font-size(1.6rem);
+    font-weight: 700;
+    height: 5rem;
+    justify-content: center;
+    width: 5rem;
+  }
+
+  &__title {
+    font-size: spruce.responsive-font-size(2rem);
+  }
+}

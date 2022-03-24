@@ -1,6 +1,56 @@
 -var year = new Date().getFullYear();
+include ../../assets/mixins
 
-footer(class='footer')
-  div(class='footer__container')
-    div(class='footer__inner')
-      p(class='footer__copyright') © #{year} Cone
+footer(class='js-footer footer footer--' + page)
+  div(class='js-footer-container footer__container')
+    div(class='footer__top')
+      div(class='footer__col')
+        a(class='footer__logo' href='#')
+          img(src='../../assets/img/vilkrig-logo-sm-dark.svg' alt='Vilkrig' height='32' width='171' data-theme-mode data-light-asset='../../assets/img/vilkrig-logo-sm-dark.svg' data-dark-asset='../../assets/img/vilkrig-logo-sm-light.svg')
+        div(class='footer__socials')
+          a(class='footer__social' href='https://twitter.com/vilkrig' aria-label='Twitter')
+            +icon('twitter', 'icon')
+          a(class='footer__social' href='https://www.facebook.com/vilkrig' aria-label='Facebook')
+            +icon('facebook', 'icon')
+          a(class='footer__social is-instagram' href='https://www.instagram.com/vilkrig/' aria-label='Instagram')
+            +icon('instagram', 'icon')
+      div(class='footer__col')
+        h3(class='footer__title') Navigation
+        ul
+          li
+            a(href='#') Services
+          li
+            a(href='#') Aproach
+          li
+            a(href='#') Case Studies
+          li
+            a(href='#') About Us
+      div(class='footer__col')
+        h3(class='footer__title') Contact
+        address
+          p
+            strong E-mail:
+            a(href='mailto:info@vilkrig.com') info@vilkrig.com
+          p
+            strong Dublin Office:
+            | 1st Floor, 9 Exchange Place I.F.S.C. #[br] Dublin 1, D01 X8H2
+        // p
+          strong Tapolca Office:
+          | fszt.3, Billege utca 1-3 #[br] Tapolca, 8300
+    div(class='footer__bottom')
+      a(class='footer__made-by' href='https://conedevelopment.com' aria-label='Made by:')
+        | made by
+        img(src='../../assets/img/cone-logo-dark.svg' alt='Cone Development' width='51' height='14' data-theme-mode data-light-asset='../../assets/img/cone-logo-dark.svg' data-dark-asset='../../assets/img/cone-logo-light.svg')
+      div(class='footer__bottom-col')
+        ul(class='footer__secondary-navigation' aria-label='Secondary Navigation')
+          li
+            a(href='#') Privacy Policy
+        p(class='footer__copyright') © #{year} Vilkrig
+        div(id='theme-switcher' class='theme-switcher')
+          span(class='theme-switcher__icon')
+            +icon('system-mode', 'is-system')
+            +icon('light-mode', 'is-light')
+            +icon('dark-mode', 'is-dark')
+          select(class='js-switch-theme-mode theme-switcher__select' aria-label='Select a theme')
+            option(value='light') Light
+            option(value='dark') Dark

@@ -4,7 +4,9 @@ header(class='header')
   div(class='header__container')
     div(class='header__inner')
       a(href='index.html' class='header__logo')
-        img(src='../../assets/img/spruce-logo-dark.svg' alt='Spruce CSS' width='140')
-      a(href='https://sprucecss.com/docs/getting-started/introduction' class='btn btn--primary')
-        +icon('arrow-forward', 'btn__icon btn__icon--sm')
-        | Documentation
+        img(src='../../assets/img/bite-sized-a11y-logo.svg' alt='Bite-sized A11Y' width='140')
+      ul(class='header__lang-switcher')
+        li
+          a(aria-current='page' href='#' hreflang='en' aria-label='English') en
+        li
+          a(href='#' hreflang='hu' aria-label='Magyar') hu

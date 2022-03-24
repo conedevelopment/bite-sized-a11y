@@ -3,6 +3,8 @@
 @forward 'styles';
 
 // Load Components
-@forward 'components/header';
-@forward 'components/docs';
-@forward 'components/footer';
+@forward 'components';
+
+body {
+  background: linear-gradient(180deg, #f4f1fb, transparent) !important;
+}

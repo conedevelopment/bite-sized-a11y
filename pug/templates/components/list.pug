@@ -1,0 +1,9 @@
+- var n = 1;
+
+div(class='list')
+  div(class='list__container')
+    div(class='list__inner')
+      each doc in docs
+        a(href=`${doc.link}` class='list-card')
+          span(class='list-card__serial-number')= `0${n++}`
+          h2(class='list-card__title')= doc.title

@@ -1,14 +1,164 @@
 @use 'sprucecss/scss/spruce';
 
 .footer {
-  padding: spruce.spacer(l) 0;
+  $this: &;
+
+  position: relative;
+
+  &--front-page {
+    border-top: 1px solid spruce.color(border);
+  }
 
   &__container {
-    @include spruce.layout-center(clamp(spruce.spacer(m), 5vw, spruce.spacer(l)));
+    @include spruce.layout-center;
   }
 
   &__copyright {
     margin-bottom: 0;
     margin-top: 0;
+  }
+
+  a {
+    color: spruce.color(text);
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: spruce.color(primary);
+      text-decoration: underline;
+    }
+  }
+
+  &__top {
+    padding-block: spruce.spacer(l);
+    column-gap: spruce.spacer(xl);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: spruce.spacer(l);
+
+    @include spruce.breakpoint(sm) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @include spruce.breakpoint(lg) {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.5fr);
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__bottom {
+    align-items: center;
+    padding-block-end: spruce.spacer(xl);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    column-gap: spruce.spacer(l);
+    row-gap: spruce.spacer(s);
+
+    @include spruce.breakpoint(md) {
+      flex-direction: row;
+    }
+
+    &-col {
+      align-items: center;
+      display: flex;
+      column-gap: spruce.spacer(l);
+      row-gap: spruce.spacer(s);
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    margin-block: 0 spruce.spacer(m);
+  }
+
+  &__logo {
+    display: inline-flex;
+    height: 2rem;
+
+    img {
+      display: block;
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  &__socials {
+    align-items: center;
+    display: flex;
+    gap: spruce.spacer(s);
+    margin-block-start: spruce.spacer(l);
+  }
+
+  &__social {
+    text-decoration: none;
+
+    &.is-instagram {
+      &,
+      svg {
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      svg {
+        color: spruce.color(primary);
+      }
+    }
+
+    &,
+    svg {
+      color: spruce.color(secondary);
+      height: 1.75rem;
+      width: 1.75rem;
+    }
+  }
+
+  &__secondary-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    gap: spruce.spacer(xs);
+    margin: 0;
+    padding: 0;
+
+    a[aria-current='page'] {
+        text-decoration: underline;
+    }
+  }
+
+  &__made-by {
+    gap: spruce.spacer(xs);
+    align-items: center;
+    display: inline-flex;
+    font-size: 0.8375rem;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: var(--transition-duration) var(--transition-timing-function);
+
+    @include spruce.breakpoint(md) {
+      margin-bottom: 0;
+    }
+
+    img {
+      transition: var(--transition-duration) var(--transition-timing-function);
+      width: 2.8rem;
+    }
+  }
+
+  &__copyright {
+      margin: 0;
+      text-align: center;
   }
 }

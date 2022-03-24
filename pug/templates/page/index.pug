@@ -8,11 +8,13 @@ html(lang='en')
     title Spruce CSS Starter Kit
     link(rel='icon' href='../../assets/img/favicon.png' sizes='32x32')
     link(rel='stylesheet' href=`../../assets/css/main.css?time=${time}`)
+    link(href='https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;800&family=Space+Mono:wght@400;700&display=swap' rel='stylesheet')
 
   body
     include ../components/header
     main(id='content')
-      include ../components/docs
+      include ../components/hero
+      include ../components/list
     include ../components/footer
     include ../../../assets/icon/icons.svg
 

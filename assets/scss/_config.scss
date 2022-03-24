@@ -1,8 +1,13 @@
 @use 'sprucecss/scss/spruce' with (
+  $color-primary: hsl(337 92% 40%),
   $colors: (
-    document-card: (
-      background: hsl(0, 0%, 100%),
-      border: hsl(0, 0%, 0%)
+    base: (
+      heading: hsl(244 84% 10%)
     )
-  )
+  ),
+  $container-width: 50rem,
+  $font-family-base: #{'Rubik', sans-serif},
+  $font-family-heading: #{'Rubik', sans-serif},
+  $font-family-cursive: #{'Space Mono', monospace},
+  $heading-font-weight: 800
 );
