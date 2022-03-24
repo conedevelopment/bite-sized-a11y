@@ -1,0 +1,8 @@
+@use 'sprucecss/scss/spruce' with (
+  $colors: (
+    document-card: (
+      background: hsl(0, 0%, 100%),
+      border: hsl(0, 0%, 0%)
+    )
+  )
+);

@@ -1,0 +1,28 @@
+{
+  "docs": [
+    {
+      "title": "Introduction",
+      "link" : "https://sprucecss.com/docs/getting-started/introduction"
+    },
+    {
+      "title": "Installation",
+      "link" : "https://sprucecss.com/docs/getting-started/installation"
+    },
+    {
+      "title": "Structure and Code",
+      "link" : "https://sprucecss.com/docs/getting-started/structure-and-code"
+    },
+    {
+      "title": "Typography",
+      "link" : "https://sprucecss.com/docs/elements/typography"
+    },
+    {
+      "title": "Tables",
+      "link" : "https://sprucecss.com/docs/elements/tables"
+    },
+    {
+      "title": "Buttons",
+      "link" : "https://sprucecss.com/docs/elements/buttons"
+    }
+  ]
+}

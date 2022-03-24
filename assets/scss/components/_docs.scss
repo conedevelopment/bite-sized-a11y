@@ -1,0 +1,52 @@
+@use 'sprucecss/scss/spruce';
+
+.docs {
+  &__container {
+    @include spruce.layout-center(clamp(spruce.spacer(m), 5vw, spruce.spacer(l)));
+  }
+
+  &__inner {
+    @include spruce.layout-grid(spruce.spacer(l), 20rem);
+  }
+}
+
+.document-card {
+  $this: &;
+
+  background-color: spruce.color(background, document-card);
+  border: 2px solid spruce.color(border, document-card);
+  border-radius: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 20rem;
+  padding: clamp(spruce.spacer(m), 7vw, spruce.spacer(l));
+  text-decoration: none;
+  transition: 0.1s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: spruce.color(primary);
+    border-color: spruce.color(primary);
+
+    #{$this}__serial-number,
+    #{$this}__title {
+      color: spruce.color(background, document-card);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+      transition: none;
+  }
+
+  &__serial-number {
+    color: spruce.color(primary);
+    font-size: spruce.responsive-font-size(4rem, 30);
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  &__title {
+    margin: spruce.spacer(m) 0 0;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "beautify": "js-beautify --type html --indent-size 2 --inline i,b,strong,span html/**/*.html",
+    "browser-sync": "browser-sync start --server --startPath \"html/page/index.html\" --files \"**/*\" --directory --no-notify --no-open",
+    "delete-dev-folder": "del-cli --force assets/css",
+    "prod": "npm-run-all delete-dev-folder pug-prod sass-compile-prod beautify",
+    "pug-dev": "pug --obj pug/assets/data.json --watch pug/templates --out html/ --pretty",
+    "pug-prod": "pug --obj pug/assets/data.json pug/templates --out html/ --pretty",
+    "sass-compile-dev": "sass --load-path=node_modules --watch --no-source-map --update --style=expanded assets/scss:assets/css",
+    "dev": "npm-run-all --parallel pug-dev sass-compile-dev browser-sync",
+    "sass-compile-prod": "sass --load-path=node_modules --load-path=scss --no-source-map --style=compressed assets/scss:assets/css",
+    "sass-lint": "stylelint assets/scss/**/*.scss",
+    "sass-lint-with-fix": "stylelint assets/scss/**/*.scss --fix"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "del-cli": "^4.0.1",
+    "js-beautify": "^1.14.0",
+    "npm-run-all": "^4.1.5",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.45.2",
+    "sprucecss": "^0.5.0",
+    "stylelint": "^14.2.0",
+    "stylelint-config-sass-guidelines": "^9.0.1"
+  }
+}
