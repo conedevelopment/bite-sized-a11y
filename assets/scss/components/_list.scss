@@ -9,7 +9,9 @@
   }
 
   &__inner {
-    @include spruce.layout-stack;
+    @include spruce.layout-stack(
+      spruce.spacer(l)
+    );
   }
 }
 
@@ -44,6 +46,7 @@
   }
 
   &__title {
-    font-size: spruce.responsive-font-size(2rem);
+    font-size: spruce.responsive-font-size(1.8rem);
+    margin: 0;
   }
 }

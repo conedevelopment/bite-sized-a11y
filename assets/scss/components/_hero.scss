@@ -16,6 +16,10 @@
   &__title {
     font-family: spruce.$font-family-heading;
     text-transform: uppercase;
+
+    span {
+      font-weight: 400;
+    }
   }
 
   &__description {
