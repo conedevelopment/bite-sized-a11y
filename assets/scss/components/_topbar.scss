@@ -1,0 +1,78 @@
+@use 'sprucecss/scss/spruce';
+
+.topbar {
+  $this: &;
+
+  background-color: spruce.color(heading);
+
+  &:hover {
+    ul a {
+      color: hsl(0 0% 100%);
+    }
+
+    #{$this}__logo {
+      opacity: 1;
+    }
+  }
+
+  &__container {
+    @include spruce.layout-center(
+      $max-width: 82rem
+    );
+  }
+
+  &__inner {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: spruce.$font-size-sm;
+    gap: clamp(spruce.spacer(m), 2vw + 1rem, spruce.spacer(l));
+    padding-block: spruce.spacer(xs);
+  }
+
+  &__logo {
+    display: inline-flex;
+    height: 0.85rem;
+    opacity: 0.25;
+    transition: opacity var(--#{spruce.setting(prefix)}-transition-duration) var(--#{spruce.setting(prefix)}-transition-timing-function);
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  ul {
+    align-items: center;
+    display: flex;
+    font-family: spruce.$font-family-cursive;
+    gap: spruce.spacer(xs) spruce.spacer(m);
+    list-style: none;
+    margin-block: 0;
+    padding: 0;
+    text-transform: uppercase;
+
+    li {
+      margin: 0;
+    }
+
+    a {
+      color: hsl(0 0% 100% / 0.25);
+      text-decoration: none;
+      transition: color var(--#{spruce.setting(prefix)}-transition-duration) var(--#{spruce.setting(prefix)}-transition-timing-function);
+
+      &:hover,
+      &[aria-current='page'] {
+        color: #FF99BA;
+      }
+
+      &[aria-current='page'] {
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__social {
+    margin-inline-start: auto;
+  }
+}

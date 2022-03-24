@@ -42,6 +42,7 @@
     font-weight: 700;
     height: 5rem;
     justify-content: center;
+    transition: all var(--#{spruce.setting(prefix)}-transition-duration) var(--#{spruce.setting(prefix)}-transition-timing-function);
     width: 5rem;
   }
 

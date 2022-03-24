@@ -33,10 +33,7 @@
             <rect x="6.161" y="40.047" width="30.805" height="3.081" style="fill:#ff99ba;fill-rule:nonzero;"/>
             <path d="M12.322,58.53l-0,-3.081l-3.081,0l0,-6.16l-3.08,-0l-0,-6.161l-3.081,-0l0,9.241l3.081,-0l-0,6.161l3.08,-0l0,3.08l33.886,0l-0,-3.08l3.08,-0l0,-6.161l3.081,-0l-0,-9.241l-12.322,-0l0,9.241l-3.08,-0l-0,3.08l-3.081,0l-0,3.081l-18.483,-0Z" style="fill:#c40851;fill-rule:nonzero;"/>
             <rect x="15.402" y="61.61" width="21.564" height="3.08" style="fill:#991054;fill-rule:nonzero;"/>
-            <rect x="30.805" y="36.966" width="12.322" height="3.08" style="fill:#5faa77;fill-rule:nonzero;"/>
-            <rect x="15.402" y="33.886" width="24.644" height="3.08" style="fill:#5faa77;fill-rule:nonzero;"/>
-            <rect x="18.483" y="30.805" width="9.242" height="3.08" style="fill:#5faa77;fill-rule:nonzero;"/>
-            <path d="M30.805,40.047l-0,-3.081l-18.483,0l-0,3.081l18.483,-0Zm-6.161,-21.564l-3.081,0l0,12.322l3.081,0l-0,-12.322Z" style="fill:#5faa77;fill-rule:nonzero;"/>
+            <path d="M12.322,40.047l30.805,-0l-0,-3.081l-3.08,0l-0,-3.08l-12.322,-0l-0,-3.081l-3.081,0l-0,-12.322l-3.081,0l0,12.322l-3.08,0l-0,3.081l-3.081,-0l0,3.08l15.403,0l-18.483,0l-0,3.081Z" style="fill:#5faa77;fill-rule:nonzero;"/>
             <rect x="24.644" y="18.483" width="3.081" height="12.322" style="fill:#e6e2ad;fill-rule:nonzero;"/>
             <rect x="21.563" y="30.805" width="3.08" height="3.08" style="fill:#e6e2ad;fill-rule:nonzero;"/>
             <rect x="21.563" y="6.161" width="9.241" height="3.08" style="fill:#c9704f;fill-rule:nonzero;"/>

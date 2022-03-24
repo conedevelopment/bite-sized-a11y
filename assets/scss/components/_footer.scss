@@ -17,20 +17,6 @@
     padding-block: spruce.spacer(xl) spruce.spacer(l);
   }
 
-  &__secondary-navigation {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    gap: spruce.spacer(xs);
-    margin: 0;
-    padding: 0;
-
-    a[aria-current='page'] {
-        text-decoration: underline;
-    }
-  }
-
   &__copyright {
     margin: 0;
   }

@@ -10,7 +10,7 @@
       spruce.spacer(s),
       $width: false
     );
-    padding-block: spruce.spacer(xl);
+    padding-block: spruce.spacer(l) spruce.spacer(xl);
   }
 
   &__title {
