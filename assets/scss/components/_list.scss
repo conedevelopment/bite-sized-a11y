@@ -10,7 +10,7 @@
 
   &__inner {
     @include spruce.layout-stack(
-      spruce.spacer(l)
+      spruce.spacer(m)
     );
   }
 }
@@ -19,6 +19,10 @@
   $this: &;
 
   align-items: center;
+  background-color: #fff;
+  border-radius: spruce.$border-radius-lg;
+  box-shadow: rgb(0 8 36 / 5%) 0px 4px 20px -5px;
+  padding: spruce.spacer(m);
   display: flex;
   gap: spruce.spacer(m);
   text-decoration: none;
@@ -47,7 +51,7 @@
   }
 
   &__title {
-    font-size: spruce.responsive-font-size(1.8rem);
+    font-size: spruce.responsive-font-size(1.5rem);
     margin: 0;
   }
 }
