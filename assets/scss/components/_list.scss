@@ -38,16 +38,21 @@
     display: flex;
     flex-shrink: 0;
     font-family: spruce.$font-family-cursive;
-    font-size: spruce.responsive-font-size(1.6rem);
+    font-size: spruce.responsive-font-size(1.6rem, 30, '1vw + 1rem');
     font-weight: 700;
-    height: 5rem;
+    height: 4rem;
     justify-content: center;
     transition: all var(--#{spruce.setting(prefix)}-transition-duration) var(--#{spruce.setting(prefix)}-transition-timing-function);
-    width: 5rem;
+    width: 4rem;
+
+    @include spruce.breakpoint(md) {
+      height: 5rem;
+      width: 5rem;
+    }
   }
 
   &__title {
-    font-size: spruce.responsive-font-size(1.7rem);
+    font-size: spruce.responsive-font-size(1.7rem, 30, '1vw + 1rem');
     margin: 0;
   }
 }
