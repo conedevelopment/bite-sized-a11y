@@ -5,7 +5,9 @@
 // Load Components
 @forward 'components';
 
+// Load Spruce CSS
+@use 'sprucecss/scss/spruce';
+
 body {
-  background: #F9FAFE;
-  // background: linear-gradient(180deg, #f4f1fb, transparent) !important;
+  background: spruce.color(background);
 }

@@ -24,10 +24,11 @@
   &__inner {
     align-items: center;
     display: flex;
-    flex-wrap: wrap;
     font-size: spruce.$font-size-sm;
     gap: clamp(spruce.spacer(m), 2vw + 1rem, spruce.spacer(l));
     padding-block: spruce.spacer(xs);
+    white-space: nowrap;
+    overflow-x: auto;
   }
 
   &__logo {
@@ -35,6 +36,7 @@
     height: 0.85rem;
     opacity: 0.25;
     transition: opacity var(--#{spruce.setting(prefix)}-transition-duration) var(--#{spruce.setting(prefix)}-transition-timing-function);
+    flex-shrink: 0;
 
     img {
       height: auto;
