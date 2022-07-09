@@ -1,3 +1,5 @@
-{% for item in collections.posts %}
-  {{ item.title }}
-{% endfor %}
+<div>
+  {% for item in collections.posts %}
+    {{ item.data.title }}
+  {% endfor %}
+</div>
