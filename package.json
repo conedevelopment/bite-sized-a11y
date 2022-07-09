@@ -11,7 +11,8 @@
     "dev": "npm-run-all --parallel pug-dev sass-compile-dev browser-sync",
     "sass-compile-prod": "sass --load-path=node_modules --load-path=scss --no-source-map --style=compressed assets/scss:assets/css",
     "sass-lint": "stylelint assets/scss/**/*.scss",
-    "sass-lint-with-fix": "stylelint assets/scss/**/*.scss --fix"
+    "sass-lint-with-fix": "stylelint assets/scss/**/*.scss --fix",
+    "start": "npx eleventy --serve"
   },
   "devDependencies": {
     "browser-sync": "^2.27.7",
