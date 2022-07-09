@@ -1,5 +1,5 @@
 ---
-title: "Hello, world"
+title: "Bite-Sized Accessibility - Quick and Small A11Y Tips"
 layout: "layouts/home.html"
 hero:
   title: "Bite-Sized Accessibility"
