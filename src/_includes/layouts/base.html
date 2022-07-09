@@ -9,6 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;800&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
   </head>
   <body>
-    {% block content %}{% endblock %}
+    <a class="btn btn--primary skip-link" href="#content">Skip to content</a>
+
+    {% include "partials/topbar.html" %}
+    {% include "partials/site-header.html" %}
+
+    <main tabindex="-1" id="content">
+      {% block content %}{% endblock %}
+    </main>
+
+    {% include "partials/site-footer.html" %}
   </body>
 </html>
