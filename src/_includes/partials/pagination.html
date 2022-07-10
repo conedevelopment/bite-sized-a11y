@@ -1,0 +1,14 @@
+{% if pagination.href.next or pagination.href.previous %}
+  <nav class="pagination__inner" aria-label="Pagination links">
+    {% if pagination.href.previous %}
+      <a href="{{ pagination.href.previous }}{{ paginationAnchor }}">
+        <span>{{ paginationPrevText if paginationPrevText else 'Previous' }}</span>
+      </a>
+    {% endif %}
+    {% if pagination.href.next %}
+      <a href="{{ pagination.href.next }}{{ paginationAnchor }}">
+        <span>{{ paginationNextText if paginationNextText else 'Next' }}</span>
+      </a>
+    {% endif %}
+  </nav>
+{% endif %}
