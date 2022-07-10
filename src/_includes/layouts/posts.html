@@ -5,10 +5,12 @@
 {% set postListItems = posts %}
 
 {# If this is a tag, grab those items instead as one large collection #}
-{% if tag %}
+{% if tags %}
   {% set postListItems = collections[tag] %}
   {% set heroTitle = 'Blog posts filed under “' + tag + '”' %}
 {% endif %}
+
+{{ tags | debugger }}
 
 {% block content %}
   {% include "partials/hero.html" %}

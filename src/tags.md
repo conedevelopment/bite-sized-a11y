@@ -1,10 +1,17 @@
 ---
 title: 'Tag Archive'
-layout: 'layouts/posts.html'
 pagination:
   data: collections
   size: 1
   alias: tag
-  filter: ['all', 'color', 'nvda']
-permalink: '/tag/{{ tag | slug }}/'
+permalink: '/tags/{{ tag | slug }}/'
 ---
+
+<h1>Tagged “{{ tag }}”</h1>
+
+<ol>
+{% set taglist = collections[ tag ] %}
+{% for post in taglist | reverse %}
+  <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
+{% endfor %}
+</ol>

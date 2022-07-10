@@ -6,6 +6,10 @@ module.exports = config => {
   // Add filters
   config.addFilter('dateFilter', dateFilter);
   config.addFilter('w3DateFilter', w3DateFilter);
+  config.addFilter("debugger", (...args) => {
+    console.log(...args)
+    debugger;
+  });
 
   // Set directories to pass through to the dist folder
   config.addPassthroughCopy('./src/img/');
