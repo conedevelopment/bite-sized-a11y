@@ -1,6 +1,6 @@
 ---
 title: 'Tag Archive'
-layout: 'layouts/home.html'
+layout: 'layouts/posts.html'
 pagination:
   data: collections
   size: 1

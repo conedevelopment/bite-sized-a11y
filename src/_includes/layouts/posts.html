@@ -1,0 +1,17 @@
+{% extends "layouts/base.html" %}
+
+{% set heroTitle = hero.title %}
+{% set heroDescription = hero.description %}
+{% set postListItems = posts %}
+
+{# If this is a tag, grab those items instead as one large collection #}
+{% if tag %}
+  {% set postListItems = collections[tag] %}
+  {% set heroTitle = 'Blog posts filed under “' + tag + '”' %}
+{% endif %}
+
+{% block content %}
+  {% include "partials/hero.html" %}
+  {% include "partials/post-list.html" %}
+  {% include "partials/pagination.html" %}
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+  <h1>{{ title }}</h1>
+
+  <time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
+  {% if tags %}
+    <p class="visually-hidden" id="tags-desc">Tags that this post has been filed under.</p>
+    <ul class="tags-list" aria-describedby="tags-desc">
+      {% for tag in tags %}
+        <li>
+          <a href="/tag/{{ tag | slug }}/">#{{ tag | replace(' ', '') }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  <div class="page-content">
+    {{ content | safe }}
+  </div>
+{% endblock %}
