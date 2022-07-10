@@ -6,6 +6,7 @@
 
 {# If this is a tag, grab those items instead as one large collection #}
 {% if tags %}
+hello
   {% set postListItems = collections[tag] %}
   {% set heroTitle = 'Blog posts filed under “' + tag + '”' %}
 {% endif %}
