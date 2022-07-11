@@ -11,3 +11,7 @@
 body {
   background: spruce.color(background);
 }
+
+.container {
+  @include spruce.layout-center(2rem);
+}
