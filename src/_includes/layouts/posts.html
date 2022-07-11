@@ -12,20 +12,12 @@
 {% endif %}
 
 {% block content %}
-
   {{ heroTitle | debugger }}
 
   {% include "partials/hero.html" %}
   {% include "partials/post-list.html" %}
-  {{ /*
-  {% include "partials/pagination.html" %}
-}}
 
-  <ol>
-    {% set taglist = collections[ tag ] %}
-    {% for post in taglist | reverse %}
-      <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
-    {% endfor %}
-  </ol>
-
+  {% if not tag %}
+    {% include "partials/pagination.html" %}
+  {% endif %}
 {% endblock %}
