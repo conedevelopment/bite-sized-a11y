@@ -1,5 +1,9 @@
 {% extends "layouts/base.html" %}
 
+
+{# Grab other posts that aren’t this one for the 'more from the blog' feed #}
+{% set recommendedPosts = helpers.getSiblingContent(collections.posts, page) %}}}
+
 {% block content %}
   <h1>{{ title }}</h1>
 
@@ -18,4 +22,13 @@
   <div class="page-content">
     {{ content | safe }}
   </div>
+
+  {% if recommendedPosts %}
+    <h3>Recommended</h3>
+    <footer class="recommended-posts">
+      {% set postListItems = recommendedPosts %}
+      {% set postListHeadline = 'More from the blog' %}
+      {% include "partials/post-list.html" %}
+    </footer>
+  {% endif %}
 {% endblock %}

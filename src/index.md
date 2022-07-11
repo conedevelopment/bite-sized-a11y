@@ -9,7 +9,7 @@ pagination:
   size: 2
   reverse: true
   alias: posts
-# Why it breaks? permalink: "page/{{ pagination.pageNumber + 1 }}/index.html"
+# permalink: "page/{{ pagination.pageNumber + 1 }}/index.html"
 ---
 
 Hello home
