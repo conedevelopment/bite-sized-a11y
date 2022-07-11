@@ -4,7 +4,8 @@ layout: 'layouts/posts.html'
 pagination:
   data: collections
   size: 1
-permalink: '/tags/{{ tag | slug }}/'
+  alias: tag
+permalink: '/tag/{{ tag | slug }}/'
 ---
 
 <h1>Tagged “{{ tag }}”</h1>

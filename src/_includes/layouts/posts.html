@@ -5,16 +5,27 @@
 {% set postListItems = posts %}
 
 {# If this is a tag, grab those items instead as one large collection #}
-{% if tags %}
-hello
+{% if collections[ tag ] %}
+  hello
   {% set postListItems = collections[tag] %}
   {% set heroTitle = 'Blog posts filed under “' + tag + '”' %}
 {% endif %}
 
-{{ tags | debugger }}
-
 {% block content %}
+
+  {{ heroTitle | debugger }}
+
   {% include "partials/hero.html" %}
   {% include "partials/post-list.html" %}
+  {{ /*
   {% include "partials/pagination.html" %}
+}}
+
+  <ol>
+    {% set taglist = collections[ tag ] %}
+    {% for post in taglist | reverse %}
+      <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
+    {% endfor %}
+  </ol>
+
 {% endblock %}
