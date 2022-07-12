@@ -3,10 +3,29 @@
     <ul id="post-list" class="post-list__inner">
       {% for post in postListItems %}
         <li>
-          <a class="post-card" href="{{ post.url }}">
-            <span class="post-card__serial-number">{{ post.data.issue }}</span>
-            <h2 class="post-card__title">{{ post.data.title }}</h2>
-          </a>
+          <div class="post-card">
+            <div class="post-card__title-wrapper">
+              <span class="post-card__serial-number">{{ post.data.issue }}</span>
+              <h2 class="post-card__title">
+                <a href="{{ post.url }}">
+                  {{ post.data.title }}
+                </a>
+              </h2>
+            </div>
+            <div class="post-card__meta">
+              <time datetime="{{ post.data.date | w3DateFilter }}">{{ post.data.date | dateFilter }}</time>
+              {% if post.data.tags %}
+                <p class="sr-only" id="tags-desc">This post is tagged with:</p>
+                <ul class="tags-list" aria-describedby="tags-desc">
+                  {% for tag in post.data.tags %}
+                    <li>
+                      <a href="/tag/{{ tag | slug }}/">#{{ tag | replace(' ', '') }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </div>
+          </div>
         </li>
       {% endfor %}
     </ul>

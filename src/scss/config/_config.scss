@@ -1,10 +1,15 @@
 @use 'sprucecss/scss/spruce' with (
-  $color-primary: hsl(337 92% 40%),
+  // $color-primary: hsl(337 92% 40%),
+  $color-primary: hsl(348deg 100% 56%),
   $colors: (
     base: (
+      background: rgb(255, 255, 255),
+      border: hsl(243 61% 91%),
       heading: hsl(244 84% 10%)
     )
   ),
+  $border-radius-sm: 0.5rem,
+  $border-radius-lg: 1rem,
   $line-height-base: 2,
   $btn-font-weight: 700,
   $font-family-base: #{'Open Sans', sans-serif},

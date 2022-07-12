@@ -2,8 +2,5 @@
 
 .more {
   @include spruce.layout-stack(m);
-  border: 1px solid spruce.color(border);
-  border-radius: spruce.$border-radius-lg;
   margin-block-start: spruce.spacer(l);
-  padding: spruce.spacer-clamp(m, l);
 }

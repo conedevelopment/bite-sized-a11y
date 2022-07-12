@@ -308,25 +308,25 @@ template {
 }
 
 :root {
-  --spruce-base-color-primary: hsl(337deg, 92%, 40%);
+  --spruce-base-color-primary: hsl(348deg, 100%, 56%);
   --spruce-base-color-secondary: hsl(227deg, 92%, 55%);
-  --spruce-base-color-background: hsl(0deg, 0%, 100%);
+  --spruce-base-color-background: rgb(255, 255, 255);
   --spruce-base-color-heading: hsl(244deg, 84%, 10%);
   --spruce-base-color-text: hsl(208deg, 7%, 30%);
-  --spruce-base-color-link: hsl(337deg, 92%, 40%);
-  --spruce-base-color-link-hover: #9d0740;
-  --spruce-base-color-border: hsl(0deg, 0%, 90%);
+  --spruce-base-color-link: hsl(348deg, 100%, 56%);
+  --spruce-base-color-link-hover: #e4002e;
+  --spruce-base-color-border: hsl(243deg, 61%, 91%);
   --spruce-base-color-mark-background: hsl(50deg, 100%, 80%);
   --spruce-base-color-mark-foreground: hsl(205deg, 100%, 2%);
-  --spruce-base-color-marker: hsl(337deg, 92%, 40%);
+  --spruce-base-color-marker: hsl(348deg, 100%, 56%);
   --spruce-base-color-code-background: hsl(261deg, 52%, 95%);
   --spruce-base-color-code-foreground: hsl(205deg, 100%, 2%);
-  --spruce-base-color-blockquote-border: hsl(337deg, 92%, 40%);
+  --spruce-base-color-blockquote-border: hsl(348deg, 100%, 56%);
 }
 
 :root {
   --spruce-selection-color-foreground: hsl(0deg, 0%, 100%);
-  --spruce-selection-color-background: hsl(337deg, 92%, 40%);
+  --spruce-selection-color-background: hsl(348deg, 100%, 56%);
 }
 
 :root {
@@ -337,11 +337,11 @@ template {
 }
 
 :root {
-  --spruce-btn-color-primary-background: hsl(337deg, 92%, 40%);
-  --spruce-btn-color-primary-background-hover: #93063c;
+  --spruce-btn-color-primary-background: hsl(348deg, 100%, 56%);
+  --spruce-btn-color-primary-background-hover: #eb002f;
   --spruce-btn-color-primary-foreground: hsl(0deg, 0%, 100%);
   --spruce-btn-color-primary-foreground-hover: hsl(0deg, 0%, 100%);
-  --spruce-btn-color-primary-shadow-focus: rgba(196, 8, 80, 0.25);
+  --spruce-btn-color-primary-shadow-focus: rgba(255, 31, 75, 0.25);
   --spruce-btn-color-secondary-background: hsl(227deg, 92%, 55%);
   --spruce-btn-color-secondary-background-hover: #0937dc;
   --spruce-btn-color-secondary-foreground: hsl(0deg, 0%, 100%);
@@ -354,10 +354,10 @@ template {
   --spruce-form-color-background-disabled: hsl(0deg, 0%, 95%);
   --spruce-form-color-border: hsl(260deg, 4%, 70%);
   --spruce-form-color-border-disabled: hsl(0deg, 0%, 90%);
-  --spruce-form-color-border-focus: hsl(337deg, 92%, 40%);
-  --spruce-form-color-shadow-focus: rgba(196, 8, 80, 0.25);
+  --spruce-form-color-border-focus: hsl(348deg, 100%, 56%);
+  --spruce-form-color-shadow-focus: rgba(255, 31, 75, 0.25);
   --spruce-form-color-check-foreground: hsl(0deg, 0%, 100%);
-  --spruce-form-color-check-background: hsl(337deg, 92%, 40%);
+  --spruce-form-color-check-background: hsl(348deg, 100%, 56%);
   --spruce-form-color-invalid: hsl(0deg, 71%, 51%);
   --spruce-form-color-invalid-shadow: rgba(219, 41, 41, 0.25);
   --spruce-form-color-label: hsl(205deg, 100%, 2%);
@@ -535,13 +535,13 @@ figure figcaption {
 }
 .table--rounded th:first-child,
 .table--rounded td:first-child {
-  border-end-start-radius: 0.5rem;
-  border-start-start-radius: 0.5rem;
+  border-end-start-radius: 1rem;
+  border-start-start-radius: 1rem;
 }
 .table--rounded th:last-child,
 .table--rounded td:last-child {
-  border-end-end-radius: 0.5rem;
-  border-start-end-radius: 0.5rem;
+  border-end-end-radius: 1rem;
+  border-start-end-radius: 1rem;
 }
 
 html {
@@ -670,7 +670,7 @@ abbr[title] {
 
 mark {
   background-color: var(--spruce-base-color-mark-background);
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   color: var(--spruce-base-color-mark-foreground);
   padding: 0.1em 0.3em;
 }
@@ -679,7 +679,7 @@ code,
 kbd,
 samp {
   background-color: var(--spruce-base-color-code-background);
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   color: var(--spruce-base-color-code-foreground);
   padding: 0.1em 0.3em;
 }
@@ -691,7 +691,7 @@ samp {
 .btn {
   align-items: center;
   border: 0;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   display: inline-flex;
   font-size: 1rem;
@@ -789,7 +789,7 @@ samp {
   appearance: none;
   background-color: var(--spruce-form-color-background);
   border: 1px solid var(--spruce-form-color-border);
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   box-sizing: border-box;
   color: var(--spruce-form-color-text);
   display: block;
@@ -896,7 +896,7 @@ html[dir=rtl] select.form-control:not([multiple]):not([size]) {
   border-radius: 50%;
 }
 .form-check__control[type=checkbox] {
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
 }
 .form-check__control:focus {
   border-color: var(--spruce-form-color-border-focus);
@@ -1019,7 +1019,7 @@ legend {
 }
 .container--narrow {
   margin-inline: auto;
-  max-width: 50rem;
+  max-width: 52rem;
   padding-inline: var(--spruce-container-gap);
 }
 
@@ -1051,7 +1051,7 @@ legend {
 .topbar__logo {
   display: inline-flex;
   height: 0.85rem;
-  opacity: 0.25;
+  opacity: 0.45;
   transition: opacity var(--spruce-transition-duration) var(--spruce-transition-timing-function);
   flex-shrink: 0;
 }
@@ -1073,7 +1073,7 @@ legend {
   margin: 0;
 }
 .topbar ul a {
-  color: hsla(0deg, 0%, 100%, 0.25);
+  color: hsla(0deg, 0%, 100%, 0.45);
   text-decoration: none;
   transition: color var(--spruce-transition-duration) var(--spruce-transition-timing-function);
 }
@@ -1125,7 +1125,7 @@ legend {
   margin-block-start: 1rem;
 }
 .hero__title {
-  font-size: clamp(2.1rem, 4vw + 1rem, 3.5rem);
+  font-size: clamp(1.95rem, 4vw + 1rem, 3.25rem);
   letter-spacing: -0.01em;
   text-transform: uppercase;
 }
@@ -1148,21 +1148,21 @@ legend {
   margin-block-start: 0;
 }
 .post-list__inner > * + * {
-  margin-block-start: 1.5rem;
+  margin-block-start: 3rem;
 }
 
 .post-card {
-  align-items: center;
-  display: flex;
-  gap: 1.5rem;
   text-decoration: none;
 }
-.post-card:hover .post-card__serial-number {
-  background-color: var(--spruce-base-color-primary);
-  color: hsl(0deg, 0%, 100%);
+.post-card > * {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+.post-card > * + * {
+  margin-block-start: 0.5rem;
 }
 .post-card__serial-number {
-  --dimension: 4rem;
+  --dimension: 2rem;
   align-items: center;
   background-color: hsl(341deg, 100%, 96%);
   border-radius: 0.5rem;
@@ -1170,7 +1170,7 @@ legend {
   display: flex;
   flex-shrink: 0;
   font-family: Space Mono, monospace;
-  font-size: clamp(1.12rem, 1vw + 1rem, 1.6rem);
+  font-size: clamp(0.7rem, 1vw + 1rem, 1rem);
   font-weight: 700;
   height: var(--dimension);
   justify-content: center;
@@ -1178,15 +1178,26 @@ legend {
   transition-property: all;
   transition-timing-function: var(--spruce-transition-timing-function);
   width: var(--dimension);
-}
-@media (min-width: 64em) {
-  .post-card__serial-number {
-    --dimension: 5rem;
-  }
+  background-color: var(--spruce-base-color-primary);
+  color: hsl(0deg, 0%, 100%);
 }
 .post-card__title {
-  font-size: clamp(1.19rem, 1vw + 1rem, 1.7rem);
+  font-size: clamp(1.05rem, 1vw + 1rem, 1.5rem);
   margin: 0;
+}
+.post-card__title a {
+  color: var(--spruce-base-color-heading);
+  text-decoration: none;
+}
+.post-card__title-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+.post-card__meta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-inline-start: 3rem;
 }
 
 .pagination {
@@ -1208,7 +1219,7 @@ legend {
   background-color: hsl(0deg, 0%, 100%);
   height: var(--dimension);
   min-width: var(--dimension);
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1239,7 +1250,7 @@ legend {
 }
 .tags-list a {
   background-color: hsl(341deg, 100%, 96%);
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   padding: 0.25em 0.5em;
   text-decoration: none;
   transition-duration: var(--spruce-transition-duration);
@@ -1253,10 +1264,7 @@ legend {
 }
 
 .more {
-  border: 1px solid var(--spruce-base-color-border);
-  border-radius: 0.5rem;
   margin-block-start: 3rem;
-  padding: clamp(1.5rem, 5vw, 3rem);
 }
 .more > * {
   margin-block-end: 0;
@@ -1267,7 +1275,7 @@ legend {
 }
 
 .site-footer {
-  padding-block: 4.5rem 3rem;
+  padding-block: 3rem;
 }
 .site-footer__copyright {
   margin: 0;
@@ -1284,7 +1292,7 @@ legend {
   margin-block-start: 1rem;
 }
 .post-heading__title {
-  font-size: clamp(2.1rem, 4vw + 1rem, 3.5rem);
+  font-size: clamp(1.95rem, 4vw + 1rem, 3.25rem);
   letter-spacing: -0.01em;
 }
 .post-heading__meta {
@@ -1328,7 +1336,7 @@ legend {
 }
 .post-content img,
 .post-content iframe {
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 }
 .post-content strong {
   color: var(--spruce-base-color-heading);

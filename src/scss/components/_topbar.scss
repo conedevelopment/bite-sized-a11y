@@ -36,7 +36,7 @@
   &__logo {
     display: inline-flex;
     height: 0.85rem;
-    opacity: 0.25;
+    opacity: 0.45;
     transition: opacity var(--#{spruce.setting(prefix)}-transition-duration) var(--#{spruce.setting(prefix)}-transition-timing-function);
     flex-shrink: 0;
 
@@ -61,7 +61,7 @@
     }
 
     a {
-      color: hsl(0 0% 100% / 0.25);
+      color: hsl(0 0% 100% / 0.45);
       text-decoration: none;
       transition: color var(--#{spruce.setting(prefix)}-transition-duration) var(--#{spruce.setting(prefix)}-transition-timing-function);
 

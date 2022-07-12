@@ -1,5 +1,5 @@
 ---
-title: 'Third Post'
+title: 'Quick and small (less than 200 words) accessibility tips if you are in a rush or just one'
 summary: 'Fusce condimentum velit nec auctor posuere. Morbi blandit massa non sem rhoncus accumsan. In mollis eros vitae tellus laoreet, mollis convallis massa tempus.'
 date: '2022-07-09'
 issue: 3
