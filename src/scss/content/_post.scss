@@ -1,0 +1,49 @@
+@use 'sprucecss/scss/spruce';
+
+.post-content {
+  @include spruce.layout-stack;
+  font-size: 1.0375rem;
+
+  :is(dd, dl, dl, h1, h2, h3, h4, h5, h6, hr, ul, ol, p, blockquote) {
+    @include spruce.layout-center(
+      null,
+      50rem
+    );
+  }
+
+  * + h1,
+  * + h2,
+  * + h3,
+  * + h4,
+  * + h5,
+  * + h6 {
+    margin-top: spruce.spacer(l);
+  }
+
+  h1 + *,
+  h2 + *,
+  h3 + *,
+  h4 + *,
+  h5 + *,
+  h6 + * {
+    margin-top: spruce.spacer(s);
+  }
+
+  img,
+  iframe {
+    border-radius: spruce.$border-radius-lg;
+  }
+
+  .gallery {
+    @include spruce.layout-grid(spruce.spacer(m), 10rem);
+
+    &-item {
+      margin-block: 0;
+    }
+
+    img {
+      aspect-ratio: 1;
+      object-fit: cover;
+    }
+  }
+}

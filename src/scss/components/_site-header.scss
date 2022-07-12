@@ -1,12 +1,8 @@
 @use 'sprucecss/scss/spruce';
 
-.header {
+.site-header {
   position: relative;
   z-index: 10;
-
-  &__container {
-    @include spruce.layout-center;
-  }
 
   &__inner {
     align-items: center;

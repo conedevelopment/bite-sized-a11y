@@ -1,4 +1,11 @@
 <div class="hero">
-  <h1 class="hero__title">{{ heroTitle }}</h1>
+  <h1 class="hero__title">
+    {% if heroTitle['first-line'] %}
+      {{ heroTitle['first-line'] }}
+      {{ heroTitle['second-line'] }}
+    {% else %}
+      {{ heroTitle }}
+    {% endif %}
+  </h1>
   <p class="hero__description">{{ heroDescription }}</p>
 </div>

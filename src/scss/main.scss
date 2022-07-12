@@ -1,17 +1,20 @@
 // Load Spruce CSS
 @forward 'config';
-@forward 'styles';
+
+// Load Layout
+@forward 'layout';
 
 // Load Components
 @forward 'components';
 
+// Load Content
+@forward 'content';
+
 // Load Spruce CSS
 @use 'sprucecss/scss/spruce';
 
-body {
-  background: spruce.color(background);
-}
-
-.container {
-  @include spruce.layout-center(2rem);
+:root {
+  @include spruce.set-css-variable((
+    --container-gap: spruce.spacer-clamp(m, l)
+  ));
 }

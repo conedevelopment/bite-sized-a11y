@@ -1,0 +1,14 @@
+@use 'sprucecss/scss/spruce';
+
+.container {
+  @include spruce.layout-center(
+    spruce.get-css-variable(--container-gap)
+  );
+
+  &--narrow {
+    @include spruce.layout-center(
+      spruce.get-css-variable(--container-gap),
+      54rem
+    );
+  }
+}
