@@ -1,16 +1,29 @@
-<h3>Pagination</h3>
-
 {% if pagination.href.next or pagination.href.previous %}
-  <nav class="pagination__inner" aria-label="Pagination links">
+
+<nav aria-labelledby="my-pagination">
+  <h2 id="my-pagination">This is my Pagination</h2>
+  <ol>
+
     {% if pagination.href.previous %}
-      <a href="{{ pagination.href.previous }}{{ paginationAnchor }}">
-        <span>{{ paginationPrevText if paginationPrevText else 'Previous' }}</span>
-      </a>
+      <li>
+        <a href="{{ pagination.href.previous }}{{ paginationAnchor }}">
+          <span>{{ paginationPrevText if paginationPrevText else 'Previous' }}</span>
+        </a>
+      </li>
     {% endif %}
-    {% if pagination.href.next %}
-      <a href="{{ pagination.href.next }}{{ paginationAnchor }}">
-        <span>{{ paginationNextText if paginationNextText else 'Next' }}</span>
-      </a>
+
+{%- for pageEntry in pagination.pages %}
+    <li><a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>{{ loop.index }}</a></li>
+{%- endfor %}
+{% if pagination.href.next %}
+    <li>
+
+    <a href="{{ pagination.href.next }}{{ paginationAnchor }}">
+      <span>{{ paginationNextText if paginationNextText else 'Next' }}</span>
+    </a>
+    </li>
     {% endif %}
-  </nav>
+  </ol>
+</nav>
+
 {% endif %}

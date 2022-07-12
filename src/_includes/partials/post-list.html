@@ -1,5 +1,16 @@
-<ul id="post-list">
-  {% for post in postListItems %}
-    <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
-  {% endfor %}
-</ul>
+<div class="list">
+  <div class="list__container">
+    <div class="list__inner">
+      <ul id="post-list">
+        {% for post in postListItems %}
+          <li>
+            <a class="list-card" href="{{ post.url }}">
+              <span class="list-card__serial-number">{{ post.data.issue }}</span>
+              <h2 class="list-card__title">{{ post.data.title }}</h2>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
