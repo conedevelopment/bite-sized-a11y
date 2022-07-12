@@ -8,7 +8,7 @@
   padding-block: spruce.spacer(l) spruce.spacer(xl);
 
   &__title {
-    font-size: spruce.responsive-font-size(3.75rem);
+    font-size: spruce.responsive-font-size(3.75rem, 40);
     letter-spacing: -0.01em;
     text-transform: uppercase;
 

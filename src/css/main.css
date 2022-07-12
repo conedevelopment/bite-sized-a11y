@@ -1118,7 +1118,7 @@ legend {
   margin-block-start: 1rem;
 }
 .hero__title {
-  font-size: clamp(3.1875rem, 2vw + 1rem, 3.75rem);
+  font-size: clamp(2.25rem, 2vw + 1rem, 3.75rem);
   letter-spacing: -0.01em;
   text-transform: uppercase;
 }
@@ -1131,36 +1131,33 @@ legend {
   max-width: 50ch;
 }
 
-.list {
-  position: relative;
-  z-index: 10;
+.post-list__inner {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.list__container {
-  margin-inline: auto;
-  max-width: 80rem;
-  padding-inline: 1.5rem;
-}
-.list__inner > * {
+.post-list__inner > * {
   margin-block-end: 0;
   margin-block-start: 0;
 }
-.list__inner > * + * {
-  margin-block-start: 2rem;
+.post-list__inner > * + * {
+  margin-block-start: 1.5rem;
 }
 
-.list-card {
+.post-card {
   align-items: center;
   display: flex;
   gap: 1.5rem;
   text-decoration: none;
 }
-.list-card:hover .list-card__serial-number {
+.post-card:hover .post-card__serial-number {
   background-color: var(--spruce-base-color-primary);
   color: hsl(0deg, 0%, 100%);
 }
-.list-card__serial-number {
+.post-card__serial-number {
+  --dimension: 4rem;
   align-items: center;
-  background-color: #ffe9f0;
+  background-color: hsl(341deg, 100%, 96%);
   border-radius: 0.5rem;
   color: var(--spruce-base-color-primary);
   display: flex;
@@ -1168,18 +1165,19 @@ legend {
   font-family: Space Mono, monospace;
   font-size: clamp(1.12rem, 1vw + 1rem, 1.6rem);
   font-weight: 700;
-  height: 4rem;
+  height: var(--dimension);
   justify-content: center;
-  transition: all var(--spruce-transition-duration) var(--spruce-transition-timing-function);
-  width: 4rem;
+  transition-duration: var(--spruce-transition-duration);
+  transition-property: all;
+  transition-timing-function: var(--spruce-transition-timing-function);
+  width: var(--dimension);
 }
 @media (min-width: 64em) {
-  .list-card__serial-number {
-    height: 5rem;
-    width: 5rem;
+  .post-card__serial-number {
+    --dimension: 5rem;
   }
 }
-.list-card__title {
+.post-card__title {
   font-size: clamp(1.19rem, 1vw + 1rem, 1.7rem);
   margin: 0;
 }

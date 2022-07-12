@@ -1,21 +1,13 @@
 @use 'sprucecss/scss/spruce';
 
-.list {
-  position: relative;
-  z-index: 10;
-
-  &__container {
-    @include spruce.layout-center;
-  }
-
+.post-list {
   &__inner {
-    @include spruce.layout-stack(
-      2rem
-    );
+    @include spruce.layout-stack(m);
+    @include spruce.clear-list;
   }
 }
 
-.list-card {
+.post-card {
   $this: &;
 
   align-items: center;
@@ -26,13 +18,14 @@
   &:hover {
     #{$this}__serial-number {
       background-color: spruce.color(primary);
-      color: hsl(0, 0%, 100%);
+      color: hsl(0 0% 100%);
     }
   }
 
   &__serial-number {
+    --dimension: 4rem;
     align-items: center;
-    background-color: #ffe9f0;
+    background-color: hsl(341 100% 96%);
     border-radius: spruce.$border-radius-lg;
     color: spruce.color(primary);
     display: flex;
@@ -40,15 +33,14 @@
     font-family: spruce.$font-family-cursive;
     font-size: spruce.responsive-font-size(1.6rem, 30, '1vw + 1rem');
     font-weight: 700;
-    height: 4rem;
+    height: var(--dimension);
     justify-content: center;
-    transition: all var(--#{spruce.setting(prefix)}-transition-duration) var(--#{spruce.setting(prefix)}-transition-timing-function);
-    width: 4rem;
+    transition-duration: spruce.transition(duration);
+    transition-property: all;
+    transition-timing-function: spruce.transition(timing-function);
+    width: var(--dimension);
 
-    @include spruce.breakpoint(md) {
-      height: 5rem;
-      width: 5rem;
-    }
+    @include spruce.breakpoint(md) { --dimension: 5rem; }
   }
 
   &__title {
