@@ -12,5 +12,3 @@ pagination:
   alias: posts
 # permalink: "page/{{ pagination.pageNumber + 1 }}/index.html"
 ---
-
-Hello home

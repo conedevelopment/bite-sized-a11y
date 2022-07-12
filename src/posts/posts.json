@@ -1,4 +1,4 @@
 {
   "layout": "layouts/post.html",
-  "permalink": "/{{ title | slug }}/index.html"
+  "permalink": "/{{ issue }}-{{ title | slug }}/index.html"
 }
