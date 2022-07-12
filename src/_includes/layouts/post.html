@@ -26,7 +26,8 @@
   </div>
 
   {% if recommendedPosts %}
-    <section class="more">
+    <section class="more" aria-describedby="more-title">
+      <h3 id="more-title" class="h2">More a11y tips</h3>
       {% set postListItems = recommendedPosts %}
       {% include "partials/post-list.html" %}
     </section>
