@@ -6,9 +6,8 @@
 
 {# If this is a tag, grab those items instead as one large collection #}
 {% if collections[ tag ] %}
-  hello
   {% set postListItems = collections[tag].reverse() %}
-  {% set heroTitle = 'Blog posts filed under “' + tag + '”' %}
+  {% set heroTitle = { 'first-line': 'Posts tagged with: ', 'second-line': tag } %}
 {% endif %}
 
 {% block content %}

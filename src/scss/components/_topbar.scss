@@ -4,6 +4,8 @@
   $this: &;
 
   background-color: spruce.color(heading);
+  line-height: spruce.$line-height-md;
+  padding-block: 0.1rem;
 
   &:hover {
     ul a {

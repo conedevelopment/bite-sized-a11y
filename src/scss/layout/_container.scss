@@ -5,10 +5,17 @@
     spruce.get-css-variable(--container-gap)
   );
 
+  &--wide {
+    @include spruce.layout-center(
+      spruce.get-css-variable(--container-gap),
+      100%
+    );
+  }
+
   &--narrow {
     @include spruce.layout-center(
       spruce.get-css-variable(--container-gap),
-      54rem
+      50rem
     );
   }
 }

@@ -1,0 +1,26 @@
+@use 'sprucecss/scss/spruce';
+
+.tags-list {
+  @include spruce.clear-list;
+
+  > * + * {
+    margin-block-start: 0;
+  }
+
+  a {
+    background-color: hsl(341 100% 96%);
+    border-radius: spruce.$border-radius-sm;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    transition-duration: spruce.transition(duration);
+    transition-property: all;
+    transition-timing-function: spruce.transition(timing-function);
+    width: var(--dimension);
+
+    &:hover,
+    &:focus {
+      background-color: spruce.color(primary);
+      color: hsl(0 0% 100%);
+    }
+  }
+}

@@ -1,18 +1,18 @@
 {% set pageTitle = title + ' - ' + site.name %}
 
 {# We don't want any duplication. This is likely for the home page. #}
-{% if site.name === title %} 
+{% if site.name === title %}
   {% set pageTitle = title %}
 {% endif %}
 
 {% set siteTitle = site.name %}
 {% set currentUrl = site.url + page.url %}
 
-{% if not socialImage %} 
-  {% set socialImage = site.url + '/images/meta/social-share.png' %} 
+{% if not socialImage %}
+  {% set socialImage = site.url + '/img/social-share.png' %}
 {% endif %}
 
-{# If the page’s Front Matter has specific metaTitle and/or metaDesc items, switch 
+{# If the page’s Front Matter has specific metaTitle and/or metaDesc items, switch
   them into the mix. #}
 {% if metaTitle %}
   {% set pageTitle = metaTitle %}
@@ -44,4 +44,4 @@
   <meta property="og:description" content="{{ metaDesc }}" />
 {% endif %}
 
-<link rel="icon" href="/images/meta/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/img/favicon.svg" type="image/svg+xml" />

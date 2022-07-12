@@ -1,0 +1,22 @@
+@use 'sprucecss/scss/spruce';
+
+.post-heading {
+  @include spruce.layout-stack(
+    spruce.spacer(s),
+    $width: false
+  );
+  padding-block: spruce.spacer(l);
+
+  &__title {
+    font-size: spruce.responsive-font-size(3.5rem, 40, '4vw + 1rem');
+    letter-spacing: -0.01em;
+  }
+
+  &__meta {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: spruce.spacer(m);
+    line-height: 1;
+  }
+}

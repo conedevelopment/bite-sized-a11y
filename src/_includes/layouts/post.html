@@ -1,33 +1,34 @@
 {% extends "layouts/base.html" %}
 
-
 {# Grab other posts that aren’t this one for the 'more from the blog' feed #}
 {% set recommendedPosts = helpers.getSiblingContent(collections.posts, page) %}}}
 
 {% block content %}
-  <h1>{{ title }}</h1>
+  <div class="post-heading">
+    <h1 class="post-heading__title">{{ title }}</h1>
+    <div class="post-heading__meta">
+      <time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
+      {% if tags %}
+        <p class="sr-only" id="tags-desc">This post is tagged with:</p>
+        <ul class="tags-list" aria-describedby="tags-desc">
+          {% for tag in tags %}
+            <li>
+              <a href="/tag/{{ tag | slug }}/">#{{ tag | replace(' ', '') }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  </div>
 
-  <time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
-  {% if tags %}
-    <p class="visually-hidden" id="tags-desc">Tags that this post has been filed under.</p>
-    <ul class="tags-list" aria-describedby="tags-desc">
-      {% for tag in tags %}
-        <li>
-          <a href="/tag/{{ tag | slug }}/">#{{ tag | replace(' ', '') }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-
-  <div class="page-content">
+  <div class="post-content">
     {{ content | safe }}
   </div>
 
   {% if recommendedPosts %}
-    <h3>Recommended</h3>
+    <h3>More a11y tip</h3>
     <footer class="recommended-posts">
       {% set postListItems = recommendedPosts %}
-      {% set postListHeadline = 'More from the blog' %}
       {% include "partials/post-list.html" %}
     </footer>
   {% endif %}

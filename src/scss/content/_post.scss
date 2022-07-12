@@ -2,13 +2,12 @@
 
 .post-content {
   @include spruce.layout-stack;
-  font-size: 1.0375rem;
+  font-size: spruce.responsive-font-size(1.0375rem);
 
-  :is(dd, dl, dl, h1, h2, h3, h4, h5, h6, hr, ul, ol, p, blockquote) {
-    @include spruce.layout-center(
-      null,
-      50rem
-    );
+  p:first-child {
+    color: spruce.color(heading);
+    font-size: spruce.responsive-font-size(1.2rem);
+    font-weight: 700;
   }
 
   * + h1,
@@ -34,16 +33,7 @@
     border-radius: spruce.$border-radius-lg;
   }
 
-  .gallery {
-    @include spruce.layout-grid(spruce.spacer(m), 10rem);
-
-    &-item {
-      margin-block: 0;
-    }
-
-    img {
-      aspect-ratio: 1;
-      object-fit: cover;
-    }
+  strong {
+    color: spruce.color(heading);
   }
 }
