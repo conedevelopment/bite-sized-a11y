@@ -26,10 +26,9 @@
   </div>
 
   {% if recommendedPosts %}
-    <h3>More a11y tip</h3>
-    <footer class="recommended-posts">
+    <section class="more">
       {% set postListItems = recommendedPosts %}
       {% include "partials/post-list.html" %}
-    </footer>
+    </section>
   {% endif %}
 {% endblock %}

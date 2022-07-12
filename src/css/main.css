@@ -1252,6 +1252,20 @@ legend {
   color: hsl(0deg, 0%, 100%);
 }
 
+.more {
+  border: 1px solid var(--spruce-base-color-border);
+  border-radius: 0.5rem;
+  margin-block-start: 3rem;
+  padding: clamp(1.5rem, 5vw, 3rem);
+}
+.more > * {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+.more > * + * {
+  margin-block-start: 1.5rem;
+}
+
 .site-footer {
   padding-block: 4.5rem 3rem;
 }

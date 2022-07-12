@@ -7,7 +7,7 @@ hero:
   description: "Quick and small (less than 250 words) accessibility tips if you are in a rush or just one to learn something new (and small)."
 pagination:
   data: collections.posts
-  size: 2
+  size: 20
   reverse: true
   alias: posts
 # permalink: "page/{{ pagination.pageNumber + 1 }}/index.html"
