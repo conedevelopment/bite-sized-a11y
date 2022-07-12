@@ -1,26 +1,16 @@
 @use 'sprucecss/scss/spruce';
 
 .hero {
-  &__container {
-    @include spruce.layout-center();
-  }
-
-  &__inner {
-    @include spruce.layout-stack(
-      spruce.spacer(s),
-      $width: false
-    );
-    padding-block: spruce.spacer(l) spruce.spacer(xl);
-  }
+  @include spruce.layout-stack(
+    spruce.spacer(s),
+    $width: false
+  );
+  padding-block: spruce.spacer(l) spruce.spacer(xl);
 
   &__title {
-    font-family: spruce.$font-family-heading;
+    font-size: spruce.responsive-font-size(3.75rem);
+    letter-spacing: -0.01em;
     text-transform: uppercase;
-    font-size: spruce.font-size(
-      $key: h1,
-      $scaler: 35,
-      $optimal-size: '3vw + 1rem'
-    );
 
     span {
       font-weight: 400;

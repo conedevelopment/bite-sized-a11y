@@ -1080,22 +1080,14 @@ legend {
   margin-inline-start: auto;
 }
 
-.site-header {
-  position: relative;
-  z-index: 10;
-}
 .site-header__inner {
   align-items: center;
   display: flex;
-  flex-wrap: wrap;
-  gap: clamp(1.5rem, 2vw + 1rem, 3rem);
-  justify-content: space-between;
   height: 8rem;
 }
 .site-header__logo {
   display: inline-flex;
   width: 7.5rem;
-  order: -2;
 }
 @media (min-width: 64em) {
   .site-header__logo {
@@ -1106,28 +1098,6 @@ legend {
   height: auto;
   width: 100%;
 }
-.site-header__lang-switcher {
-  align-items: center;
-  display: flex;
-  gap: 0.5rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
-}
-.site-header__lang-switcher li {
-  margin: 0;
-}
-.site-header__lang-switcher a {
-  color: var(--spruce-base-color-text);
-  text-decoration: none;
-}
-.site-header__lang-switcher a:hover, .site-header__lang-switcher a[aria-current=page] {
-  color: var(--spruce-base-color-primary);
-}
-.site-header__lang-switcher a[aria-current=page] {
-  font-weight: 700;
-}
 
 .skip-link {
   inset: -50vh auto auto 1.5rem;
@@ -1137,25 +1107,20 @@ legend {
   inset-block-start: 1.5rem;
 }
 
-.hero__container {
-  margin-inline: auto;
-  max-width: 80rem;
-  padding-inline: 1.5rem;
-}
-.hero__inner {
+.hero {
   padding-block: 3rem 4.5rem;
 }
-.hero__inner > * {
+.hero > * {
   margin-block-end: 0;
   margin-block-start: 0;
 }
-.hero__inner > * + * {
+.hero > * + * {
   margin-block-start: 1rem;
 }
 .hero__title {
-  font-family: Rubik, sans-serif;
+  font-size: clamp(3.1875rem, 2vw + 1rem, 3.75rem);
+  letter-spacing: -0.01em;
   text-transform: uppercase;
-  font-size: clamp(1.5869140625rem, 3vw + 1rem, 2.44140625rem);
 }
 .hero__title span {
   font-weight: 400;
@@ -1219,24 +1184,6 @@ legend {
   margin: 0;
 }
 
-.footer {
-  position: relative;
-}
-.footer--front-page {
-  border-top: 1px solid var(--spruce-base-color-border);
-}
-.footer__container {
-  margin-inline: auto;
-  max-width: 80rem;
-  padding-inline: 1.5rem;
-}
-.footer__inner {
-  padding-block: 4.5rem 3rem;
-}
-.footer__copyright {
-  margin: 0;
-}
-
 .pagination {
   display: flex;
   font-family: Space Mono, monospace;
@@ -1268,6 +1215,13 @@ legend {
   background-color: var(--spruce-base-color-primary);
   text-decoration: none;
   color: #fff;
+}
+
+.site-footer {
+  padding-block: 4.5rem 3rem;
+}
+.site-footer__copyright {
+  margin: 0;
 }
 
 .post-content {

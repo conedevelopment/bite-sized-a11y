@@ -1,22 +1,15 @@
 @use 'sprucecss/scss/spruce';
 
 .site-header {
-  position: relative;
-  z-index: 10;
-
   &__inner {
     align-items: center;
     display: flex;
-    flex-wrap: wrap;
-    gap: clamp(spruce.spacer(m), 2vw + 1rem, spruce.spacer(l));
-    justify-content: space-between;
     height: 8rem;
   }
 
   &__logo {
     display: inline-flex;
     width: 7.5rem;
-    order: -2;
 
     @include spruce.breakpoint(md) {
       width: 8.75rem;
@@ -25,34 +18,6 @@
     img {
       height: auto;
       width: 100%;
-    }
-  }
-
-  &__lang-switcher {
-    align-items: center;
-    display: flex;
-    gap: spruce.spacer(xs);
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-
-    li {
-      margin: 0;
-    }
-
-    a {
-      color: spruce.color(text);
-      text-decoration: none;
-
-      &:hover,
-      &[aria-current='page'] {
-        color: spruce.color(primary);
-      }
-
-      &[aria-current='page'] {
-        font-weight: 700;
-      }
     }
   }
 }

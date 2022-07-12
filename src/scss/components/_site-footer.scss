@@ -1,0 +1,9 @@
+@use 'sprucecss/scss/spruce';
+
+.site-footer {
+  padding-block: spruce.spacer(xl) spruce.spacer(l);
+
+  &__copyright {
+    margin: 0;
+  }
+}
