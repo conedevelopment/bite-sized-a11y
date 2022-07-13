@@ -1,10 +1,7 @@
 @use 'sprucecss/scss/spruce';
 
 .post-heading {
-  @include spruce.layout-stack(
-    spruce.spacer(s),
-    $width: false
-  );
+  @include spruce.layout-stack(m);
   padding-block: spruce.spacer(l);
 
   &__title {

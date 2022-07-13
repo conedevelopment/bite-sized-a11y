@@ -1,10 +1,7 @@
 @use 'sprucecss/scss/spruce';
 
 .hero {
-  @include spruce.layout-stack(
-    spruce.spacer(s),
-    $width: false
-  );
+  @include spruce.layout-stack(s);
   padding-block: spruce.spacer(l) spruce.spacer(xl);
 
   &__title {

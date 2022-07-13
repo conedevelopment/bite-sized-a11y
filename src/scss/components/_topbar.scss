@@ -7,7 +7,8 @@
   line-height: spruce.$line-height-md;
   padding-block: 0.1rem;
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     ul a {
       color: hsl(0 0% 100%);
     }
@@ -15,12 +16,6 @@
     #{$this}__logo {
       opacity: 1;
     }
-  }
-
-  &__container {
-    @include spruce.layout-center(
-      $max-width: 82rem
-    );
   }
 
   &__inner {

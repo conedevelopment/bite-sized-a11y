@@ -1028,16 +1028,11 @@ legend {
   line-height: 1.5;
   padding-block: 0.1rem;
 }
-.topbar:hover ul a {
+.topbar:hover ul a, .topbar:focus-within ul a {
   color: hsl(0deg, 0%, 100%);
 }
-.topbar:hover .topbar__logo {
+.topbar:hover .topbar__logo, .topbar:focus-within .topbar__logo {
   opacity: 1;
-}
-.topbar__container {
-  margin-inline: auto;
-  max-width: 82rem;
-  padding-inline: 1.5rem;
 }
 .topbar__inner {
   align-items: center;
@@ -1299,7 +1294,7 @@ legend {
   margin-block-start: 0;
 }
 .post-heading > * + * {
-  margin-block-start: 1rem;
+  margin-block-start: 1.5rem;
 }
 .post-heading__title {
   font-size: clamp(1.95rem, 4vw + 1rem, 3.25rem);
