@@ -1039,16 +1039,16 @@ legend {
   display: flex;
   font-size: 0.9rem;
   gap: clamp(1.5rem, 2vw + 1rem, 3rem);
+  overflow-x: auto;
   padding-block: 0.5rem;
   white-space: nowrap;
-  overflow-x: auto;
 }
 .topbar__logo {
   display: inline-flex;
+  flex-shrink: 0;
   height: 0.85rem;
   opacity: 0.45;
   transition: opacity var(--spruce-transition-duration) var(--spruce-transition-timing-function);
-  flex-shrink: 0;
 }
 .topbar__logo img {
   height: auto;
@@ -1057,7 +1057,7 @@ legend {
 .topbar ul {
   align-items: center;
   display: flex;
-  font-family: Space Mono, monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   gap: 0.5rem 1.5rem;
   list-style: none;
   margin-block: 0;
@@ -1073,7 +1073,7 @@ legend {
   transition: color var(--spruce-transition-duration) var(--spruce-transition-timing-function);
 }
 .topbar ul a:hover, .topbar ul a[aria-current=page] {
-  color: #FF99BA;
+  color: #ff99ba;
 }
 .topbar ul a[aria-current=page] {
   font-weight: 700;
@@ -1160,11 +1160,13 @@ legend {
   --dimension: 2rem;
   align-items: center;
   background-color: hsl(341deg, 100%, 96%);
+  background-color: var(--spruce-base-color-primary);
   border-radius: 0.5rem;
   color: var(--spruce-base-color-primary);
+  color: hsl(0deg, 0%, 100%);
   display: flex;
   flex-shrink: 0;
-  font-family: Space Mono, monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: clamp(0.7rem, 1vw + 1rem, 1rem);
   font-weight: 700;
   height: var(--dimension);
@@ -1173,8 +1175,6 @@ legend {
   transition-property: all;
   transition-timing-function: var(--spruce-transition-timing-function);
   width: var(--dimension);
-  background-color: var(--spruce-base-color-primary);
-  color: hsl(0deg, 0%, 100%);
 }
 .post-card__title {
   font-size: clamp(1.05rem, 1vw + 1rem, 1.5rem);
@@ -1190,8 +1190,8 @@ legend {
 }
 .post-card__meta {
   display: flex;
-  gap: 1rem;
   flex-wrap: wrap;
+  gap: 1rem;
   margin-inline-start: 3rem;
 }
 
@@ -1199,31 +1199,31 @@ legend {
   list-style: none;
   margin: 0;
   padding: 0;
-  font-family: Space Mono, monospace;
-  display: flex;
   align-items: center;
+  display: flex;
   flex-wrap: wrap;
-  margin-block-start: 4.5rem;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   gap: 1rem;
+  margin-block-start: 4.5rem;
 }
 .pagination > * + * {
   margin-block-start: 0;
 }
 .pagination a {
   --dimension: 2.8rem;
-  background-color: hsl(0deg, 0%, 100%);
-  height: var(--dimension);
-  min-width: var(--dimension);
-  border-radius: 1rem;
-  display: flex;
   align-items: center;
-  justify-content: center;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 1rem;
   color: var(--spruce-base-color-primary);
+  display: flex;
   font-weight: 700;
+  height: var(--dimension);
+  justify-content: center;
+  min-width: var(--dimension);
+  text-decoration: none;
   transition-duration: var(--spruce-transition-duration);
   transition-property: all;
   transition-timing-function: var(--spruce-transition-timing-function);
-  text-decoration: none;
 }
 .pagination a.next, .pagination a.prev {
   padding-inline: 1rem;
@@ -1231,8 +1231,8 @@ legend {
 }
 .pagination a[aria-current=page], .pagination a:hover {
   background-color: var(--spruce-base-color-primary);
-  text-decoration: none;
   color: hsl(0deg, 0%, 100%);
+  text-decoration: none;
 }
 
 .tags-list {
@@ -1247,6 +1247,7 @@ legend {
   background-color: hsl(341deg, 100%, 96%);
   border-radius: 0.5rem;
   color: #d50045;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-weight: 400;
   padding: 0.25em 0.5em;
   text-decoration: none;
@@ -1254,7 +1255,6 @@ legend {
   transition-property: all;
   transition-timing-function: var(--spruce-transition-timing-function);
   width: var(--dimension);
-  font-family: Space Mono, monospace;
 }
 .tags-list a:hover, .tags-list a:focus {
   background-color: var(--spruce-base-color-primary);
