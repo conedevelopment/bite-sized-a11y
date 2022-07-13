@@ -1,9 +1,8 @@
 @use 'sprucecss/scss/spruce' with (
   // $color-primary: hsl(337 92% 40%),
-  $color-primary: hsl(348deg 100% 56%),
+  $color-primary: #E9004C,
   $colors: (
     base: (
-      background: rgb(255, 255, 255),
       border: hsl(243 61% 91%),
       heading: hsl(244 84% 10%)
     )

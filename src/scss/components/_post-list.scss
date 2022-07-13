@@ -1,10 +1,8 @@
 @use 'sprucecss/scss/spruce';
 
 .post-list {
-  &__inner {
-    @include spruce.layout-stack(l);
-    @include spruce.clear-list;
-  }
+  @include spruce.layout-stack(l);
+  @include spruce.clear-list;
 }
 
 .post-card {

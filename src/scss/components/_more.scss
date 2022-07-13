@@ -2,5 +2,9 @@
 
 .more {
   @include spruce.layout-stack(m);
-  margin-block-start: spruce.spacer(l);
+  margin-block-start: spruce.spacer(xl);
+
+  .post-list {
+    @include spruce.layout-stack(m);
+  }
 }

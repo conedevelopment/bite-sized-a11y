@@ -15,7 +15,7 @@
   &--narrow {
     @include spruce.layout-center(
       spruce.get-css-variable(--container-gap),
-      52rem
+      48rem
     );
   }
 }

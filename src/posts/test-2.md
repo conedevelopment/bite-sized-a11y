@@ -3,7 +3,7 @@ title: 'Second Post'
 summary: 'Fusce condimentum velit nec auctor posuere. Morbi blandit massa non sem rhoncus accumsan. In mollis eros vitae tellus laoreet, mollis convallis massa tempus.'
 date: '2022-07-09'
 issue: 2
-tags: ['color']
+tags: 'color'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tortor dolor, tristique nec metus nec, lacinia facilisis nibh. Nam suscipit pellentesque faucibus. Proin ullamcorper enim ut dapibus rhoncus. Nullam sed facilisis arcu. Ut dictum elit in erat facilisis bibendum. Maecenas lacinia erat non quam feugiat pulvinar.
