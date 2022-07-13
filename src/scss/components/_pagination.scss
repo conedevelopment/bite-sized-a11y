@@ -3,12 +3,12 @@
 
 .pagination {
   @include spruce.clear-list;
-  font-family: spruce.$font-family-cursive;
-  display: flex;
   align-items: center;
+  display: flex;
   flex-wrap: wrap;
-  margin-block-start: spruce.spacer(xl);
+  font-family: spruce.$font-family-cursive;
   gap: spruce.spacer(s);
+  margin-block-start: spruce.spacer(xl);
 
   > * + * {
     margin-block-start: 0;
@@ -16,20 +16,20 @@
 
   a {
     --dimension: 2.8rem;
+    align-items: center;
 
     background-color: hsl(0 0% 100%);
-    height: var(--dimension);
-    min-width: var(--dimension);
     border-radius: spruce.$border-radius-lg;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: spruce.color(primary);
+    display: flex;
     font-weight: 700;
+    height: var(--dimension);
+    justify-content: center;
+    min-width: var(--dimension);
+    text-decoration: none;
     transition-duration: spruce.transition(duration);
     transition-property: all;
     transition-timing-function: spruce.transition(timing-function);
-    text-decoration: none;
 
     &.next,
     &.prev {
@@ -40,8 +40,8 @@
     &[aria-current='page'],
     &:hover {
       background-color: spruce.color(primary);
-      text-decoration: none;
       color: hsl(0 0% 100%);
+      text-decoration: none;
     }
   }
 }

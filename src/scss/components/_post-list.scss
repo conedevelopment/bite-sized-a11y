@@ -7,8 +7,8 @@
 
 .post-card {
   $this: &;
-  text-decoration: none;
   @include spruce.layout-stack(xs);
+  text-decoration: none;
 
   &:hover {
     #{$this}__serial-number {
@@ -19,8 +19,10 @@
     --dimension: 2rem;
     align-items: center;
     background-color: hsl(341 100% 96%);
+    background-color: spruce.color(primary);
     border-radius: spruce.$border-radius-sm;
     color: spruce.color(primary);
+    color: hsl(0 0% 100%);
     display: flex;
     flex-shrink: 0;
     font-family: spruce.$font-family-cursive;
@@ -32,8 +34,6 @@
     transition-property: all;
     transition-timing-function: spruce.transition(timing-function);
     width: var(--dimension);
-    background-color: spruce.color(primary);
-    color: hsl(0 0% 100%);
   }
 
   &__title {
@@ -53,8 +53,8 @@
 
   &__meta {
     display: flex;
-    gap: spruce.spacer(s);
     flex-wrap: wrap;
+    gap: spruce.spacer(s);
     margin-inline-start: 3rem;
   }
 }

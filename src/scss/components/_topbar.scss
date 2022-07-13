@@ -23,17 +23,17 @@
     display: flex;
     font-size: spruce.$font-size-sm;
     gap: clamp(spruce.spacer(m), 2vw + 1rem, spruce.spacer(l));
+    overflow-x: auto;
     padding-block: spruce.spacer(xs);
     white-space: nowrap;
-    overflow-x: auto;
   }
 
   &__logo {
     display: inline-flex;
+    flex-shrink: 0;
     height: 0.85rem;
     opacity: 0.45;
     transition: opacity var(--#{spruce.setting(prefix)}-transition-duration) var(--#{spruce.setting(prefix)}-transition-timing-function);
-    flex-shrink: 0;
 
     img {
       height: auto;
@@ -62,7 +62,7 @@
 
       &:hover,
       &[aria-current='page'] {
-        color: #FF99BA;
+        color: #ff99ba;
       }
 
       &[aria-current='page'] {

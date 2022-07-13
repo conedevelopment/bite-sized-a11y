@@ -12,6 +12,7 @@
     background-color: hsl(341 100% 96%);
     border-radius: spruce.$border-radius-sm;
     color: color.adjust(spruce.color(primary, $only-color: true), $lightness: -4%);
+    font-family: spruce.$font-family-cursive;
     font-weight: 400;
     padding: 0.25em 0.5em;
     text-decoration: none;
@@ -19,7 +20,6 @@
     transition-property: all;
     transition-timing-function: spruce.transition(timing-function);
     width: var(--dimension);
-    font-family: spruce.$font-family-cursive;
 
     &:hover,
     &:focus {
