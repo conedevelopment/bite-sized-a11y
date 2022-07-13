@@ -1,5 +1,6 @@
 <ul id="post-list" class="post-list">
   {% for post in postListItems %}
+    {% set tags = post.data.tags %}
     <li>
       <div class="post-card">
         <div class="post-card__title-wrapper">
@@ -14,7 +15,8 @@
           {% if post.data.date %}
             <time datetime="{{ post.data.date | w3DateFilter }}">{{ post.data.date | dateFilter }}</time>
           {% endif %}
-          {% include "partials/pagination.html" %}
+
+          {% include "partials/tags.html" %}
         </div>
       </div>
     </li>

@@ -8,16 +8,7 @@
     <h1 class="post-heading__title">{{ title }}</h1>
     <div class="post-heading__meta">
       <time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
-      {% if tags %}
-        <p class="sr-only" id="tags-desc">This post is tagged with:</p>
-        <ul class="tags-list" aria-describedby="tags-desc">
-          {% for tag in tags %}
-            <li>
-              <a href="/tag/{{ tag | slug }}/">#{{ tag | replace(' ', '') }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      {% endif %}
+      {% include "partials/tags.html" %}
     </div>
   </div>
 
