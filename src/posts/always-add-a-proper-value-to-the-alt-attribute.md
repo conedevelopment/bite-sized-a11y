@@ -21,3 +21,7 @@ If you have an image that is only (and honestly) decorative, use `alt=""` with a
 Always define the `alt` attribute on any image element. Try to write a good alt description and use empty value if it is decorative.
 
 Omitting an alt value is one of the most common and easily fixable errors in web accessibility.
+
+```html
+<img src="your-image.png" alt="">
+```

@@ -5,7 +5,9 @@
     base: (
       border: hsl(243 61% 91%),
       heading: rgb(255, 255, 255),
-      text: hsl(0 0% 100% / 0.8)
+      text: hsl(0 0% 100% / 0.8),
+      code-background: rgba(255, 235, 241, 0.077),
+      code-foreground: #94F71C
     )
   ),
   $border-radius-sm: 0.5rem,
