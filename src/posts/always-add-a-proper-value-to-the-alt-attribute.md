@@ -4,6 +4,13 @@ summary: 'By default, the images on the web aren’t available to blind or visua
 date: '2022-07-12'
 issue: 1
 tags: 'media'
+resources:
+  - title: 'Alt Text: Why It’s Important For Accessibility & SEO'
+    url: 'https://moz.com/learn/seo/alt-text'
+  - title: 'H37: Using alt attributes on img elements'
+    url: 'https://www.w3.org/TR/WCAG20-TECHS/H37.html'
+  - title: 'Alternative Text'
+    url: 'https://webaim.org/techniques/alttext/'
 ---
 By default, the images on the web aren’t available to blind or visually impaired users using screen readers.
 

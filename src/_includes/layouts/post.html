@@ -4,23 +4,37 @@
 {% set recommendedPosts = helpers.getSiblingContent(collections.posts, page) %}}}
 
 {% block content %}
-  <div class="post-heading">
-    <h1 class="post-heading__title">{{ title }}</h1>
-    <div class="post-heading__meta">
-      <time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
-      {% include "partials/tags.html" %}
+  <article>
+    <div class="post-heading">
+      <h1 class="post-heading__title">{{ title }}</h1>
+      <div class="post-heading__meta">
+        <time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
+        {% include "partials/tags.html" %}
+      </div>
     </div>
-  </div>
+    <div class="post-content">
+      {{ content | safe }}
+    </div>
+  </article>
 
-  <div class="post-content">
-    {{ content | safe }}
-  </div>
+  {% if resources %}
+    <div class="resources">
+      <h2 class="headline">Resources</h2>
+      <ol class="[ key-facts__list ] [ auto-grid ]">
+        {% for item in resources %}
+          <li class="flow flow-space-300">
+            <a href="{{ item.url }}">{{ item.title }}</a>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+  {% endif %}
 
   {% if recommendedPosts %}
-    <section class="more" aria-describedby="more-title">
-      <h3 id="more-title" class="h2">More a11y tips</h3>
+    <div class="more-content">
+      <h2 class="headline">More a11y tips</h2>
       {% set postListItems = recommendedPosts %}
       {% include "partials/post-list.html" %}
-    </section>
+    </div>
   {% endif %}
 {% endblock %}

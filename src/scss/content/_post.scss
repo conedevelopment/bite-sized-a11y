@@ -6,8 +6,9 @@
 
   p:first-child {
     color: spruce.color(heading);
-    font-size: spruce.responsive-font-size(1.2rem);
+    font-size: spruce.responsive-font-size(1.3rem);
     font-weight: 700;
+    line-height: 1.7;
   }
 
   * + h1,
@@ -35,5 +36,30 @@
 
   strong {
     color: spruce.color(heading);
+  }
+}
+
+.resources {
+  @include spruce.layout-stack(s);
+  font-size: spruce.responsive-font-size(1.0375rem);
+  margin-block-start: spruce.spacer(l);
+
+  a {
+    color: spruce.color(text);
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: spruce.color(primary);
+    }
+  }
+}
+
+.more-content {
+  @include spruce.layout-stack(2rem);
+  margin-block-start: spruce.spacer(l);
+
+  .post-list {
+    @include spruce.layout-stack(m);
   }
 }

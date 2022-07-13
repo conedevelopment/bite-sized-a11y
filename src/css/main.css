@@ -308,25 +308,25 @@ template {
 }
 
 :root {
-  --spruce-base-color-primary: #E9004C;
+  --spruce-base-color-primary: #94F71C;
   --spruce-base-color-secondary: hsl(227deg, 92%, 55%);
   --spruce-base-color-background: hsl(0deg, 0%, 100%);
-  --spruce-base-color-heading: hsl(244deg, 84%, 10%);
-  --spruce-base-color-text: hsl(208deg, 7%, 30%);
-  --spruce-base-color-link: #E9004C;
-  --spruce-base-color-link-hover: #ba003d;
+  --spruce-base-color-heading: rgb(255, 255, 255);
+  --spruce-base-color-text: hsla(0deg, 0%, 100%, 0.8);
+  --spruce-base-color-link: #94F71C;
+  --spruce-base-color-link-hover: #78d507;
   --spruce-base-color-border: hsl(243deg, 61%, 91%);
   --spruce-base-color-mark-background: hsl(50deg, 100%, 80%);
   --spruce-base-color-mark-foreground: hsl(205deg, 100%, 2%);
-  --spruce-base-color-marker: #E9004C;
+  --spruce-base-color-marker: #94F71C;
   --spruce-base-color-code-background: hsl(261deg, 52%, 95%);
   --spruce-base-color-code-foreground: hsl(205deg, 100%, 2%);
-  --spruce-base-color-blockquote-border: #E9004C;
+  --spruce-base-color-blockquote-border: #94F71C;
 }
 
 :root {
   --spruce-selection-color-foreground: hsl(0deg, 0%, 100%);
-  --spruce-selection-color-background: #E9004C;
+  --spruce-selection-color-background: #94F71C;
 }
 
 :root {
@@ -337,11 +337,11 @@ template {
 }
 
 :root {
-  --spruce-btn-color-primary-background: #E9004C;
-  --spruce-btn-color-primary-background-hover: #b6003b;
+  --spruce-btn-color-primary-background: #94F71C;
+  --spruce-btn-color-primary-background-hover: #7ad808;
   --spruce-btn-color-primary-foreground: hsl(0deg, 0%, 100%);
   --spruce-btn-color-primary-foreground-hover: hsl(0deg, 0%, 100%);
-  --spruce-btn-color-primary-shadow-focus: rgba(233, 0, 76, 0.25);
+  --spruce-btn-color-primary-shadow-focus: rgba(148, 247, 28, 0.25);
   --spruce-btn-color-secondary-background: hsl(227deg, 92%, 55%);
   --spruce-btn-color-secondary-background-hover: #0937dc;
   --spruce-btn-color-secondary-foreground: hsl(0deg, 0%, 100%);
@@ -354,10 +354,10 @@ template {
   --spruce-form-color-background-disabled: hsl(0deg, 0%, 95%);
   --spruce-form-color-border: hsl(260deg, 4%, 70%);
   --spruce-form-color-border-disabled: hsl(0deg, 0%, 90%);
-  --spruce-form-color-border-focus: #E9004C;
-  --spruce-form-color-shadow-focus: rgba(233, 0, 76, 0.25);
+  --spruce-form-color-border-focus: #94F71C;
+  --spruce-form-color-shadow-focus: rgba(148, 247, 28, 0.25);
   --spruce-form-color-check-foreground: hsl(0deg, 0%, 100%);
-  --spruce-form-color-check-background: #E9004C;
+  --spruce-form-color-check-background: #94F71C;
   --spruce-form-color-invalid: hsl(0deg, 71%, 51%);
   --spruce-form-color-invalid-shadow: rgba(219, 41, 41, 0.25);
   --spruce-form-color-label: hsl(205deg, 100%, 2%);
@@ -1025,6 +1025,7 @@ legend {
 
 .topbar {
   background-color: var(--spruce-base-color-heading);
+  background-color: #01081c;
   line-height: 1.5;
   padding-block: 0.1rem;
 }
@@ -1047,7 +1048,7 @@ legend {
   display: inline-flex;
   flex-shrink: 0;
   height: 0.85rem;
-  opacity: 0.45;
+  opacity: 0.35;
   transition: opacity var(--spruce-transition-duration) var(--spruce-transition-timing-function);
 }
 .topbar__logo img {
@@ -1068,7 +1069,7 @@ legend {
   margin: 0;
 }
 .topbar ul a {
-  color: hsla(0deg, 0%, 100%, 0.45);
+  color: hsla(0deg, 0%, 100%, 0.35);
   text-decoration: none;
   transition: color var(--spruce-transition-duration) var(--spruce-transition-timing-function);
 }
@@ -1125,6 +1126,7 @@ legend {
   text-transform: uppercase;
 }
 .hero__title span {
+  color: var(--spruce-base-color-primary);
   font-weight: 400;
 }
 .hero__description {
@@ -1163,7 +1165,7 @@ legend {
   background-color: var(--spruce-base-color-primary);
   border-radius: 0.5rem;
   color: var(--spruce-base-color-primary);
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(87deg, 91%, 15%);
   display: flex;
   flex-shrink: 0;
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -1244,9 +1246,9 @@ legend {
   margin-block-start: 0;
 }
 .tags-list a {
-  background-color: hsl(341deg, 100%, 96%);
+  background-color: rgba(255, 235, 241, 0.077);
   border-radius: 0.5rem;
-  color: #d50045;
+  color: #8bf609;
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-weight: 400;
   padding: 0.25em 0.5em;
@@ -1259,24 +1261,6 @@ legend {
 .tags-list a:hover, .tags-list a:focus {
   background-color: var(--spruce-base-color-primary);
   color: hsl(0deg, 0%, 100%);
-}
-
-.more {
-  margin-block-start: 4.5rem;
-}
-.more > * {
-  margin-block-end: 0;
-  margin-block-start: 0;
-}
-.more > * + * {
-  margin-block-start: 1.5rem;
-}
-.more .post-list > * {
-  margin-block-end: 0;
-  margin-block-start: 0;
-}
-.more .post-list > * + * {
-  margin-block-start: 1.5rem;
 }
 
 .site-footer {
@@ -1320,8 +1304,9 @@ legend {
 }
 .post-content p:first-child {
   color: var(--spruce-base-color-heading);
-  font-size: clamp(1.02rem, 2vw + 1rem, 1.2rem);
+  font-size: clamp(1.105rem, 2vw + 1rem, 1.3rem);
   font-weight: 700;
+  line-height: 1.7;
 }
 .post-content * + h1,
 .post-content * + h2,
@@ -1347,6 +1332,47 @@ legend {
   color: var(--spruce-base-color-heading);
 }
 
+.resources {
+  font-size: clamp(0.881875rem, 2vw + 1rem, 1.0375rem);
+  margin-block-start: 3rem;
+}
+.resources > * {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+.resources > * + * {
+  margin-block-start: 1rem;
+}
+.resources a {
+  color: var(--spruce-base-color-text);
+  text-decoration: none;
+}
+.resources a:hover, .resources a:focus {
+  color: var(--spruce-base-color-primary);
+}
+
+.more-content {
+  margin-block-start: 3rem;
+}
+.more-content > * {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+.more-content > * + * {
+  margin-block-start: 2rem;
+}
+.more-content .post-list > * {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+.more-content .post-list > * + * {
+  margin-block-start: 1.5rem;
+}
+
 :root {
   --spruce-container-gap: clamp(1.5rem, 5vw, 3rem);
+}
+
+body {
+  background: #020d2a;
 }

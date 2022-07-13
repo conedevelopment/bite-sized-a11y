@@ -9,7 +9,7 @@
   }
 
   a {
-    background-color: hsl(341 100% 96%);
+    background-color: rgba(255, 235, 241, 0.077);
     border-radius: spruce.$border-radius-sm;
     color: color.adjust(spruce.color(primary, $only-color: true), $lightness: -4%);
     font-family: spruce.$font-family-cursive;

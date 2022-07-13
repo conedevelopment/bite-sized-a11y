@@ -1,10 +1,11 @@
 @use 'sprucecss/scss/spruce' with (
   // $color-primary: hsl(337 92% 40%),
-  $color-primary: #E9004C,
+  $color-primary: #94F71C,
   $colors: (
     base: (
       border: hsl(243 61% 91%),
-      heading: hsl(244 84% 10%)
+      heading: rgb(255, 255, 255),
+      text: hsl(0 0% 100% / 0.8)
     )
   ),
   $border-radius-sm: 0.5rem,
