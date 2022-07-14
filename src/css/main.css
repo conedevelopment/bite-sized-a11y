@@ -1133,13 +1133,8 @@ legend {
   margin-block-start: 1rem;
 }
 .hero__title {
-  font-size: clamp(1.95rem, 4vw + 1rem, 3.25rem);
+  font-size: clamp(2.4rem, 4vw + 1rem, 4rem);
   letter-spacing: -0.01em;
-  text-transform: uppercase;
-}
-.hero__title span {
-  color: hsl(222deg, 87%, 47%);
-  font-weight: 400;
 }
 .hero__description {
   font-size: clamp(1rem, 0.25vw + 1rem, 1.25rem);
@@ -1191,7 +1186,7 @@ legend {
   width: var(--dimension);
 }
 .post-card__title {
-  font-size: clamp(1.05rem, 1vw + 1rem, 1.5rem);
+  font-size: clamp(1.295rem, 1vw + 1rem, 1.85rem);
   margin: 0;
 }
 .post-card__title a {
@@ -1415,7 +1410,7 @@ pre[class*=language-] {
   margin-block-start: 1.5rem;
 }
 .post-heading__title {
-  font-size: clamp(1.95rem, 4vw + 1rem, 3.25rem);
+  font-size: clamp(2.1rem, 4vw + 1rem, 3.5rem);
   letter-spacing: -0.01em;
 }
 .post-heading__meta {

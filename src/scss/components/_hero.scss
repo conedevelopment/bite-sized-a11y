@@ -6,14 +6,8 @@
   padding-block: spruce.spacer(l) spruce.spacer(xl);
 
   &__title {
-    font-size: spruce.responsive-font-size(3.25rem, 40, '4vw + 1rem');
+    font-size: spruce.responsive-font-size(4rem, 40, '4vw + 1rem');
     letter-spacing: -0.01em;
-    text-transform: uppercase;
-
-    span {
-      color: spruce.color(primary, $only-color: true);
-      font-weight: 400;
-    }
   }
 
   &__description {
