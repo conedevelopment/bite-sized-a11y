@@ -11,7 +11,7 @@
     text-transform: uppercase;
 
     span {
-      color: color.adjust(spruce.color(primary, $only-color: true), $lightness: 20%);
+      color: spruce.color(primary, $only-color: true);
       font-weight: 400;
     }
   }

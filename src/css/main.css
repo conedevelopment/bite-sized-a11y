@@ -308,25 +308,25 @@ template {
 }
 
 :root {
-  --spruce-base-color-primary: #94F71C;
+  --spruce-base-color-primary: hsl(222deg, 87%, 47%);
   --spruce-base-color-secondary: hsl(227deg, 92%, 55%);
   --spruce-base-color-background: hsl(0deg, 0%, 100%);
-  --spruce-base-color-heading: rgb(255, 255, 255);
-  --spruce-base-color-text: hsla(0deg, 0%, 100%, 0.8);
-  --spruce-base-color-link: #94F71C;
-  --spruce-base-color-link-hover: #78d507;
+  --spruce-base-color-heading: #0b2a49;
+  --spruce-base-color-text: #141414;
+  --spruce-base-color-link: hsl(222deg, 87%, 47%);
+  --spruce-base-color-link-hover: #0c3fb3;
   --spruce-base-color-border: hsl(243deg, 61%, 91%);
   --spruce-base-color-mark-background: hsl(50deg, 100%, 80%);
   --spruce-base-color-mark-foreground: hsl(205deg, 100%, 2%);
-  --spruce-base-color-marker: #94F71C;
-  --spruce-base-color-code-background: rgba(255, 235, 241, 0.077);
-  --spruce-base-color-code-foreground: #94F71C;
-  --spruce-base-color-blockquote-border: #94F71C;
+  --spruce-base-color-marker: hsl(222deg, 87%, 47%);
+  --spruce-base-color-code-background: hsl(222deg, 100%, 95%);
+  --spruce-base-color-code-foreground: hsl(222deg, 87%, 47%);
+  --spruce-base-color-blockquote-border: hsl(222deg, 87%, 47%);
 }
 
 :root {
   --spruce-selection-color-foreground: hsl(0deg, 0%, 100%);
-  --spruce-selection-color-background: #94F71C;
+  --spruce-selection-color-background: hsl(222deg, 87%, 47%);
 }
 
 :root {
@@ -337,11 +337,11 @@ template {
 }
 
 :root {
-  --spruce-btn-color-primary-background: #94F71C;
-  --spruce-btn-color-primary-background-hover: #7ad808;
+  --spruce-btn-color-primary-background: hsl(222deg, 87%, 47%);
+  --spruce-btn-color-primary-background-hover: #0c3eb0;
   --spruce-btn-color-primary-foreground: hsl(0deg, 0%, 100%);
   --spruce-btn-color-primary-foreground-hover: hsl(0deg, 0%, 100%);
-  --spruce-btn-color-primary-shadow-focus: rgba(148, 247, 28, 0.25);
+  --spruce-btn-color-primary-shadow-focus: rgba(16, 78, 224, 0.25);
   --spruce-btn-color-secondary-background: hsl(227deg, 92%, 55%);
   --spruce-btn-color-secondary-background-hover: #0937dc;
   --spruce-btn-color-secondary-foreground: hsl(0deg, 0%, 100%);
@@ -354,10 +354,10 @@ template {
   --spruce-form-color-background-disabled: hsl(0deg, 0%, 95%);
   --spruce-form-color-border: hsl(260deg, 4%, 70%);
   --spruce-form-color-border-disabled: hsl(0deg, 0%, 90%);
-  --spruce-form-color-border-focus: #94F71C;
-  --spruce-form-color-shadow-focus: rgba(148, 247, 28, 0.25);
+  --spruce-form-color-border-focus: hsl(222deg, 87%, 47%);
+  --spruce-form-color-shadow-focus: rgba(16, 78, 224, 0.25);
   --spruce-form-color-check-foreground: hsl(0deg, 0%, 100%);
-  --spruce-form-color-check-background: #94F71C;
+  --spruce-form-color-check-background: hsl(222deg, 87%, 47%);
   --spruce-form-color-invalid: hsl(0deg, 71%, 51%);
   --spruce-form-color-invalid-shadow: rgba(219, 41, 41, 0.25);
   --spruce-form-color-label: hsl(205deg, 100%, 2%);
@@ -573,7 +573,7 @@ h4,
 h5,
 h6 {
   color: var(--spruce-base-color-heading);
-  font-family: Rubik, sans-serif;
+  font-family: Harmony OS, sans-serif;
   font-weight: 700;
   line-height: calc(2px + 2ex + 2px);
 }
@@ -1007,6 +1007,18 @@ legend {
   color: var(--spruce-alert-color-danger);
 }
 
+@font-face {
+  font-family: "Harmony OS";
+  src: url("/font/harmonyos_sans_regular-webfont.woff2") format("woff2"), url("/font/harmonyos_sans_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Harmony OS";
+  src: url("/font/harmonyos_sans_black-webfont.woff2") format("woff2"), url("/font/harmonyos_sans_black-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
 .container {
   margin-inline: auto;
   max-width: 80rem;
@@ -1126,7 +1138,7 @@ legend {
   text-transform: uppercase;
 }
 .hero__title span {
-  color: #c2fa7f;
+  color: hsl(222deg, 87%, 47%);
   font-weight: 400;
 }
 .hero__description {
@@ -1165,7 +1177,7 @@ legend {
   background-color: var(--spruce-base-color-primary);
   border-radius: 0.5rem;
   color: var(--spruce-base-color-primary);
-  color: hsl(87deg, 91%, 15%);
+  color: hsl(0deg, 0%, 100%);
   display: flex;
   flex-shrink: 0;
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -1246,9 +1258,9 @@ legend {
   margin-block-start: 0;
 }
 .tags-list a {
-  background-color: rgba(255, 235, 241, 0.077);
+  background-color: hsl(222deg, 100%, 95%);
   border-radius: 0.5rem;
-  color: #c2fa7f;
+  color: var(--spruce-base-color-primary);
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-weight: 400;
   padding: 0.25em 0.5em;
@@ -1493,8 +1505,4 @@ pre[class*=language-] {
 
 :root {
   --spruce-container-gap: clamp(1.5rem, 5vw, 3rem);
-}
-
-body {
-  background: #020d2a;
 }

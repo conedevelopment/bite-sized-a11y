@@ -9,9 +9,9 @@
   }
 
   a {
-    background-color: rgba(255, 235, 241, 0.077);
+    background-color: hsl(222 100% 95%);
     border-radius: spruce.$border-radius-sm;
-    color: color.adjust(spruce.color(primary, $only-color: true), $lightness: 20%);
+    color: spruce.color(primary);
     font-family: spruce.$font-family-cursive;
     font-weight: 400;
     padding: 0.25em 0.5em;
