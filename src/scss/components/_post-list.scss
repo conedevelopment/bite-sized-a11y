@@ -20,9 +20,10 @@
     align-items: center;
     background-color: hsl(341 100% 96%);
     background-color: spruce.color(primary);
+    background-color: #E55381;
     border-radius: spruce.$border-radius-sm;
     color: spruce.color(primary);
-    color: hsl(0deg 0% 100%);
+    color: hsl(0 0% 100%);
     display: flex;
     flex-shrink: 0;
     font-family: spruce.$font-family-cursive;
@@ -37,7 +38,7 @@
   }
 
   &__title {
-    font-size: spruce.responsive-font-size(1.85rem, 30, '1vw + 1rem');
+    font-size: spruce.responsive-font-size(1.85rem, 15, '1vw + 1rem');
     margin: 0;
 
     a {

@@ -309,10 +309,10 @@ template {
 
 :root {
   --spruce-base-color-primary: hsl(222deg, 87%, 47%);
-  --spruce-base-color-secondary: hsl(227deg, 92%, 55%);
+  --spruce-base-color-secondary: #5B1647;
   --spruce-base-color-background: hsl(0deg, 0%, 100%);
-  --spruce-base-color-heading: #0b2a49;
-  --spruce-base-color-text: #141414;
+  --spruce-base-color-heading: #062442;
+  --spruce-base-color-text: #010218;
   --spruce-base-color-link: hsl(222deg, 87%, 47%);
   --spruce-base-color-link-hover: #0c3fb3;
   --spruce-base-color-border: hsl(243deg, 61%, 91%);
@@ -342,11 +342,11 @@ template {
   --spruce-btn-color-primary-foreground: hsl(0deg, 0%, 100%);
   --spruce-btn-color-primary-foreground-hover: hsl(0deg, 0%, 100%);
   --spruce-btn-color-primary-shadow-focus: rgba(16, 78, 224, 0.25);
-  --spruce-btn-color-secondary-background: hsl(227deg, 92%, 55%);
-  --spruce-btn-color-secondary-background-hover: #0937dc;
+  --spruce-btn-color-secondary-background: #5B1647;
+  --spruce-btn-color-secondary-background-hover: #320c27;
   --spruce-btn-color-secondary-foreground: hsl(0deg, 0%, 100%);
   --spruce-btn-color-secondary-foreground-hover: hsl(0deg, 0%, 100%);
-  --spruce-btn-color-secondary-shadow-focus: rgba(35, 80, 246, 0.25);
+  --spruce-btn-color-secondary-shadow-focus: rgba(91, 22, 71, 0.25);
 }
 
 :root {
@@ -649,7 +649,7 @@ dl dd + dt {
 blockquote {
   border-left: 0.5rem solid var(--spruce-base-color-blockquote-border);
   margin-left: 0;
-  padding: 0 0 0 1.5rem;
+  padding: 0 0 0 2rem;
 }
 blockquote > * {
   margin-block-end: 0;
@@ -1037,7 +1037,7 @@ legend {
 
 .topbar {
   background-color: var(--spruce-base-color-heading);
-  background-color: #01081c;
+  background-color: #020e30;
   line-height: 1.5;
   padding-block: 0.1rem;
 }
@@ -1051,7 +1051,7 @@ legend {
   align-items: center;
   display: flex;
   font-size: 0.9rem;
-  gap: clamp(1.5rem, 2vw + 1rem, 3rem);
+  gap: clamp(2rem, 2vw + 1rem, 3rem);
   overflow-x: auto;
   padding-block: 0.5rem;
   white-space: nowrap;
@@ -1071,7 +1071,7 @@ legend {
   align-items: center;
   display: flex;
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  gap: 0.5rem 1.5rem;
+  gap: 0.5rem 2rem;
   list-style: none;
   margin-block: 0;
   padding: 0;
@@ -1102,12 +1102,7 @@ legend {
 }
 .site-header__logo {
   display: inline-flex;
-  width: 7.5rem;
-}
-@media (min-width: 64em) {
-  .site-header__logo {
-    width: 8.75rem;
-  }
+  width: 9.75rem;
 }
 .site-header__logo img {
   height: auto;
@@ -1115,15 +1110,15 @@ legend {
 }
 
 .skip-link {
-  inset: -50vh auto auto 1.5rem;
+  inset: -50vh auto auto 2rem;
   position: fixed;
 }
 .skip-link:focus {
-  inset-block-start: 1.5rem;
+  inset-block-start: 2rem;
 }
 
 .hero {
-  padding-block: 3rem 4.5rem;
+  padding-block: 2rem 4.5rem;
 }
 .hero > * {
   margin-block-end: 0;
@@ -1133,7 +1128,7 @@ legend {
   margin-block-start: 1rem;
 }
 .hero__title {
-  font-size: clamp(2.4rem, 4vw + 1rem, 4rem);
+  font-size: clamp(2.1rem, 4vw + 1rem, 3.5rem);
   letter-spacing: -0.01em;
 }
 .hero__description {
@@ -1170,6 +1165,7 @@ legend {
   align-items: center;
   background-color: hsl(341deg, 100%, 96%);
   background-color: var(--spruce-base-color-primary);
+  background-color: #E55381;
   border-radius: 0.5rem;
   color: var(--spruce-base-color-primary);
   color: hsl(0deg, 0%, 100%);
@@ -1186,7 +1182,7 @@ legend {
   width: var(--dimension);
 }
 .post-card__title {
-  font-size: clamp(1.295rem, 1vw + 1rem, 1.85rem);
+  font-size: clamp(1.5725rem, 1vw + 1rem, 1.85rem);
   margin: 0;
 }
 .post-card__title a {
@@ -1253,7 +1249,7 @@ legend {
   margin-block-start: 0;
 }
 .tags-list a {
-  background-color: hsl(222deg, 100%, 95%);
+  background-color: #f1f5fe;
   border-radius: 0.5rem;
   color: var(--spruce-base-color-primary);
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -1367,7 +1363,7 @@ pre[class*=language-] {
 .token.attr-value,
 .token.function,
 .token.class-name {
-  color: #94f71c;
+  color: #4baeff;
 }
 
 .token.keyword {
@@ -1400,14 +1396,14 @@ pre[class*=language-] {
 }
 
 .post-heading {
-  padding-block: 3rem;
+  padding-block: 2rem 3rem;
 }
 .post-heading > * {
   margin-block-end: 0;
   margin-block-start: 0;
 }
 .post-heading > * + * {
-  margin-block-start: 1.5rem;
+  margin-block-start: 2rem;
 }
 .post-heading__title {
   font-size: clamp(2.1rem, 4vw + 1rem, 3.5rem);
@@ -1417,7 +1413,7 @@ pre[class*=language-] {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 2rem;
   line-height: 1;
 }
 
@@ -1429,7 +1425,7 @@ pre[class*=language-] {
   margin-block-start: 0;
 }
 .post-content > * + * {
-  margin-block-start: 1.5rem;
+  margin-block-start: 2rem;
 }
 .post-content p:first-child {
   color: var(--spruce-base-color-heading);
@@ -1495,9 +1491,9 @@ pre[class*=language-] {
   margin-block-start: 0;
 }
 .more-content .post-list > * + * {
-  margin-block-start: 1.5rem;
+  margin-block-start: 2rem;
 }
 
 :root {
-  --spruce-container-gap: clamp(1.5rem, 5vw, 3rem);
+  --spruce-container-gap: clamp(2rem, 5vw, 3rem);
 }

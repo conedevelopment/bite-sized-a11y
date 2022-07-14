@@ -9,11 +9,7 @@
 
   &__logo {
     display: inline-flex;
-    width: 7.5rem;
-
-    @include spruce.breakpoint(md) {
-      width: 8.75rem;
-    }
+    width: 9.75rem;
 
     img {
       height: auto;
