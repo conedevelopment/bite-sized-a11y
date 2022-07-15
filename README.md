@@ -9,5 +9,7 @@
 
 **Bite-Sized A11Y is a small project where you can find quick and small accessibility tips.**
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d52a18b2-70bc-40c5-a911-816f24d144c7/deploy-status)](https://app.netlify.com/sites/eclectic-peony-73f413/deploys)
+
 ## Contributing
 Thank you for considering contributing to Bite-Sized A11Y! Right now, we don't accept any new posts, but we will be thankful if you find any typos and make a pull request.
