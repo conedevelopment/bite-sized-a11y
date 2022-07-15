@@ -1,9 +1,9 @@
 ---
-title: "Quick and Small Accessibility Tips"
+title: "Quick and Small Accessibility"
 layout: "layouts/posts.html"
 metaDesc: "Learn something new about accessibility with short and solid articles (less than 150 words)."
 hero:
-  title: "Quick and Small Accessibility Tips"
+  title: "Quick and Small Accessibility"
   description: "Learn something new about accessibility with short and solid articles (less than 150 words)."
 pagination:
   data: collections.posts
