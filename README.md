@@ -1,4 +1,3 @@
-bite-sized-a11y-logo-dark
 <p>
   <a href="https://bite-sized-a11y.com/#gh-light-mode-only">
     <br/>
