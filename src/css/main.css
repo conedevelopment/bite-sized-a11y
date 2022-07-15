@@ -1237,28 +1237,29 @@ legend {
   text-decoration: none;
 }
 
-.tags-list {
+.tag-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
-.tags-list > * + * {
-  margin-block-start: 0;
+.tag-list > * {
+  margin-block: 0;
 }
-.tags-list a {
-  background-color: #f1f5fe;
+.tag-list a {
+  background-color: var(--spruce-base-color-tag-background);
   border-radius: 0.5rem;
   color: var(--spruce-base-color-primary);
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-weight: 400;
   padding: 0.25em 0.5em;
   text-decoration: none;
   transition-duration: var(--spruce-transition-duration);
   transition-property: all;
   transition-timing-function: var(--spruce-transition-timing-function);
-  width: var(--dimension);
 }
-.tags-list a:hover, .tags-list a:focus {
+.tag-list a:hover, .tag-list a:focus {
   background-color: var(--spruce-base-color-primary);
   color: hsl(0deg, 0%, 100%);
 }

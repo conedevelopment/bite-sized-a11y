@@ -1,25 +1,27 @@
 @use 'sass:color';
 @use 'sprucecss/scss/spruce';
 
-.tags-list {
+.tag-list {
   @include spruce.clear-list;
 
-  > * + * {
-    margin-block-start: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: spruce.spacer(s);
+
+  > * {
+    margin-block: 0;
   }
 
   a {
-    background-color: color.adjust(spruce.color(primary, $only-color: true), $lightness: 50%);
+    background-color: spruce.color(tag-background);
     border-radius: spruce.$border-radius-sm;
     color: spruce.color(primary);
     font-family: spruce.$font-family-cursive;
-    font-weight: 400;
     padding: 0.25em 0.5em;
     text-decoration: none;
     transition-duration: spruce.transition(duration);
     transition-property: all;
     transition-timing-function: spruce.transition(timing-function);
-    width: var(--dimension);
 
     &:hover,
     &:focus {
