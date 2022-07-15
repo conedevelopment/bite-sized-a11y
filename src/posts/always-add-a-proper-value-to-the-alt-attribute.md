@@ -1,5 +1,5 @@
 ---
-title: 'Always add a proper value to the alt attribute'
+title: 'Always Add a Proper Value to the Alt Attribute'
 summary: 'By default, the images on the web aren’t available to blind or visually impaired users using screen readers.'
 date: '2022-07-12'
 issue: 1

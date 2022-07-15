@@ -8,12 +8,3 @@ pagination:
   alias: tag
 permalink: '/tag/{{ tag | slug }}/'
 ---
-
-<h1>Tagged “{{ tag }}”</h1>
-
-<ol>
-{% set taglist = collections[ tag ] %}
-{% for post in taglist | reverse %}
-  <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
-{% endfor %}
-</ol>

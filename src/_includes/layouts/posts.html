@@ -4,7 +4,6 @@
 {% set heroDescription = hero.description %}
 {% set postListItems = posts %}
 
-{# If this is a tag, grab those items instead as one large collection #}
 {% if collections[ tag ] %}
   {% set postListItems = collections[tag].reverse() %}
   {% set heroTitle = { 'first-line': 'Posts tagged with: ', 'second-line': tag } %}

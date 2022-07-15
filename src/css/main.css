@@ -1009,24 +1009,19 @@ legend {
 
 @font-face {
   font-family: "Harmony OS";
-  src: url("/font/harmonyos_sans_regular-webfont.woff2") format("woff2"), url("/font/harmonyos_sans_regular-webfont.woff") format("woff");
-  font-weight: normal;
   font-style: normal;
+  font-weight: normal;
+  src: url("/font/harmonyos_sans_regular-webfont.woff2") format("woff2"), url("/font/harmonyos_sans_regular-webfont.woff") format("woff");
 }
 @font-face {
   font-family: "Harmony OS";
-  src: url("/font/harmonyos_sans_black-webfont.woff2") format("woff2"), url("/font/harmonyos_sans_black-webfont.woff") format("woff");
-  font-weight: bold;
   font-style: normal;
+  font-weight: bold;
+  src: url("/font/harmonyos_sans_black-webfont.woff2") format("woff2"), url("/font/harmonyos_sans_black-webfont.woff") format("woff");
 }
 .container {
   margin-inline: auto;
   max-width: 80rem;
-  padding-inline: var(--spruce-container-gap);
-}
-.container--wide {
-  margin-inline: auto;
-  max-width: 100%;
   padding-inline: var(--spruce-container-gap);
 }
 .container--narrow {
@@ -1037,7 +1032,7 @@ legend {
 
 .topbar {
   background-color: var(--spruce-base-color-heading);
-  background-color: #020e30;
+  background-color: #062442;
   line-height: 1.5;
   padding-block: 0.1rem;
 }
@@ -1165,7 +1160,7 @@ legend {
   align-items: center;
   background-color: hsl(341deg, 100%, 96%);
   background-color: var(--spruce-base-color-primary);
-  background-color: #E55381;
+  background-color: #e55381;
   border-radius: 0.5rem;
   color: var(--spruce-base-color-primary);
   color: hsl(0deg, 0%, 100%);
@@ -1267,49 +1262,46 @@ legend {
 }
 
 /**
- * Lucario Theme originally by Raphael Amorim [@raphamorim]
- * https://github.com/raphamorim/lucario
- *
- * Ported for PrismJS by Christopher Kapic [@christopher-kapic]
+ * a11y-dark theme for JavaScript, CSS, and HTML
+ * Based on the okaidia theme: https://github.com/PrismJS/prism/blob/gh-pages/themes/prism-okaidia.css
+ * @author ericwbailey
  */
 code[class*=language-],
 pre[class*=language-] {
-  color: #f8f8f2;
   background: none;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-  font-family: Monaco, Consolas, "Andale Mono", "Ubuntu Mono", monospace;
+  color: #f8f8f2;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  hyphens: none;
+  hyphens: none;
+  hyphens: none;
+  hyphens: none;
+  line-height: 1.5;
+  tab-size: 4;
+  tab-size: 4;
+  tab-size: 4;
   text-align: left;
   white-space: pre;
-  word-spacing: normal;
   word-break: normal;
+  word-spacing: normal;
   word-wrap: normal;
-  line-height: 1.5;
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
 }
 
 /* Code blocks */
 pre[class*=language-] {
-  font-size: 1rem;
-  padding: 2em;
+  border-radius: 0.5rem;
   overflow: auto;
-  border-radius: 0.3em;
+  padding: clamp(1rem, 5vw, 2rem);
 }
 
 :not(pre) > code[class*=language-],
 pre[class*=language-] {
-  background: #1e2843;
+  background: #2b2b2b;
 }
 
 /* Inline code */
 :not(pre) > code[class*=language-] {
-  padding: 0.1em;
   border-radius: 0.3em;
+  padding: 0.1em;
   white-space: normal;
 }
 
@@ -1317,15 +1309,11 @@ pre[class*=language-] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #5c98cd;
+  color: #d4d0ab;
 }
 
 .token.punctuation {
-  color: #f8f8f2;
-}
-
-.namespace {
-  opacity: 0.7;
+  color: #fefefe;
 }
 
 .token.property,
@@ -1333,12 +1321,12 @@ pre[class*=language-] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-  color: #F05E5D;
+  color: #ffa07a;
 }
 
 .token.boolean,
 .token.number {
-  color: #BC94F9;
+  color: #00e0e0;
 }
 
 .token.selector,
@@ -1347,7 +1335,7 @@ pre[class*=language-] {
 .token.char,
 .token.builtin,
 .token.inserted {
-  color: #FCFCD6;
+  color: #abe338;
 }
 
 .token.operator,
@@ -1356,23 +1344,22 @@ pre[class*=language-] {
 .language-css .token.string,
 .style .token.string,
 .token.variable {
-  color: #f8f8f2;
+  color: #00e0e0;
 }
 
 .token.atrule,
 .token.attr-value,
-.token.function,
-.token.class-name {
-  color: #4baeff;
+.token.function {
+  color: #ffd700;
 }
 
 .token.keyword {
-  color: #6EB26E;
+  color: #00e0e0;
 }
 
 .token.regex,
 .token.important {
-  color: #F05E5D;
+  color: #ffd700;
 }
 
 .token.important,
@@ -1388,6 +1375,44 @@ pre[class*=language-] {
   cursor: help;
 }
 
+@media screen and (-ms-high-contrast: active) {
+  code[class*=language-],
+pre[class*=language-] {
+    background: window;
+    color: windowText;
+  }
+  :not(pre) > code[class*=language-],
+pre[class*=language-] {
+    background: window;
+  }
+  .token.important {
+    background: highlight;
+    color: window;
+    font-weight: normal;
+  }
+  .token.atrule,
+.token.attr-value,
+.token.function,
+.token.keyword,
+.token.operator,
+.token.selector {
+    font-weight: bold;
+  }
+  .token.attr-value,
+.token.comment,
+.token.doctype,
+.token.function,
+.token.keyword,
+.token.operator,
+.token.property,
+.token.string {
+    color: highlight;
+  }
+  .token.attr-value,
+.token.url {
+    font-weight: normal;
+  }
+}
 .site-footer {
   padding-block: 4.5rem 3rem;
 }

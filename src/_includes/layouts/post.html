@@ -1,6 +1,5 @@
 {% extends "layouts/base.html" %}
 
-{# Grab other posts that aren’t this one for the 'more from the blog' feed #}
 {% set recommendedPosts = helpers.getSiblingContent(collections.posts, page) %}}}
 
 {% block content %}
@@ -20,9 +19,9 @@
   {% if resources %}
     <div class="resources">
       <h2 class="headline">Resources</h2>
-      <ol class="[ key-facts__list ] [ auto-grid ]">
+      <ol>
         {% for item in resources %}
-          <li class="flow flow-space-300">
+          <li>
             <a href="{{ item.url }}">{{ item.title }}</a>
           </li>
         {% endfor %}
