@@ -6,21 +6,13 @@
 }
 
 .post-card {
-  $this: &;
   @include spruce.layout-stack(xs);
   text-decoration: none;
-
-  &:hover {
-    #{$this}__serial-number {
-    }
-  }
 
   &__serial-number {
     --dimension: 2rem;
     align-items: center;
-    background-color: hsl(341 100% 96%);
-    background-color: spruce.color(primary);
-    background-color: #e55381;
+    background-color: spruce.color(secondary);
     border-radius: spruce.$border-radius-sm;
     color: spruce.color(primary);
     color: hsl(0 0% 100%);
@@ -39,7 +31,7 @@
 
   &__title {
     font-size: spruce.responsive-font-size(1.85rem, 15, '1vw + 1rem');
-    margin: 0;
+    margin-block: 0.05em 0;
 
     a {
       color: spruce.color(heading);

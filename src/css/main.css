@@ -1160,9 +1160,7 @@ legend {
 .post-card__serial-number {
   --dimension: 2rem;
   align-items: center;
-  background-color: hsl(341deg, 100%, 96%);
-  background-color: var(--spruce-base-color-primary);
-  background-color: #e55381;
+  background-color: var(--spruce-base-color-secondary);
   border-radius: 0.5rem;
   color: var(--spruce-base-color-primary);
   color: hsl(0deg, 0%, 100%);
@@ -1180,7 +1178,7 @@ legend {
 }
 .post-card__title {
   font-size: clamp(1.5725rem, 1vw + 1rem, 1.85rem);
-  margin: 0;
+  margin-block: 0.05em 0;
 }
 .post-card__title a {
   color: var(--spruce-base-color-heading);
@@ -1208,8 +1206,8 @@ legend {
   gap: 1rem;
   margin-block-start: 4.5rem;
 }
-.pagination > * + * {
-  margin-block-start: 0;
+.pagination > * {
+  margin-block: 0;
 }
 .pagination a {
   --dimension: 2.8rem;
@@ -1272,7 +1270,7 @@ legend {
 code[class*=language-],
 pre[class*=language-] {
   background: none;
-  color: #f8f8f2;
+  color: hsl(60deg, 30%, 96%);
   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   hyphens: none;
   hyphens: none;
@@ -1298,25 +1296,18 @@ pre[class*=language-] {
 
 :not(pre) > code[class*=language-],
 pre[class*=language-] {
-  background: #2b2b2b;
-}
-
-/* Inline code */
-:not(pre) > code[class*=language-] {
-  border-radius: 0.3em;
-  padding: 0.1em;
-  white-space: normal;
+  background: hsl(0deg, 0%, 17%);
 }
 
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #d4d0ab;
+  color: hsl(54deg, 32%, 75%);
 }
 
 .token.punctuation {
-  color: #fefefe;
+  color: hsl(0deg, 0%, 100%);
 }
 
 .token.property,
@@ -1324,12 +1315,12 @@ pre[class*=language-] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-  color: #ffa07a;
+  color: hsl(17deg, 100%, 74%);
 }
 
 .token.boolean,
 .token.number {
-  color: #00e0e0;
+  color: hsl(180deg, 100%, 44%);
 }
 
 .token.selector,
@@ -1338,7 +1329,7 @@ pre[class*=language-] {
 .token.char,
 .token.builtin,
 .token.inserted {
-  color: #abe338;
+  color: hsl(80deg, 75%, 55%);
 }
 
 .token.operator,
@@ -1347,22 +1338,22 @@ pre[class*=language-] {
 .language-css .token.string,
 .style .token.string,
 .token.variable {
-  color: #00e0e0;
+  color: hsl(180deg, 100%, 44%);
 }
 
 .token.atrule,
 .token.attr-value,
 .token.function {
-  color: #ffd700;
+  color: hsl(51deg, 100%, 50%);
 }
 
 .token.keyword {
-  color: #00e0e0;
+  color: hsl(180deg, 100%, 44%);
 }
 
 .token.regex,
 .token.important {
-  color: #ffd700;
+  color: hsl(51deg, 100%, 50%);
 }
 
 .token.important,

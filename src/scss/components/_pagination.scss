@@ -10,8 +10,8 @@
   gap: spruce.spacer(s);
   margin-block-start: spruce.spacer(xl);
 
-  > * + * {
-    margin-block-start: 0;
+  > * {
+    margin-block: 0;
   }
 
   a {
