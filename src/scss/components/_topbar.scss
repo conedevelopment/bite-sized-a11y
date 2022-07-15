@@ -3,10 +3,9 @@
 .topbar {
   $this: &;
 
-  background-color: spruce.color(heading);
-  background-color: #062442;
+  background-color: spruce.color(topbar-background);
   line-height: spruce.$line-height-md;
-  padding-block: 0.1rem;
+  padding-block: 0.65rem;
 
   &:hover,
   &:focus-within {
@@ -23,9 +22,8 @@
     align-items: center;
     display: flex;
     font-size: spruce.$font-size-sm;
-    gap: clamp(spruce.spacer(m), 2vw + 1rem, spruce.spacer(l));
+    gap: spruce.spacer-clamp(m, l);
     overflow-x: auto;
-    padding-block: spruce.spacer(xs);
     white-space: nowrap;
   }
 
@@ -34,7 +32,9 @@
     flex-shrink: 0;
     height: 0.85rem;
     opacity: 0.35;
-    transition: opacity var(--#{spruce.setting(prefix)}-transition-duration) var(--#{spruce.setting(prefix)}-transition-timing-function);
+    transition-duration: spruce.transition(duration);
+    transition-property: opacity;
+    transition-timing-function: spruce.transition(timing-function);
 
     img {
       height: auto;
@@ -46,28 +46,26 @@
     align-items: center;
     display: flex;
     font-family: spruce.$font-family-cursive;
-    gap: spruce.spacer(xs) spruce.spacer(m);
+    gap: spruce.spacer(m);
     list-style: none;
     margin-block: 0;
     padding: 0;
     text-transform: uppercase;
 
     li {
-      margin: 0;
+      margin-block: 0;
     }
 
     a {
       color: hsl(0 0% 100% / 0.35);
       text-decoration: none;
-      transition: color var(--#{spruce.setting(prefix)}-transition-duration) var(--#{spruce.setting(prefix)}-transition-timing-function);
+      transition-duration: spruce.transition(duration);
+      transition-property: color;
+      transition-timing-function: spruce.transition(timing-function);
 
       &:hover,
       &[aria-current='page'] {
-        color: #ff99ba;
-      }
-
-      &[aria-current='page'] {
-        font-weight: 700;
+        color: spruce.color(secondary);
       }
     }
   }

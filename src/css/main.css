@@ -309,19 +309,22 @@ template {
 
 :root {
   --spruce-base-color-primary: hsl(222deg, 87%, 47%);
-  --spruce-base-color-secondary: #5B1647;
+  --spruce-base-color-secondary: hsl(341deg, 74%, 61%);
   --spruce-base-color-background: hsl(0deg, 0%, 100%);
-  --spruce-base-color-heading: #062442;
-  --spruce-base-color-text: #010218;
+  --spruce-base-color-heading: hsl(210deg, 83%, 14%);
+  --spruce-base-color-text: hsl(237deg, 33%, 21%);
   --spruce-base-color-link: hsl(222deg, 87%, 47%);
   --spruce-base-color-link-hover: #0c3fb3;
-  --spruce-base-color-border: hsl(243deg, 61%, 91%);
+  --spruce-base-color-border: hsl(0deg, 0%, 90%);
   --spruce-base-color-mark-background: hsl(50deg, 100%, 80%);
   --spruce-base-color-mark-foreground: hsl(205deg, 100%, 2%);
   --spruce-base-color-marker: hsl(222deg, 87%, 47%);
-  --spruce-base-color-code-background: hsl(222deg, 100%, 95%);
+  --spruce-base-color-code-background: #f1f5fe;
   --spruce-base-color-code-foreground: hsl(222deg, 87%, 47%);
   --spruce-base-color-blockquote-border: hsl(222deg, 87%, 47%);
+  --spruce-base-color-topbar-background: hsl(210deg, 83%, 14%);
+  --spruce-base-color-tag-background: #f1f5fe;
+  --spruce-base-color-tag-foreground: hsl(222deg, 87%, 47%);
 }
 
 :root {
@@ -342,11 +345,11 @@ template {
   --spruce-btn-color-primary-foreground: hsl(0deg, 0%, 100%);
   --spruce-btn-color-primary-foreground-hover: hsl(0deg, 0%, 100%);
   --spruce-btn-color-primary-shadow-focus: rgba(16, 78, 224, 0.25);
-  --spruce-btn-color-secondary-background: #5B1647;
-  --spruce-btn-color-secondary-background-hover: #320c27;
+  --spruce-btn-color-secondary-background: hsl(341deg, 74%, 61%);
+  --spruce-btn-color-secondary-background-hover: #df2660;
   --spruce-btn-color-secondary-foreground: hsl(0deg, 0%, 100%);
   --spruce-btn-color-secondary-foreground-hover: hsl(0deg, 0%, 100%);
-  --spruce-btn-color-secondary-shadow-focus: rgba(91, 22, 71, 0.25);
+  --spruce-btn-color-secondary-shadow-focus: rgba(229, 82, 129, 0.25);
 }
 
 :root {
@@ -1031,10 +1034,9 @@ legend {
 }
 
 .topbar {
-  background-color: var(--spruce-base-color-heading);
-  background-color: #062442;
+  background-color: var(--spruce-base-color-topbar-background);
   line-height: 1.5;
-  padding-block: 0.1rem;
+  padding-block: 0.65rem;
 }
 .topbar:hover ul a, .topbar:focus-within ul a {
   color: hsl(0deg, 0%, 100%);
@@ -1046,9 +1048,8 @@ legend {
   align-items: center;
   display: flex;
   font-size: 0.9rem;
-  gap: clamp(2rem, 2vw + 1rem, 3rem);
+  gap: clamp(2rem, 5vw, 3rem);
   overflow-x: auto;
-  padding-block: 0.5rem;
   white-space: nowrap;
 }
 .topbar__logo {
@@ -1056,7 +1057,9 @@ legend {
   flex-shrink: 0;
   height: 0.85rem;
   opacity: 0.35;
-  transition: opacity var(--spruce-transition-duration) var(--spruce-transition-timing-function);
+  transition-duration: var(--spruce-transition-duration);
+  transition-property: opacity;
+  transition-timing-function: var(--spruce-transition-timing-function);
 }
 .topbar__logo img {
   height: auto;
@@ -1066,25 +1069,24 @@ legend {
   align-items: center;
   display: flex;
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  gap: 0.5rem 2rem;
+  gap: 2rem;
   list-style: none;
   margin-block: 0;
   padding: 0;
   text-transform: uppercase;
 }
 .topbar ul li {
-  margin: 0;
+  margin-block: 0;
 }
 .topbar ul a {
   color: hsla(0deg, 0%, 100%, 0.35);
   text-decoration: none;
-  transition: color var(--spruce-transition-duration) var(--spruce-transition-timing-function);
+  transition-duration: var(--spruce-transition-duration);
+  transition-property: color;
+  transition-timing-function: var(--spruce-transition-timing-function);
 }
 .topbar ul a:hover, .topbar ul a[aria-current=page] {
-  color: #ff99ba;
-}
-.topbar ul a[aria-current=page] {
-  font-weight: 700;
+  color: var(--spruce-base-color-secondary);
 }
 .topbar__social {
   margin-inline-start: auto;
@@ -1499,6 +1501,10 @@ pre[class*=language-] {
 }
 .resources a:hover, .resources a:focus {
   color: var(--spruce-base-color-primary);
+}
+
+.edit-on-github {
+  margin-block-start: 3rem;
 }
 
 .more-content {

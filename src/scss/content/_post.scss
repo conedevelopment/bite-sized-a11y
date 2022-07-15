@@ -55,6 +55,10 @@
   }
 }
 
+.edit-on-github {
+  margin-block-start: spruce.spacer(l);
+}
+
 .more-content {
   @include spruce.layout-stack(2rem);
   margin-block-start: spruce.spacer(l);
