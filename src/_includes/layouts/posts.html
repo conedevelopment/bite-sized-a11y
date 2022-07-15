@@ -6,7 +6,7 @@
 
 {% if collections[ tag ] %}
   {% set postListItems = collections[tag].reverse() %}
-  {% set heroTitle = { 'first-line': 'Posts tagged with: ', 'second-line': tag } %}
+  {% set heroTitle = 'Posts tagged with: ' + tag %}
 {% endif %}
 
 {% block content %}

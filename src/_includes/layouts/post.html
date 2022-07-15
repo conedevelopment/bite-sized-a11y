@@ -29,14 +29,15 @@
     </div>
   {% endif %}
 
-
   {% if github %}
     <div class="edit-on-github">
       <a href="{{ github}}" >Edit on GitHub</a>
     </div>
   {% endif %}
 
-  {% if recommendedPosts %}
+  {{ recommendedPosts | debugger }}
+
+  {% if recommendedPosts | length %}
     <div class="more-content">
       <h2 class="headline">More a11y tips</h2>
       {% set postListItems = recommendedPosts %}
