@@ -1,5 +1,10 @@
 MIT License
 
+This license is granted to everyone except for the following entities and
+any of their subsidiaries:
+
+- "Everything under the img folder" (https://github.com/conedevelopment/bite-sized-a11y/tree/master/src/img)
+
 Copyright (c) Cone Development
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

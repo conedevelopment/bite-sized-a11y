@@ -13,7 +13,7 @@
     "url": "git+https://github.com/conedevelopment/bite-sized-a11y"
   },
   "main": ".eleventy.js",
-  "license": "ISC",
+  "license": "MIT",
   "scripts": {
     "delete:dist": "del-cli --force dist",
     "eleventy:dev": "npx eleventy --serve",
