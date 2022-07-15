@@ -56,7 +56,9 @@
 }
 
 .edit-on-github {
+  border-block: 1px solid spruce.color(border);
   margin-block-start: spruce.spacer(l);
+  padding-block: spruce.spacer(s);
 }
 
 .more-content {

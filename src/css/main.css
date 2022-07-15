@@ -315,7 +315,7 @@ template {
   --spruce-base-color-text: hsl(237deg, 33%, 21%);
   --spruce-base-color-link: hsl(222deg, 87%, 47%);
   --spruce-base-color-link-hover: #0c3fb3;
-  --spruce-base-color-border: hsl(0deg, 0%, 90%);
+  --spruce-base-color-border: #f1f5fe;
   --spruce-base-color-mark-background: hsl(50deg, 100%, 80%);
   --spruce-base-color-mark-foreground: hsl(205deg, 100%, 2%);
   --spruce-base-color-marker: hsl(222deg, 87%, 47%);
@@ -1496,7 +1496,9 @@ pre[class*=language-] {
 }
 
 .edit-on-github {
+  border-block: 1px solid var(--spruce-base-color-border);
   margin-block-start: 3rem;
+  padding-block: 1rem;
 }
 
 .more-content {

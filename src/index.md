@@ -7,7 +7,7 @@ hero:
   description: "Learn something new about accessibility with short and solid articles (less than 150 words)."
 pagination:
   data: collections.posts
-  size: 2
+  size: 20
   reverse: true
   alias: posts
 # permalink: "page/{{ pagination.pageNumber + 1 }}/index.html"

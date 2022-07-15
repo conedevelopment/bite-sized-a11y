@@ -12,6 +12,7 @@ $color-black: hsl(210 83% 14%);
   $color-secondary: $color-secondary,
   $colors: (
     base: (
+      border: $color-primary-light,
       heading: $color-black,
       text: hsl(237 33% 21%),
       code-background: $color-primary-light,
