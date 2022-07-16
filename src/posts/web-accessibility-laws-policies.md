@@ -16,7 +16,7 @@ resources:
 
 For accessibility, laws are essential. Unfortunately, we still don’t live in an inclusive society. Hence we need directions to protect everyone who needs it. Luckily there is the much-needed progression from around the world.
 
-The related laws can be of different types (civil rights, procurement, and industry-specific), so many aren’t just web or internet based but generic. Fortunately (and hopefully with a newer version), a common thing is the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/), the standard of web accessibility.
+The related laws can be of different types (civil rights, procurement, and industry-specific), so many aren’t just web or internet based but generic. Fortunately (and hopefully with a newer version), a common thing is usually the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/), the standard of web accessibility.
 
 In the following list, you will find an incomplete list of a11y (accessibility) laws from around the world:
 
