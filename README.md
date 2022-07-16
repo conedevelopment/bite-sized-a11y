@@ -7,7 +7,7 @@
   </a>
 </p>
 
-**Bite-Sized A11Y is a small project where you can find short and solid accessibility articles.**
+**[Bite-Sized A11Y](https://bite-sized-a11y.com/) is a small project where you can find short and solid accessibility articles.**
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d52a18b2-70bc-40c5-a911-816f24d144c7/deploy-status)](https://app.netlify.com/sites/eclectic-peony-73f413/deploys)
 
