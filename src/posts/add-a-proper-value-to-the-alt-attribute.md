@@ -23,5 +23,5 @@ If you have an image that is only (and honestly) decorative, use `alt=""` with a
 Define the `alt` attribute on any image element to make it more understandable to the assistive technologies. Try to write a good and short (no more than 150 characters) description and use empty value if it is decorative.
 
 ```html
-<img src="https://images.unsplash.com/photo-1623574226937-0dad1c9a0495" alt="A photo of a green bicycle that is standing before a lake.">
+<img src="https://images.unsplash.com/photo-1623574226937-0dad1c9a0495" alt="A green bicycle that is standing before a lake.">
 ```
