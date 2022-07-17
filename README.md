@@ -15,6 +15,13 @@
 
 The goal is to give you concise posts about accessibility. For me, it is also a notebook. Here we can summarize and organize a11y related content (repeat and learn).
 
+## The Rules
+
+- Maximum length of 149 words.
+- Title doesn’t count.
+- Alt text doesn’t count.
+- Code doesn’t count.
+
 ## About the Content Quality
 
 Writing about something in just a maximum of 149 words is a double-edged sword. It makes it easier (less content) but more complicated to include everything you want. And of course, there are cases where this length isn’t enough, but still, with the right resources, it has enough meaning.
