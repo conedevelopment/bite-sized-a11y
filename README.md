@@ -17,7 +17,7 @@ The goal is to give you concise posts about accessibility. For me, it is also a 
 
 ## About the Content Quality
 
-Writing about something in just a maximum of 149 is a double-edged sword. It makes it easier (less content) but more complicated to include everything you want. And of course, there are cases where 149 isn’t enough, but still, with the right resources, it has enough meaning.
+Writing about something in just a maximum of 149 words is a double-edged sword. It makes it easier (less content) but more complicated to include everything you want. And of course, there are cases where this length isn’t enough, but still, with the right resources, it has enough meaning.
 
 ## Contributing
 Thank you for considering contributing to Bite-Sized A11Y! Right now, we don’t accept any new posts, but we will be thankful if you find any typos and make a pull request.
