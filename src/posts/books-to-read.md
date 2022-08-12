@@ -1,6 +1,6 @@
 ---
 title: 'Books to Read'
-summary: 'Books are great resources as a starting point to grasp the basics of a11y (accessibility). '
+summary: 'Books are great resources as a starting point to grasp the basics of a11y (accessibility).'
 date: '2022-07-22'
 issue: 5
 tags: 'resources'
