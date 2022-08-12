@@ -23,7 +23,7 @@ module.exports = config => {
   config.addPassthroughCopy('./src/css/');
   config.addPassthroughCopy('./src/font/');
 
-  // Returns work items, sorted by display order
+  // Returns post items, sorted by issue order
   config.addCollection('posts', collection => {
     return [...collection.getFilteredByGlob('./src/posts/*.md')];
   });
