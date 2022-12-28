@@ -14,7 +14,7 @@ resources:
 
 The keyboard accessibility is one of the essential parts of inclusivity that is easily testable. Using the tab key to jump through the interactive elements in our document manually is a simple but crucial step in any testing.
 
-**Also, navigating with the keyboard (with the tab key) is a fundamental interaction, just like the mouse.**
+Also, navigating with the keyboard (with the tab key) is a fundamental interaction, just like the mouse.
 
 In HTML [just a few elements can receive](https://stackoverflow.com/questions/1599660/which-html-elements-can-receive-focus) focus by default: `<select>`, `<inputs>`, `<button>` and `<a>`.
 
