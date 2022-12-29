@@ -26,4 +26,4 @@ Using the tab key, we can make sure that:
 - The document’s focus order is the same as it is seen on the screen.
 - All of our focusable elements can get focus.
 - Just the needed parts can get focus (not the hidden navigation).
-- We can eliminate any keyboard traps.
+- We can eliminate any [keyboard traps](https://bite-sized-a11y.com/11-what-is-a-keyboard-trap/).
