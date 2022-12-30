@@ -1657,6 +1657,9 @@ pre[class*=language-] {
   overflow: auto;
   padding: clamp(1rem, 5vw, 2rem);
 }
+pre[class*=language-] code {
+  padding-inline: 0;
+}
 
 :not(pre) > code[class*=language-],
 pre[class*=language-] {

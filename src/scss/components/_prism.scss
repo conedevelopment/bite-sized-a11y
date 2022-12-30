@@ -33,6 +33,10 @@ pre[class*='language-'] {
   border-radius: spruce.$border-radius-sm;
   overflow: auto;
   padding: spruce.spacer-clamp(s, m);
+
+  code {
+    padding-inline: 0;
+  }
 }
 
 :not(pre) > code[class*='language-'],
