@@ -8,6 +8,8 @@ github: 'https://github.com/conedevelopment/bite-sized-a11y/blob/master/src/post
 resources:
   - title: 'Visual Impairment & Blindness Global Data & Statistics'
     url: 'https://www.lasereyesurgeryhub.co.uk/data/visual-impairment-blindness-data-statistics/'
+  - title: 'Resize text: Understanding SC 1.4.4'
+    url: 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html'
 permalink: /14-dont-disable-the-zoom-functionality/
 ---
 
