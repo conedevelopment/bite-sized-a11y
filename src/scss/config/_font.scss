@@ -1,15 +1,12 @@
-@font-face {
-  font-family: 'Harmony OS';
-  font-style: normal;
-  font-weight: normal;
-  src: url('/font/harmonyos_sans_regular-webfont.woff2') format('woff2'),
-    url('/font/harmonyos_sans_regular-webfont.woff') format('woff');
-}
+@use 'sprucecss/scss/spruce';
 
-@font-face {
-  font-family: 'Harmony OS';
-  font-style: normal;
-  font-weight: bold;
-  src: url('/font/harmonyos_sans_black-webfont.woff2') format('woff2'),
-    url('/font/harmonyos_sans_black-webfont.woff') format('woff');
-}
+@include spruce.font-face(
+  'Harmony OS',
+  '/font/harmonyos_sans_regular-webfont.woff2'
+);
+
+@include spruce.font-face(
+  'Harmony OS',
+  '/font/harmonyos_sans_black-webfont.woff2',
+  700
+);
