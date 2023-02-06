@@ -1,10 +1,10 @@
 ---
-title: 'The Main Features of WAI-ARIA'
+title: 'The Main Areas of WAI-ARIA'
 summary: 'ARIA has three main areas that we can utilize: roles, properties and states.'
 date: '2023-01-11'
 issue: 16
 tags: ['aria']
-github: 'https://github.com/conedevelopment/bite-sized-a11y/blob/master/src/posts/the-main-features-of-wai-aria.md'
+github: 'https://github.com/conedevelopment/bite-sized-a11y/blob/master/src/posts/the-main-areas-of-wai-aria.md'
 resources:
   - title: 'WAI-ARIA basics'
     url: 'https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics'
