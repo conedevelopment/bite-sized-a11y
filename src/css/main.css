@@ -309,7 +309,7 @@ template {
 
 :root {
   --spruce-base-color-primary: hsl(222deg, 87%, 47%);
-  --spruce-base-color-secondary: hsl(341deg, 74%, 61%);
+  --spruce-base-color-secondary: hsl(341deg, 74%, 52%);
   --spruce-base-color-background: hsl(0deg, 0%, 100%);
   --spruce-base-color-heading: hsl(210deg, 83%, 14%);
   --spruce-base-color-text: hsl(237deg, 33%, 21%);
@@ -343,8 +343,8 @@ template {
   --spruce-btn-color-primary-background: hsl(222deg, 87%, 47%);
   --spruce-btn-color-primary-background-hover: #0c3eb0;
   --spruce-btn-color-primary-foreground: hsl(0deg, 0%, 100%);
-  --spruce-btn-color-secondary-background: hsl(341deg, 74%, 61%);
-  --spruce-btn-color-secondary-background-hover: #df2660;
+  --spruce-btn-color-secondary-background: hsl(341deg, 74%, 52%);
+  --spruce-btn-color-secondary-background-hover: #ba1c4e;
   --spruce-btn-color-secondary-foreground: hsl(0deg, 0%, 100%);
 }
 
