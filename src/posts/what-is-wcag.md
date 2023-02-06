@@ -3,7 +3,7 @@ title: 'What is WCAG?'
 summary: 'The Web Content Accessibility Guidelines (WCAG) is an extensive standard for web development; right now, its current version is 2.1.'
 date: '2022-07-15'
 issue: 3
-tags: 'standards'
+tags: ['standards', 'wcag']
 github: 'https://github.com/conedevelopment/bite-sized-a11y/blob/master/src/posts/what-is-wcag.md'
 resources:
   - title: 'Web Content Accessibility Guidelines (WCAG) 2.1'
