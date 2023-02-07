@@ -1,6 +1,7 @@
 ---
 title: 'What is Accessibility?'
 summary: 'By accessibility, we mean the concept of designing any service (digital) product in a way that will be usable for everyone equally.'
+socialImage: '/img/social-thumbnails/what-is-accessibility.png'
 date: '2022-10-28'
 issue: 13
 tags: ['generic']

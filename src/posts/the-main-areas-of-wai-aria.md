@@ -1,6 +1,7 @@
 ---
 title: 'The Main Areas of WAI-ARIA'
 summary: 'ARIA has three main areas that we can utilize: roles, properties and states.'
+socialImage: '/img/social-thumbnails/the-main-areas-of-wai-aria.png'
 date: '2023-01-11'
 issue: 16
 tags: ['aria']

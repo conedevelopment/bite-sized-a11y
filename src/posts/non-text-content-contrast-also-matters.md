@@ -1,6 +1,7 @@
 ---
 title: 'Non-text Content Contrast Also Matters'
 summary: 'Although our main concern in the case of color contrast is text, we also have to care about our other visual element’s presentation.'
+socialImage: '/img/social-thumbnails/non-text-content-contrast-also-matters.png'
 date: '2023-02-06'
 issue: 17
 tags: ['color', 'contrast']

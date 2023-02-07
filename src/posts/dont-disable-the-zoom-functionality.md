@@ -1,6 +1,7 @@
 ---
 title: 'Don’t Disable the Zoom Functionality'
 summary: 'The zoom functionality in the browsers is not there by accident; people use it. As a generic category, visual impairment is one of the most widespread disabilities.'
+socialImage: '/img/social-thumbnails/dont-disable-the-zoom-functionality.png'
 date: '2022-11-12'
 issue: 14
 tags: 'design'

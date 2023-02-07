@@ -1,6 +1,7 @@
 ---
 title: 'What is ARIA?'
 summary: 'WAI-ARIA stands for Web Accessibility Initiative - Accessible Rich Internet Applications Suite, which defines a way to make any web content, site, or application more accessible for people with disabilities.'
+socialImage: '/img/social-thumbnails/what-is-aria.png'
 date: '2022-10-07'
 issue: 12
 tags: ['standards', 'aria']

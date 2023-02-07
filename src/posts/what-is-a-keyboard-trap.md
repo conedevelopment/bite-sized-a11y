@@ -1,6 +1,7 @@
 ---
 title: 'What Is a Keyboard Trap?'
 summary: 'A keyboard trap is a phenomenon where you can’t escape from a context using the tab key. Your focus won’t move to the next focusable element.'
+socialImage: '/img/social-thumbnails/what-is-a-keyboard-trap.png'
 date: '2022-09-13'
 issue: 11
 tags: ['testing']

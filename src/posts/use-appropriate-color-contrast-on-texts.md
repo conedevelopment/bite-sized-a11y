@@ -1,6 +1,7 @@
 ---
 title: 'Use Appropriate Color Contrast on Texts'
 summary: 'When we talk about color contrast, we usually mean the difference between the background and foreground. We typically mean it for text, but we should watch out for non-text contrast ratio too.'
+socialImage: '/img/social-thumbnails/use-appropriate-color-contrast-on-texts.png'
 date: '2022-12-21'
 issue: 15
 tags: ['color', 'contrast']
