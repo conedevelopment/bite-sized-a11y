@@ -9,6 +9,8 @@
 
 {% if not socialImage %}
   {% set socialImage = site.url + '/img/social-share.png' %}
+{% else %}
+  {% set socialImage = site.url + socialImage %}
 {% endif %}
 
 {% if metaTitle %}
