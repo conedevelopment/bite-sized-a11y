@@ -1,6 +1,7 @@
 ---
 title: 'Add a Proper Value to the Alt Attribute'
 summary: 'By default, the images on the web aren’t available to blind or visually impaired users using screen readers.'
+socialImage: '/img/social-thumbnails/add-a-proper-value-to-the-alt-attribute.png'
 date: '2022-07-12'
 issue: 1
 tags: 'media'
