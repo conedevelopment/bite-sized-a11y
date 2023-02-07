@@ -1,6 +1,7 @@
 ---
 title: 'Courses to Take'
 summary: 'If you like to learn with videos, you can find a lot of courses about inclusive design. Mostly these are - at least the ones I watched - behind a paywall.'
+socialImage: '/img/social-thumbnails/courses-to-take.png'
 date: '2022-07-26'
 issue: 7
 tags: 'resources'

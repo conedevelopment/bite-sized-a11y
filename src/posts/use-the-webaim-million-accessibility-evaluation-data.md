@@ -1,6 +1,7 @@
 ---
 title: 'Use the WebAIM Million Accessibility Evaluation Data'
 summary: 'The WebAIM million is a yearly and thorough accessibility report. It uses WAVE to analyze the home pages of the top 1,000,000 websites.'
+socialImage: '/img/social-thumbnails/use-the-webaim-million-accessibility-evaluation-data.png'
 date: '2022-08-23'
 issue: 9
 tags: 'resources'

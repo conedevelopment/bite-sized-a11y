@@ -1,6 +1,7 @@
 ---
 title: 'Web Accessibility Laws & Policies'
 summary: 'For accessibility, laws are essential. Unfortunately, we still don’t live in an inclusive society.'
+socialImage: '/img/social-thumbnails/web-accessibility-laws-policies.png'
 date: '2022-07-14'
 issue: 2
 tags: 'laws'

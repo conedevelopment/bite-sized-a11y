@@ -1,6 +1,7 @@
 ---
 title: 'Accessibility Testing Tools'
 summary: 'We can use testing tools to catch up to 40% of the accessibility errors in bulk.'
+socialImage: '/img/social-thumbnails/accessibility-testing-tools.png'
 date: '2022-09-03'
 issue: 10
 tags: ['testing', 'resources']

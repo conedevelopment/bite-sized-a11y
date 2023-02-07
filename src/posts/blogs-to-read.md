@@ -1,6 +1,7 @@
 ---
 title: 'Blogs to Read'
 summary: 'Today more people and experts write about accessibility. For the better progression it is a good idea to read them.'
+socialImage: '/img/social-thumbnails/blogs-to-read.png'
 date: '2022-07-24'
 issue: 6
 tags: 'resources'

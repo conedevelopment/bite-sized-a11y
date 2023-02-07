@@ -1,6 +1,7 @@
 ---
 title: 'Write Better Alt Text'
 summary: 'We use the alt (alternative) text to convey any image’s content (photograph) and meaning (UI image).'
+socialImage: '/img/social-thumbnails/write-better-alt-text.png'
 date: '2022-07-16'
 issue: 4
 tags: 'media'

@@ -1,6 +1,7 @@
 ---
 title: 'Use Tab to Test Keyboard Accessibility'
 summary: 'The keyboard accessibility is one of the essential parts of inclusivity that is easily testable.'
+socialImage: '/img/social-thumbnails/use-tab-to-test-keyboard-accessibility.png'
 date: '2022-08-06'
 issue: 8
 tags: 'testing'
