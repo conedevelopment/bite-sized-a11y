@@ -7,38 +7,17 @@
   line-height: spruce.$line-height-md;
   padding-block: 0.65rem;
 
-  &:hover,
-  &:focus-within {
-    ul a {
-      color: hsl(0 0% 100%);
-    }
-
-    #{$this}__logo {
-      opacity: 1;
-    }
-  }
-
   &__inner {
     align-items: center;
     display: flex;
-    font-size: spruce.$font-size-sm;
+    font-size: 1rem;
+    font-weight: 700;
     gap: spruce.spacer-clamp(m, l);
     overflow-x: auto;
     white-space: nowrap;
-  }
 
-  &__logo {
-    display: inline-flex;
-    flex-shrink: 0;
-    height: 0.85rem;
-    opacity: 0.35;
-    transition-duration: spruce.transition(duration);
-    transition-property: opacity;
-    transition-timing-function: spruce.transition(timing-function);
-
-    img {
-      height: auto;
-      width: 100%;
+    &::-webkit-scrollbar{
+      display: none;
     }
   }
 
@@ -57,7 +36,6 @@
     }
 
     a {
-      color: hsl(0 0% 100% / 0.35);
       text-decoration: none;
       transition-duration: spruce.transition(duration);
       transition-property: color;
