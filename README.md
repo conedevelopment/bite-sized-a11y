@@ -24,7 +24,7 @@ The goal is to collect and give you (and us) concise posts about accessibility. 
 
 ## About the Content-Length
 
-Writing about something in just a maximum of 149 words is a double-edged sword. It makes it easier (less content) but more complicated to include everything you want. Learning about accessibility is challenging; we thought creating a note-like post collection would be a good idea.
+Writing about something in just a maximum of 149 words is a double-edged sword. It makes it easier (less content) but more complicated to include everything you want. Hence the references (that you can find at the end of most posts) are essential. We encourage you to read and discover them too. Learning about accessibility is challenging; we thought creating a note-like post collection would be a good idea to start.
 
 ## Contributing
 Thank you for considering contributing to Bite-Sized A11Y! Right now, we don’t accept any new posts, but we will be thankful if you find any errors and make a pull request.
