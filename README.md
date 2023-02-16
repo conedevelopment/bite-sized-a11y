@@ -1,11 +1,11 @@
-<p>
+<h1>
   <a href="https://bite-sized-a11y.com/#gh-light-mode-only">
-    <img src="./.github/bite-sized-a11y-logo-dark.svg" alt="Bite-Sized Accessibility" width="160">
+    <img src=".github/assets/bite-sized-a11y-logo-dark.svg" alt="Bite-Sized Accessibility" width="160">
   </a>
   <a href="https://bite-sized-a11y.com/#gh-dark-mode-only">
-    <img src="./.github/bite-sized-a11y-logo-light.svg" alt="Bite-Sized Accessibility" width="160">
+    <img src=".github/assets/bite-sized-a11y-logo-light.svg" alt="Bite-Sized Accessibility" width="160">
   </a>
-</p>
+</h1>
 
 **[Bite-Sized A11Y](https://bite-sized-a11y.com/) is a small project where you can find short and solid accessibility posts.**
 
@@ -27,4 +27,5 @@ The goal is to collect and give you (and us) concise posts about accessibility. 
 Writing about something in just a maximum of 149 words is a double-edged sword. It makes it easier (less content) but more complicated to include everything you want. Hence the references (that you can find at the end of most posts) are essential. We encourage you to read and discover them too. Learning about accessibility is challenging; we thought creating a note-like post collection would be a good idea to start.
 
 ## Contributing
+
 Thank you for considering contributing to Bite-Sized A11Y! Right now, we don’t accept any new posts, but we will be thankful if you find any errors and make a pull request.
