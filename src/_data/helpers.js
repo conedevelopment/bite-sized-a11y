@@ -6,7 +6,7 @@ module.exports = {
    * @param {Array} collection The 11ty collection we want to take from
    * @param {Object} item The item we want to exclude (often current page)
    * @param {Number} limit=3 How many items we want back
-   * @param {Boolean} random=true Wether or not this should be randomised
+   * @param {Boolean} random=true Whether or not this should be randomised
    * @returns {Array} The resulting collection
    */
   getSiblingContent(collection, item, limit = 3, random = true) {
