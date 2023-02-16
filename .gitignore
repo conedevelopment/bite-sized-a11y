@@ -175,6 +175,9 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Yarn lock file
+yarn.lock
+
 # Generated folders
 assets/css
 html/
