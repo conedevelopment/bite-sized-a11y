@@ -18,6 +18,7 @@ The Web Content Accessibility Guidelines (WCAG) is an extensive standard for web
 The **WCAG version 2.1** has 13 guidelines with many success criteria distributed among three levels to help you create more accessible web-based products. The levels are: **A** is the easiest, the **AA** is the most suggested goal, and the **AAA** is the most strict.
 
 It has four main principles (named POUR):
+
 - **Perceivable:** the content must be accessible to everyone.
 - **Operable:** the functionality must work on different user inputs (mouse, keyboard).
 - **Understandable:** must be easily understandable (content, structure, functionality).
