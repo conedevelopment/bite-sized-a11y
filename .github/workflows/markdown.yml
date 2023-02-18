@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow
+
+name: "Markdown"
+
+on:  # yamllint disable-line rule:truthy
+    pull_request:
+        paths:
+        - "**/*.md"
+    push:
+        branches:
+        - "master"
+        paths:
+        - "**/*.md"
+# Add [skip ci] to commit message to skip CI.
+
+permissions:
+    contents: "read"
+
+concurrency:
+    group: "${{ github.workflow }}-${{ github.ref }}"
+    cancel-in-progress: true
+
+jobs:
+    markdown:
+        name: "Markdown"
+        runs-on: "ubuntu-22.04"
+        timeout-minutes: 1
+        steps:
+        -
+            name: "Checkout repository"
+            uses: "actions/checkout@v3"
+        -
+            name: "Check Markdown documents"
+            uses: "DavidAnson/markdownlint-cli2-action@v9"
+            with:
+                globs: "**/*.md"

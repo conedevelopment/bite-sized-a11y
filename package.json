@@ -36,5 +36,10 @@
     "sprucecss": "^1.2.1",
     "stylelint": "^14.16.0",
     "stylelint-config-sass-guidelines": "^9.0.1"
+  },
+  "engines": {
+    "node": "^18.12",
+    "npm": "^9.2",
+    "yarn": "please-use-npm"
   }
 }

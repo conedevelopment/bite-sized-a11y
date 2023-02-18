@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow
+
+name: "Front-end"
+
+# ECMAScript version: ES6 (2015)
+
+on:  # yamllint disable-line rule:truthy
+    pull_request: null
+    push:
+        branches:
+        - "master"
+# Add [skip ci] to commit message to skip CI.
+
+permissions:
+    contents: "read"
+
+concurrency:
+    group: "${{ github.workflow }}-${{ github.ref }}"
+    cancel-in-progress: true
+
+jobs:
+    js_syntax_errors:
+        name: "𝟙 JavaScript Syntax Errors"
+        runs-on: "ubuntu-22.04"
+        timeout-minutes: 5
+        steps:
+        -
+            name: "Checkout repository"
+            uses: "actions/checkout@v3"
+        -
+            name: "Set up NodeJS"
+            uses: "actions/setup-node@v3"
+            with:
+                node-version: "18"
+                check-latest: true
+                cache: "npm"
+        -
+            name: "Configure npm"
+            run: "npm config set engine-strict true"
+        -
+            name: "Install all dependencies"
+            run: "npm ci"
+        -
+            name: "Check JavaScript files for syntax errors"
+            run: |
+                find src/ -type f -name '*.js' -print0 | xargs -0 -L 1 -- npx acorn --ecma2015 --module --silent
+
+    scss_coding_standards:
+        name: "𝟛 Sassy CSS Coding Standards"
+        runs-on: "ubuntu-22.04"
+        timeout-minutes: 5
+        steps:
+        -
+            name: "Checkout repository"
+            uses: "actions/checkout@v3"
+        -
+            name: "Check EditorConfig configuration"
+            run: "test -f .editorconfig"
+        -
+            name: "Check adherence to EditorConfig"
+            uses: "greut/eclint-action@v0"
+        -
+            name: "Set up NodeJS"
+            uses: "actions/setup-node@v3"
+            with:
+                node-version: "18"
+                cache: "npm"
+        -
+            name: "Configure npm"
+            run: "npm config set engine-strict true"
+        -
+            name: "Install all dependencies"
+            run: "npm ci"
+        -
+            name: "Install stylelint-formatter-github-annotate"
+            run: "npm install --no-save stylelint-formatter-github-annotate"
+        -
+            name: "Check coding style"
+            run: "npm run sass:lint -- --custom-formatter=node_modules/stylelint-formatter-github-annotate"

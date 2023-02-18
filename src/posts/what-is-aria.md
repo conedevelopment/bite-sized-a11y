@@ -21,6 +21,6 @@ WAI-ARIA stands for Web Accessibility Initiative - Accessible Rich Internet Appl
 
 It is a framework that introduces new roles (e.g., menu, slider) and properties (e.g., haspopup, expanded, hidden). It is a complete collection of solutions that can help us create more accessible, dynamic, custom code (like a calendar-based date picker) for people who navigate with a keyboard and/or screen reader software.
 
-- We can communicate any collapsable element’s [open or closed state](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-expanded) (like in a case of a mobile - _hamburger_ - navigation).
+- We can communicate any collapsible element’s [open or closed state](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-expanded) (like in a case of a mobile - _hamburger_ - navigation).
 - Using `aria-live`, we can interact with the screen readers and communicate with our users directly through voice.
 - With `aria-hidden`, we can control what should display in the accessibility API.
