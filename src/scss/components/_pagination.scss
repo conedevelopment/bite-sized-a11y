@@ -31,17 +31,17 @@
     transition-property: all;
     transition-timing-function: spruce.transition(timing-function);
 
-    &.next,
-    &.prev {
-      padding-inline: 1rem;
-      width: auto;
-    }
-
     &[aria-current='page'],
     &:hover {
       background-color: spruce.color(primary);
       color: hsl(0 0% 100%);
       text-decoration: none;
     }
+  }
+
+  .next,
+  .prev {
+    padding-inline: 1rem;
+    width: auto;
   }
 }
