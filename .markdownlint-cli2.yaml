@@ -1,0 +1,7 @@
+config:
+    line-length: false
+    no-inline-html:
+        allowed_elements:
+            - h1
+            - a
+            - img
