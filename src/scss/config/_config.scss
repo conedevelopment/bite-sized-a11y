@@ -13,13 +13,13 @@ $color-black: hsl(210 83% 14%);
   $colors: (
     base: (
       border: $color-primary-light,
-      heading: $color-black,
-      text: hsl(237 33% 21%),
       code-background: $color-primary-light,
       code-foreground: $color-primary,
+      heading: $color-black,
       topbar-background: $color-primary-light,
       tag-background: $color-primary-light,
-      tag-foreground: $color-primary
+      tag-foreground: $color-primary,
+      text: hsl(237 33% 21%)
     )
   ),
   $spacers: (
