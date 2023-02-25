@@ -18,6 +18,9 @@ module.exports = config => {
   config.addPlugin(rssPlugin);
   config.addPlugin(syntaxHighlight);
 
+  // Put robots.txt in root
+  config.addPassthroughCopy({ './src/robots.txt': '/robots.txt' });
+
   // Set directories to pass through to the dist folder
   config.addPassthroughCopy('./src/img/');
   config.addPassthroughCopy('./src/css/');
