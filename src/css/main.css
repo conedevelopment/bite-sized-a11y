@@ -1189,12 +1189,8 @@ pre[class*=language-] {
 .resources > * + * {
   margin-block-start: 1rem;
 }
-.resources a {
-  color: var(--spruce-base-color-text);
-  text-decoration: none;
-}
-.resources a:hover, .resources a:focus {
-  color: var(--spruce-base-color-primary);
+.resources li::marker {
+  color: var(--spruce-base-color-heading);
 }
 
 .edit-on-github {

@@ -44,14 +44,8 @@
   font-size: spruce.responsive-font-size(1.0375rem);
   margin-block-start: spruce.spacer(l);
 
-  a {
-    color: spruce.color(text);
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-      color: spruce.color(primary);
-    }
+  li::marker {
+    color: spruce.color(heading);
   }
 }
 
