@@ -21,7 +21,7 @@ resources:
 
 ARIA has three main areas that we can utilize:
 
-**Roles** define what an element does or means by adding a semantic meaning. Using roles, we can redefine how assistive technologies should treat an element. We mostly meet these roles on the structures of our websites/applications, but some scenarios overlap with the native HTML landmarks (so we don’t need a role).
+**Roles** identify the purpose of an element or component. Using roles, we can revise how assistive technologies expose an element to assistive technology. Many HTML elements have implicit roles, so we do not need to specify them ourselves.  For instance, `<button>` element has an implicit `role=button`. A `<main>`, `<article>` and `<input type=checkbox>` have a role of `main`, `article` and `checkbox`, respectively. Roles such as `menu` and `tab` don't have equivalent HTML elements. 
 
 ```html
 <form id="search" role="search">
@@ -29,20 +29,20 @@ ARIA has three main areas that we can utilize:
 </form>
 ```
 
-**Properties** are additional information about an element that is communicated through the browser’s accessibility tree to assistive technologies. Using `aria-labelledby` on an HTML `<input>` element, we can add and share extra description text that a screen reader can connect and read.
+**Properties** provide accessibility information about an element that is conveyed to assistive technology via the browser’s accessibility tree. For instance, using `aria-describedby` on an HTML `<input>` element, we can associate text that provides additional information to the form field so that a screen reader can announce this to its user.
 
 ```html
 <div class="form-group">
   <label class="form-label" for="first-name">First Name</label>
   <input class="form-control" id="first-name" name="first-name" type="text" aria-describedby="first-name-description">
-  <span id="first-name-description" class="form-description">Just a help text for presentation purposes.</span>
+  <span id="first-name-description" class="form-description">Just some helpful text related to entering your first name.</span>
 </div>
 ```
 
 **States** are for managing the condition of an element. Using `aria-pressed="true"`, we can tell assistive technologies that this toggle button’s current state is pressed.
 
 ```html
-<button aria-pressed="false">Play</button>
+<button aria-pressed="true">Bold</button>
 ```
 
 Using ARIA, we can give more information about our elements and behavior to the accessibility APIs.
