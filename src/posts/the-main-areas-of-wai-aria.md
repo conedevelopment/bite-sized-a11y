@@ -21,7 +21,7 @@ resources:
 
 ARIA has three main areas that we can utilize:
 
-**Roles** identify the purpose of an element or component. Using roles, we can revise how assistive technologies expose an element to assistive technology. Many HTML elements have implicit roles, so we do not need to specify them ourselves.  For instance, `<button>` element has an implicit `role=button`. A `<main>`, `<article>` and `<input type=checkbox>` have a role of `main`, `article` and `checkbox`, respectively. Roles such as `menu` and `tab` don't have equivalent HTML elements. 
+**Roles** identify the purpose of an element or component. Using roles, we can revise how assistive technologies expose an element to assistive technology. Many HTML elements have implicit roles, so we do not need to specify them ourselves. For instance, `<button>` and `<main>` elements have an implicit role of `button` and `main`. Roles such as `menu` and `tab` don’t have equivalent HTML elements.
 
 ```html
 <form id="search" role="search">
@@ -44,5 +44,3 @@ ARIA has three main areas that we can utilize:
 ```html
 <button aria-pressed="true">Bold</button>
 ```
-
-Using ARIA, we can give more information about our elements and behavior to the accessibility APIs.
