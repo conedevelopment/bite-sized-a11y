@@ -1,22 +1,22 @@
-@use 'sprucecss/scss/spruce';
+@use 'sprucecss/scss/spruce' as *;
 
-@include spruce.font-face(
+@include font-face(
   'Harmony OS',
   '/font/harmonyos_sans_regular-webfont.woff2'
 );
 
-@include spruce.font-face(
+@include font-face(
   'Harmony OS',
   '/font/harmonyos_sans_black-webfont.woff2',
   700
 );
 
-@include spruce.font-face(
+@include font-face(
   'Open Sans',
   '/font/open-sans-v34-latin-regular.woff2'
 );
 
-@include spruce.font-face(
+@include font-face(
   'Open Sans',
   '/font/open-sans-v34-latin-700.woff2',
   700

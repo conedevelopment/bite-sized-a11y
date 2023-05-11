@@ -1,4 +1,4 @@
-@use 'sprucecss/scss/spruce';
+@use 'sprucecss/scss/spruce' as *;
 
 /**
  * a11y-dark theme for JavaScript, CSS, and HTML
@@ -9,7 +9,7 @@
 code[class*='language-'],
 pre[class*='language-'] {
   background: none;
-  color: hsl(60 30% 96%);
+  color: hsl(60deg 30% 96%);
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   font-size: 1rem;
 
@@ -31,9 +31,9 @@ pre[class*='language-'] {
 
 /* Code blocks */
 pre[class*='language-'] {
-  border-radius: spruce.$border-radius-sm;
+  border-radius: config('border-radius-sm', $display);
   overflow: auto;
-  padding: spruce.spacer-clamp(s, m);
+  padding: spacer-clamp('s', 'm');
 
   code {
     padding-inline: 0;
@@ -49,11 +49,11 @@ pre[class*='language-'] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: hsl(54 32% 75%);
+  color: hsl(54deg 32% 75%);
 }
 
 .token.punctuation {
-  color: hsl(0 0% 100%);
+  color: hsl(0deg 0% 100%);
 }
 
 .token.property,
@@ -61,12 +61,12 @@ pre[class*='language-'] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-  color: hsl(17 100% 74%);
+  color: hsl(17deg 100% 74%);
 }
 
 .token.boolean,
 .token.number {
-  color: hsl(180 100% 44%);
+  color: hsl(180deg 100% 44%);
 }
 
 .token.selector,
@@ -75,7 +75,7 @@ pre[class*='language-'] {
 .token.char,
 .token.builtin,
 .token.inserted {
-  color: hsl(80 75% 55%);
+  color: hsl(80deg 75% 55%);
 }
 
 .token.operator,
@@ -84,22 +84,22 @@ pre[class*='language-'] {
 .language-css .token.string,
 .style .token.string,
 .token.variable {
-  color: hsl(180 100% 44%);
+  color: hsl(180deg 100% 44%);
 }
 
 .token.atrule,
 .token.attr-value,
 .token.function {
-  color: hsl(51 100% 50%);
+  color: hsl(51deg 100% 50%);
 }
 
 .token.keyword {
-  color: hsl(180 100% 44%);
+  color: hsl(180deg 100% 44%);
 }
 
 .token.regex,
 .token.important {
-  color: hsl(51 100% 50%);
+  color: hsl(51deg 100% 50%);
 }
 
 .token.important,

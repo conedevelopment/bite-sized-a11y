@@ -336,92 +336,89 @@ template {
 }
 
 :root {
-  --spruce-base-color-primary: hsl(222deg, 87%, 47%);
-  --spruce-base-color-secondary: hsl(341deg, 74%, 52%);
-  --spruce-base-color-background: hsl(0deg, 0%, 100%);
-  --spruce-base-color-heading: hsl(210deg, 83%, 14%);
-  --spruce-base-color-text: hsl(237deg, 33%, 21%);
-  --spruce-base-color-link: hsl(222deg, 87%, 47%);
-  --spruce-base-color-link-hover: #0c3fb3;
+  --spruce-alert-color-danger: hsl(0, 71%, 51%);
+  --spruce-alert-color-info: hsl(195, 100%, 42%);
+  --spruce-alert-color-success: hsl(150, 100%, 33%);
+  --spruce-alert-color-warning: hsl(48, 89%, 55%);
+}
+
+:root {
+  --spruce-base-color-background: hsl(0, 0%, 100%);
+  --spruce-base-color-blockquote-border: hsl(222, 87%, 47%);
   --spruce-base-color-border: #f1f5fe;
-  --spruce-base-color-mark-background: hsl(50deg, 100%, 80%);
-  --spruce-base-color-mark-foreground: hsl(205deg, 100%, 2%);
-  --spruce-base-color-marker: hsl(222deg, 87%, 47%);
   --spruce-base-color-code-background: #f1f5fe;
-  --spruce-base-color-code-foreground: hsl(222deg, 87%, 47%);
-  --spruce-base-color-blockquote-border: hsl(222deg, 87%, 47%);
-  --spruce-base-color-topbar-background: #f1f5fe;
+  --spruce-base-color-code-foreground: hsl(222, 87%, 47%);
+  --spruce-base-color-heading: hsl(210, 83%, 14%);
+  --spruce-base-color-link: hsl(222, 87%, 47%);
+  --spruce-base-color-link-hover: #0c3fb3;
+  --spruce-base-color-mark-background: hsl(50, 100%, 80%);
+  --spruce-base-color-mark-foreground: hsl(205, 100%, 2%);
+  --spruce-base-color-marker: hsl(222, 87%, 47%);
+  --spruce-base-color-primary: hsl(222, 87%, 47%);
+  --spruce-base-color-secondary: hsl(341, 74%, 52%);
+  --spruce-base-color-text: hsl(237, 33%, 21%);
   --spruce-base-color-tag-background: #f1f5fe;
-  --spruce-base-color-tag-foreground: hsl(222deg, 87%, 47%);
+  --spruce-base-color-tag-foreground: hsl(222, 87%, 47%);
+  --spruce-base-color-topbar-background: #f1f5fe;
 }
 
 :root {
-  --spruce-selection-color-foreground: hsl(0deg, 0%, 100%);
-  --spruce-selection-color-background: hsl(222deg, 87%, 47%);
-}
-
-:root {
-  --spruce-alert-color-danger: hsl(0deg, 71%, 51%);
-  --spruce-alert-color-info: hsl(195deg, 100%, 42%);
-  --spruce-alert-color-success: hsl(150deg, 100%, 33%);
-  --spruce-alert-color-warning: hsl(48deg, 89%, 55%);
-}
-
-:root {
-  --spruce-btn-color-primary-background: hsl(222deg, 87%, 47%);
+  --spruce-btn-color-primary-background: hsl(222, 87%, 47%);
   --spruce-btn-color-primary-background-hover: #0c3eb0;
-  --spruce-btn-color-primary-foreground: hsl(0deg, 0%, 100%);
-  --spruce-btn-color-secondary-background: hsl(341deg, 74%, 52%);
+  --spruce-btn-color-primary-foreground: hsl(0, 0%, 100%);
+  --spruce-btn-color-secondary-background: hsl(341, 74%, 52%);
   --spruce-btn-color-secondary-background-hover: #ba1c4e;
-  --spruce-btn-color-secondary-foreground: hsl(0deg, 0%, 100%);
+  --spruce-btn-color-secondary-foreground: hsl(0, 0%, 100%);
 }
 
 :root {
-  --spruce-form-color-background: hsl(0deg, 0%, 100%);
-  --spruce-form-color-background-disabled: hsl(0deg, 0%, 95%);
-  --spruce-form-color-border: hsl(260deg, 4%, 70%);
-  --spruce-form-color-border-disabled: hsl(0deg, 0%, 90%);
-  --spruce-form-color-border-focus: hsl(222deg, 87%, 47%);
-  --spruce-form-color-ring-focus: rgba(16, 78, 224, 0.25);
-  --spruce-form-color-check-foreground: hsl(0deg, 0%, 100%);
-  --spruce-form-color-check-background: hsl(222deg, 87%, 47%);
-  --spruce-form-color-check-focus-ring: hsl(222deg, 87%, 47%);
-  --spruce-form-color-invalid: hsl(0deg, 71%, 51%);
+  --spruce-form-color-background: hsl(0, 0%, 100%);
+  --spruce-form-color-background-disabled: hsl(0, 0%, 95%);
+  --spruce-form-color-border: hsl(260, 4%, 70%);
+  --spruce-form-color-border-disabled: hsl(215, 63%, 93%);
+  --spruce-form-color-border-focus: hsl(222, 87%, 47%);
+  --spruce-form-color-check-background: hsl(222, 87%, 47%);
+  --spruce-form-color-check-focus-ring: hsl(222, 87%, 47%);
+  --spruce-form-color-check-foreground: hsl(0, 0%, 100%);
+  --spruce-form-color-invalid: hsl(0, 71%, 51%);
   --spruce-form-color-invalid-focus-ring: rgba(219, 41, 41, 0.25);
-  --spruce-form-color-label: hsl(205deg, 100%, 2%);
-  --spruce-form-color-legend: hsl(205deg, 100%, 2%);
-  --spruce-form-color-placeholder: hsl(208deg, 7%, 40%);
-  --spruce-form-color-range-thumb-background: hsl(222deg, 87%, 47%);
-  --spruce-form-color-range-thumb-focus-ring: hsl(222deg, 87%, 47%);
-  --spruce-form-color-range-track-background: hsl(0deg, 0%, 90%);
-  --spruce-form-color-text: hsl(208deg, 7%, 30%);
-  --spruce-form-color-select-foreground: hsl(205deg, 100%, 2%);
-  --spruce-form-color-valid: hsl(150deg, 100%, 33%);
+  --spruce-form-color-label: hsl(205, 100%, 2%);
+  --spruce-form-color-legend: hsl(205, 100%, 2%);
+  --spruce-form-color-placeholder: hsl(208, 7%, 40%);
+  --spruce-form-color-range-thumb-background: hsl(222, 87%, 47%);
+  --spruce-form-color-range-thumb-focus-ring: hsl(222, 87%, 47%);
+  --spruce-form-color-range-track-background: hsl(215, 63%, 93%);
+  --spruce-form-color-ring-focus: rgba(16, 78, 224, 0.25);
+  --spruce-form-color-select-foreground: hsl(205, 100%, 2%);
+  --spruce-form-color-text: hsl(208, 9%, 42%);
+  --spruce-form-color-valid: hsl(150, 100%, 33%);
   --spruce-form-color-valid-focus-ring: rgba(0, 168, 84, 0.25);
 }
 
 :root {
-  --spruce-table-color-border: hsl(0deg, 0%, 90%);
-  --spruce-table-color-caption: hsl(208deg, 7%, 30%);
-  --spruce-table-color-heading: hsl(205deg, 100%, 2%);
-  --spruce-table-color-hover: hsla(0deg, 0%, 0%, 0.05);
-  --spruce-table-color-text: hsl(208deg, 7%, 30%);
-  --spruce-table-color-stripe: hsla(0deg, 0%, 0%, 0.025);
+  --spruce-selection-color-foreground: hsl(0, 0%, 100%);
+  --spruce-selection-color-background: hsl(222, 87%, 47%);
 }
 
 :root {
-  --spruce-scrollbar-color-thumb-background: hsla(0deg, 0%, 0%, 0.15);
-  --spruce-scrollbar-color-thumb-background-hover: hsla(0deg, 0%, 0%, 0.25);
-  --spruce-scrollbar-color-track-background: hsla(0deg, 0%, 0%, 0.05);
+  --spruce-scrollbar-color-thumb-background: hsla(0, 0%, 0%, 0.15);
+  --spruce-scrollbar-color-thumb-background-hover: hsla(0, 0%, 0%, 0.25);
+  --spruce-scrollbar-color-track-background: hsla(0, 0%, 0%, 0.05);
 }
 
 :root {
-  --spruce-transition-duration: 0.15s;
-  --spruce-transition-timing-function: ease-in-out;
+  --spruce-table-color-border: hsl(215, 63%, 93%);
+  --spruce-table-color-caption: hsl(208, 9%, 42%);
+  --spruce-table-color-heading: hsl(205, 100%, 2%);
+  --spruce-table-color-hover: hsla(0, 0%, 0%, 0.05);
+  --spruce-table-color-stripe: hsla(0, 0%, 0%, 0.025);
+  --spruce-table-color-text: hsl(208, 9%, 42%);
 }
-@media (prefers-reduced-motion: reduce) {
+
+@media (prefers-reduced-motion: no-preference) {
   :root {
-    --spruce-transition-duration: 0;
+    --spruce-duration: 0.15s;
+    --spruce-timing-function: ease-in-out;
   }
 }
 
@@ -470,9 +467,9 @@ body {
 a {
   color: var(--spruce-base-color-link);
   text-decoration: underline;
-  transition-duration: var(--spruce-transition-duration);
+  transition-duration: var(--spruce-duration);
   transition-property: color;
-  transition-timing-function: var(--spruce-transition-timing-function);
+  transition-timing-function: var(--spruce-timing-function);
 }
 a:hover {
   color: var(--spruce-base-color-link-hover);
@@ -489,7 +486,7 @@ button {
 
 hr {
   border: 0;
-  border-top: 1px solid var(--spruce-base-color-border);
+  border-block-start: 1px solid var(--spruce-base-color-border);
 }
 
 img {
@@ -520,7 +517,7 @@ figure figcaption {
   overflow-x: auto;
 }
 .table-responsive table {
-  min-width: var(--min-width);
+  min-width: var(--spruce-responsive-width);
 }
 
 .table {
@@ -577,7 +574,7 @@ figure figcaption {
 }
 
 html {
-  -webkit-tap-highlight-color: hsla(0deg, 0%, 0%, 0);
+  -webkit-tap-highlight-color: hsla(0, 0%, 0%, 0);
 }
 
 body {
@@ -610,33 +607,27 @@ h6 {
   line-height: calc(2px + 2ex + 2px);
 }
 
-h1,
-.h1 {
+h1 {
   font-size: clamp(2.0751953125rem, 2vw + 1rem, 2.44140625rem);
 }
 
-h2,
-.h2 {
+h2 {
   font-size: clamp(1.66015625rem, 2vw + 1rem, 1.953125rem);
 }
 
-h3,
-.h3 {
+h3 {
   font-size: clamp(1.328125rem, 2vw + 1rem, 1.5625rem);
 }
 
-h4,
-.h4 {
+h4 {
   font-size: clamp(1.0625rem, 2vw + 1rem, 1.25rem);
 }
 
-h5,
-.h5 {
+h5 {
   font-size: 1rem;
 }
 
-h6,
-.h6 {
+h6 {
   font-size: 1rem;
 }
 
@@ -733,7 +724,36 @@ samp {
 }
 
 .lead {
-  font-size: clamp(1.1rem, 2vw, 1.25rem);
+  font-size: clamp(1.15rem, 2vw, 1.35rem);
+}
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+.h1 {
+  font-size: clamp(2.0751953125rem, 2vw + 1rem, 2.44140625rem);
+}
+
+.h2 {
+  font-size: clamp(1.66015625rem, 2vw + 1rem, 1.953125rem);
+}
+
+.h3 {
+  font-size: clamp(1.328125rem, 2vw + 1rem, 1.5625rem);
+}
+
+.h4 {
+  font-size: clamp(1.0625rem, 2vw + 1rem, 1.25rem);
+}
+
+.h5 {
+  font-size: 1rem;
+}
+
+.h6 {
+  font-size: 1rem;
 }
 
 .container {
@@ -767,7 +787,7 @@ samp {
 .topbar ul {
   align-items: center;
   display: flex;
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: ui-monospace, Cascadia Code, Source Code Pro, Menlo, Consolas, DejaVu Sans Mono, monospace;
   gap: 2rem;
   list-style: none;
   margin-block: 0;
@@ -778,10 +798,11 @@ samp {
   margin-block: 0;
 }
 .topbar ul a {
-  text-decoration: none;
-  transition-duration: var(--spruce-transition-duration);
+  transition-duration: var(--spruce-duration);
   transition-property: color;
-  transition-timing-function: var(--spruce-transition-timing-function);
+  transition-timing-function: var(--spruce-timing-function);
+  font-size: 0.875rem;
+  text-decoration: none;
 }
 .topbar ul a:hover, .topbar ul a[aria-current=page] {
   color: var(--spruce-base-color-secondary);
@@ -857,20 +878,20 @@ samp {
 }
 .post-card__serial-number {
   --dimension: 2rem;
+  transition-duration: var(--spruce-duration);
+  transition-property: all;
+  transition-timing-function: var(--spruce-timing-function);
   align-items: center;
   background-color: var(--spruce-base-color-secondary);
   border-radius: 0.5rem;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   display: flex;
   flex-shrink: 0;
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: ui-monospace, Cascadia Code, Source Code Pro, Menlo, Consolas, DejaVu Sans Mono, monospace;
   font-size: clamp(0.85rem, 2vw, 1rem);
   font-weight: 700;
   height: var(--dimension);
   justify-content: center;
-  transition-duration: var(--spruce-transition-duration);
-  transition-property: all;
-  transition-timing-function: var(--spruce-transition-timing-function);
   width: var(--dimension);
 }
 .post-card__title {
@@ -899,7 +920,7 @@ samp {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: ui-monospace, Cascadia Code, Source Code Pro, Menlo, Consolas, DejaVu Sans Mono, monospace;
   gap: 1rem;
   margin-block-start: 4.5rem;
 }
@@ -908,8 +929,11 @@ samp {
 }
 .pagination a {
   --dimension: 2.8rem;
+  transition-duration: var(--spruce-duration);
+  transition-property: all;
+  transition-timing-function: var(--spruce-timing-function);
   align-items: center;
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
   border-radius: 1rem;
   color: var(--spruce-base-color-primary);
   display: flex;
@@ -918,13 +942,10 @@ samp {
   justify-content: center;
   min-width: var(--dimension);
   text-decoration: none;
-  transition-duration: var(--spruce-transition-duration);
-  transition-property: all;
-  transition-timing-function: var(--spruce-transition-timing-function);
 }
 .pagination a[aria-current=page], .pagination a:hover {
   background-color: var(--spruce-base-color-primary);
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   text-decoration: none;
 }
 .pagination .next,
@@ -945,19 +966,20 @@ samp {
   margin-block: 0;
 }
 .tag-list a {
+  transition-duration: var(--spruce-duration);
+  transition-property: all;
+  transition-timing-function: var(--spruce-timing-function);
   background-color: var(--spruce-base-color-tag-background);
   border-radius: 0.5rem;
   color: var(--spruce-base-color-primary);
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  padding: 0.25em 0.5em;
+  font-family: ui-monospace, Cascadia Code, Source Code Pro, Menlo, Consolas, DejaVu Sans Mono, monospace;
+  font-size: 0.875rem;
+  padding: 0.35em 0.55em;
   text-decoration: none;
-  transition-duration: var(--spruce-transition-duration);
-  transition-property: all;
-  transition-timing-function: var(--spruce-transition-timing-function);
 }
 .tag-list a:hover, .tag-list a:focus {
   background-color: var(--spruce-base-color-primary);
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
 
 /**
@@ -968,7 +990,7 @@ samp {
 code[class*=language-],
 pre[class*=language-] {
   background: none;
-  color: hsl(60deg, 30%, 96%);
+  color: hsl(60, 30%, 96%);
   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   font-size: 1rem;
   hyphens: none;
@@ -998,18 +1020,18 @@ pre[class*=language-] code {
 
 :not(pre) > code[class*=language-],
 pre[class*=language-] {
-  background: hsl(222deg, 60%, 16%);
+  background: hsl(222, 60%, 16%);
 }
 
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: hsl(54deg, 32%, 75%);
+  color: hsl(54, 32%, 75%);
 }
 
 .token.punctuation {
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
 
 .token.property,
@@ -1017,12 +1039,12 @@ pre[class*=language-] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-  color: hsl(17deg, 100%, 74%);
+  color: hsl(17, 100%, 74%);
 }
 
 .token.boolean,
 .token.number {
-  color: hsl(180deg, 100%, 44%);
+  color: hsl(180, 100%, 44%);
 }
 
 .token.selector,
@@ -1031,7 +1053,7 @@ pre[class*=language-] {
 .token.char,
 .token.builtin,
 .token.inserted {
-  color: hsl(80deg, 75%, 55%);
+  color: hsl(80, 75%, 55%);
 }
 
 .token.operator,
@@ -1040,22 +1062,22 @@ pre[class*=language-] {
 .language-css .token.string,
 .style .token.string,
 .token.variable {
-  color: hsl(180deg, 100%, 44%);
+  color: hsl(180, 100%, 44%);
 }
 
 .token.atrule,
 .token.attr-value,
 .token.function {
-  color: hsl(51deg, 100%, 50%);
+  color: hsl(51, 100%, 50%);
 }
 
 .token.keyword {
-  color: hsl(180deg, 100%, 44%);
+  color: hsl(180, 100%, 44%);
 }
 
 .token.regex,
 .token.important {
-  color: hsl(51deg, 100%, 50%);
+  color: hsl(51, 100%, 50%);
 }
 
 .token.important,

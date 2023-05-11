@@ -1,10 +1,10 @@
-@use 'sprucecss/scss/spruce';
+@use 'sprucecss/scss/spruce' as *;
 
 .topbar {
   $this: &;
 
-  background-color: spruce.color(topbar-background);
-  line-height: spruce.$line-height-md;
+  background-color: color('topbar-background');
+  line-height: config('line-height-md', $typography);
   padding-block: 0.65rem;
 
   &__inner {
@@ -12,7 +12,7 @@
     display: flex;
     font-size: 1rem;
     font-weight: 700;
-    gap: spruce.spacer-clamp(m, l);
+    gap: spacer-clamp('m', 'l');
     overflow-x: auto;
     white-space: nowrap;
 
@@ -24,8 +24,8 @@
   ul {
     align-items: center;
     display: flex;
-    font-family: spruce.$font-family-cursive;
-    gap: spruce.spacer(m);
+    font-family: config('font-family-cursive', $typography);
+    gap: spacer('m');
     list-style: none;
     margin-block: 0;
     padding: 0;
@@ -36,14 +36,13 @@
     }
 
     a {
+      @include transition($property: color);
+      font-size: config('font-size-sm', $typography);
       text-decoration: none;
-      transition-duration: spruce.transition(duration);
-      transition-property: color;
-      transition-timing-function: spruce.transition(timing-function);
 
       &:hover,
       &[aria-current='page'] {
-        color: spruce.color(secondary);
+        color: color('secondary');
       }
     }
   }

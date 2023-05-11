@@ -1,20 +1,12 @@
-// Load Spruce CSS
 @forward 'config';
-
-// Load Layout
 @forward 'layout';
-
-// Load Components
 @forward 'components';
-
-// Load Content
 @forward 'content';
 
-// Load Spruce CSS
-@use 'sprucecss/scss/spruce';
+@use 'sprucecss/scss/spruce' as *;
 
 :root {
-  @include spruce.set-css-variable((
-    --container-gap: spruce.spacer-clamp(m, l)
+  @include set-css-variable((
+    --container-gap: spacer-clamp('m', 'l')
   ));
 }

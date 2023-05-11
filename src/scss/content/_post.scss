@@ -1,12 +1,12 @@
-@use 'sprucecss/scss/spruce';
+@use 'sprucecss/scss/spruce' as *;
 
 .post-content {
-  @include spruce.layout-stack;
-  font-size: spruce.responsive-font-size(1.0375rem);
+  @include layout-stack;
+  font-size: responsive-font-size(1.0375rem);
 
   p:first-child {
-    color: spruce.color(heading);
-    font-size: spruce.responsive-font-size(1.3rem);
+    color: color('heading');
+    font-size: responsive-font-size(1.3rem);
     font-weight: 700;
     line-height: 1.7;
   }
@@ -17,7 +17,7 @@
   * + h4,
   * + h5,
   * + h6 {
-    margin-top: spruce.spacer(l);
+    margin-top: spacer('l');
   }
 
   h1 + *,
@@ -26,40 +26,40 @@
   h4 + *,
   h5 + *,
   h6 + * {
-    margin-top: spruce.spacer(s);
+    margin-top: spacer('s');
   }
 
   img,
   iframe {
-    border-radius: spruce.$border-radius-lg;
+    border-radius: config('border-radius-lg', $display);
   }
 
   strong {
-    color: spruce.color(heading);
+    color: color('heading');
   }
 }
 
 .resources {
-  @include spruce.layout-stack(s);
-  font-size: spruce.responsive-font-size(1.0375rem);
-  margin-block-start: spruce.spacer(l);
+  @include layout-stack('s');
+  font-size: responsive-font-size(1.0375rem);
+  margin-block-start: spacer('l');
 
   li::marker {
-    color: spruce.color(heading);
+    color: color('heading');
   }
 }
 
 .edit-on-github {
-  border-block: 1px solid spruce.color(border);
-  margin-block-start: spruce.spacer(l);
-  padding-block: spruce.spacer(s);
+  border-block: 1px solid color('border');
+  margin-block-start: spacer('l');
+  padding-block: spacer('s');
 }
 
 .more-content {
-  @include spruce.layout-stack(2rem);
-  margin-block-start: spruce.spacer(l);
+  @include layout-stack(2rem);
+  margin-block-start: spacer('l');
 
   .post-list {
-    @include spruce.layout-stack(m);
+    @include layout-stack('m');
   }
 }

@@ -1,11 +1,11 @@
-@use 'sprucecss/scss/spruce';
+@use 'sprucecss/scss/spruce' as *;
 
 .post-heading {
-  @include spruce.layout-stack(m);
-  padding-block: spruce.spacer(m) spruce.spacer(l);
+  @include layout-stack('m');
+  padding-block: spacer('m') spacer('l');
 
   &__title {
-    font-size: spruce.responsive-font-size(3.5rem, 40, '4vw + 1rem');
+    font-size: responsive-font-size(3.5rem, 40, '4vw + 1rem');
     letter-spacing: -0.01em;
   }
 
@@ -13,7 +13,7 @@
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    gap: spruce.spacer(m);
+    gap: spacer('m');
     line-height: 1;
   }
 }

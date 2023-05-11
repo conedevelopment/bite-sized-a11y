@@ -1,17 +1,17 @@
 @use 'sass:color';
-@use 'sprucecss/scss/spruce';
+@use 'sprucecss/scss/spruce' as *;
 
 .hero {
-  @include spruce.layout-stack(s);
-  padding-block: spruce.spacer(m) spruce.spacer(xl);
+  @include layout-stack(s);
+  padding-block: spacer('m') spacer('xl');
 
   &__title {
-    font-size: spruce.responsive-font-size(3.5rem, 40, '4vw + 1rem');
+    font-size: responsive-font-size(3.5rem, 40, '4vw + 1rem');
     letter-spacing: -0.01em;
   }
 
   &__description {
-    font-size: spruce.font-size(
+    font-size: font-size(
       $key: h4,
       $scaler: 20,
       $optimal-size: '0.25vw + 1rem'

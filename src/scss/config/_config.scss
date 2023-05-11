@@ -1,34 +1,54 @@
 @use 'sass:color';
 
-$color-primary: hsl(222 87% 47%);
-$color-primary-light: color.adjust(hsl(222 87% 47%), $lightness: 50%);
-
-$color-secondary: hsl(341 74% 52%);
-
-$color-black: hsl(210 83% 14%);
+$color-black: hsl(210deg 83% 14%);
+$color-primary-light: color.adjust(hsl(222deg 87% 47%), $lightness: 50%);
+$color-primary: hsl(222deg 87% 47%);
+$color-secondary: hsl(341deg 74% 52%);
 
 @use 'sprucecss/scss/spruce' with (
+  $btn: (
+    'font-weight': 700,
+  ),
   $color-primary: $color-primary,
   $color-secondary: $color-secondary,
   $colors: (
-    base: (
-      border: $color-primary-light,
-      code-background: $color-primary-light,
-      code-foreground: $color-primary,
-      heading: $color-black,
-      topbar-background: $color-primary-light,
-      tag-background: $color-primary-light,
-      tag-foreground: $color-primary,
-      text: hsl(237 33% 21%)
+    'base': (
+      'border': $color-primary-light,
+      'code-background': $color-primary-light,
+      'code-foreground': $color-primary,
+      'heading': $color-black,
+      'tag-background': $color-primary-light,
+      'tag-foreground': $color-primary,
+      'text': hsl(237deg 33% 21%),
+      'topbar-background': $color-primary-light,
     )
   ),
-  $spacers: (
-    m: 2rem
+  $display: (
+    'border-radius-lg': 1rem,
+    'border-radius-sm': 0.5rem,
   ),
-  $border-radius-sm: 0.5rem,
-  $border-radius-lg: 1rem,
-  $line-height-base: 2,
-  $btn-font-weight: 700,
-  $font-family-base: #{'Open Sans', sans-serif},
-  $font-family-heading: #{'Harmony OS', sans-serif}
+  $generators: (
+    'form': (
+      'btn': false,
+      'file-btn': false,
+      'form-check': false,
+      'form-control': false,
+      'form-description': false,
+      'form-feedback': false,
+      'form-fieldset': false,
+      'form-group': false,
+      'form-label': false,
+      'form-range': false,
+      'form-row': false,
+      'form-switch': false,
+    ),
+  ),
+  $typography: (
+    'font-family-base': #{'Open Sans', sans-serif},
+    'font-family-heading': #{'Harmony OS', sans-serif},
+    'line-height-base': 2,
+  ),
+  $spacers: (
+    'm': 2rem,
+  ),
 );

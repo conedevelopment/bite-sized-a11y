@@ -1,32 +1,31 @@
 @use 'sass:color';
-@use 'sprucecss/scss/spruce';
+@use 'sprucecss/scss/spruce' as *;
 
 .tag-list {
-  @include spruce.clear-list;
+  @include clear-list;
 
   display: flex;
   flex-wrap: wrap;
-  gap: spruce.spacer(s);
+  gap: spacer('s');
 
   > * {
     margin-block: 0;
   }
 
   a {
-    background-color: spruce.color(tag-background);
-    border-radius: spruce.$border-radius-sm;
-    color: spruce.color(primary);
-    font-family: spruce.$font-family-cursive;
-    padding: 0.25em 0.5em;
+    @include transition;
+    background-color: color(tag-background);
+    border-radius: config('border-radius-sm', $display);
+    color: color('primary');
+    font-family: config('font-family-cursive', $typography);
+    font-size: config('font-size-sm', $typography);
+    padding: 0.35em 0.55em;
     text-decoration: none;
-    transition-duration: spruce.transition(duration);
-    transition-property: all;
-    transition-timing-function: spruce.transition(timing-function);
 
     &:hover,
     &:focus {
-      background-color: spruce.color(primary);
-      color: hsl(0 0% 100%);
+      background-color: color('primary');
+      color: hsl(0deg 0% 100%);
     }
   }
 }
