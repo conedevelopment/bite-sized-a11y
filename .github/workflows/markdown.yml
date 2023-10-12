@@ -36,3 +36,19 @@ jobs:
             uses: "DavidAnson/markdownlint-cli2-action@v9"
             with:
                 globs: "**/*.md"
+
+    links:
+        name: "Links"
+        runs-on: "ubuntu-22.04"
+        timeout-minutes: 10
+        steps:
+        -
+            name: "Checkout repository"
+            uses: "actions/checkout@v4"
+        -
+            name: "Run Lychee"
+            uses: "lycheeverse/lychee-action@v1.8.0"
+            with:
+                args: "--verbose --no-progress --require-https './**/*.md'"
+                output: "${{ runner.temp }}/lychee/out.md"
+                fail: true
