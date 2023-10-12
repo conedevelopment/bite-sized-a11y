@@ -12,6 +12,6 @@ In my opinion, accessibility is an area that rewards simplicity the best. On the
 
 In many scenarios, you can choose to create a straightforward solution. Leave a carousel from your design and use a simple grid, eliminating the JS dependency and complexity. Usually, what is simple - in an HTML way - is accessible.
 
-The [Motherfucking Website](http://motherfuckingwebsite.com/) is an excellent example of this methodology called [KISS](https://en.wikipedia.org/wiki/KISS_principle). It is an example site that shows how complex today’s web development can sometimes be because of us.
+The [Motherfucking Website](https://motherfuckingwebsite.com/) is an excellent example of this methodology called [KISS](https://en.wikipedia.org/wiki/KISS_principle). It is an example site that shows how complex today’s web development can sometimes be because of us.
 
 Of course, life is more complex. We often don’t have the freedom to decide, but designing and creating with a mentality that focuses on simplicity will spare you and your users a lot.
