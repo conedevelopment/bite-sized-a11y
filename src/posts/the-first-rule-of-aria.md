@@ -9,6 +9,8 @@ github: 'https://github.com/conedevelopment/bite-sized-a11y/blob/master/src/post
 resources:
   - title: '2.1 First Rule of ARIA Use'
     url: 'https://www.w3.org/TR/using-aria/#firstrule'
+  - title: 'ARIA (MDN)'
+    url: 'https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA'
 ---
 
 The Accessible Rich Internet Applications specification is a powerful tool that can help us tackle the accessible problems on the web.
