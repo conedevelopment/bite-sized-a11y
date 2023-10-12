@@ -49,5 +49,6 @@ jobs:
             name: "Run Lychee"
             uses: "lycheeverse/lychee-action@v1.8.0"
             with:
+                args: "--verbose --no-progress --require-https './**/*.md'"
                 output: "${{ runner.temp }}/lychee/out.md"
                 fail: true
